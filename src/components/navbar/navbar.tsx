@@ -68,16 +68,16 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed z-50 w-full ${scrolled ? "bg-backgroundNavbar" : "bg-transparent"}`}
+      className={`fixed z-50 w-full ${scrolled ? "bg-backgroundNavBar" : "bg-transparent"}`}
     >
-      <nav className="mx-auto my-0 flex h-20 max-w-7xl items-center  justify-between px-3">
+      <nav className="mx-auto my-0 flex h-[74px] max-w-7xl items-center  justify-between px-5">
         <div className="pr-36">
           <Link href={"/"}>
             <Image
               src={"/logo.svg"}
               alt="logo GODRIVES"
-              width={48}
-              height={48}
+              width={44}
+              height={44}
               className=""
             />
           </Link>
@@ -162,7 +162,7 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-primaryBlue px-7 py-3 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
+            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-primaryBlue px-7 py-2.5 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
               Contate-nos
             </button>
           </>

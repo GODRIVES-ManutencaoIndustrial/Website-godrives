@@ -18,6 +18,7 @@ const config = {
       },
     },
     colors: {
+      backgroundNavBar: "#0C2E48",
       primaryBlue: "#0C8DC0",
       primaryRed: "#EB4C50",
       primaryWhite: "#F4F5F5",
