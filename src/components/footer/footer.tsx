@@ -29,13 +29,6 @@ export default function Footer() {
           <p>Siga as nossas redes sociais</p>
           <ul className="flex">
             <li className="flex items-center justify-between gap-3">
-              <Image
-                src={"/Facebook.png"}
-                width={40}
-                height={40}
-                // className="min-w-max opacity-80 mix-blend-overlay"
-                alt="Ícone link Facebook"
-              />
               <Link href={"https://www.instagram.com/go.drives/"}>
                 <Image
                   src={"/instagram.png"}
@@ -46,13 +39,19 @@ export default function Footer() {
                 />
               </Link>
 
-              <Image
-                src={"/Linkedin.png"}
-                width={40}
-                height={40}
-                // className="min-w-max opacity-80 mix-blend-overlay"
-                alt="Ícone link Linkedin"
-              />
+              <Link
+                href={
+                  " https://www.linkedin.com/company/go-drives/posts/?feedView=all"
+                }
+              >
+                <Image
+                  src={"/Linkedin.png"}
+                  width={40}
+                  height={40}
+                  // className="min-w-max opacity-80 mix-blend-overlay"
+                  alt="Ícone link Linkedin"
+                />
+              </Link>
             </li>
           </ul>
         </div>

@@ -5,7 +5,7 @@ const ArrowContactButton = () => {
     <div>
       <button
         onClick={() => (window.location.href = "https://wa.me/5562998817695")}
-        className="inline-flex h-[56px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-primaryBlue bg-primaryBlue fill-secondary900 py-3 text-blue900 transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue"
+        className="inline-flex h-[54px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-primaryBlue bg-primaryBlue fill-secondary900 py-3 text-blue900 transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue"
       >
         <p className="font-['Poppins'] text-xl font-normal ">Contate-nos</p>
         <svg
