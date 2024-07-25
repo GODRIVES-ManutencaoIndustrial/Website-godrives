@@ -1,11 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import ArrowContactButton from "../arrowContactButton/arrowContactButton"
 
 export default function Footer() {
   return (
     <div className="w-full bg-secondary900 px-5 pb-14 pt-16">
-      <div className="">
-        <div className="mb-5 flex flex-col gap-1">
+      <div className="flex justify-between gap-6 max-md:flex-col">
+        <div className="flex flex-col gap-1">
           <Image
             src={"/logoMarca.svg"}
             width={188}
@@ -18,20 +21,10 @@ export default function Footer() {
             <span className="text-primaryRed">eletrônicos industrais</span>
           </p>
         </div>
-        <button className="inline-flex h-[56px] items-center justify-center gap-6 rounded-[28px] bg-primaryBlue px-10 py-3">
-          <p className="font-['Poppins'] text-xl font-normal text-blue900">
-            Contate-nos
-          </p>
-          <Image
-            src={"/Arrow.svg"}
-            width={27}
-            height={0}
-            alt="Logo marca GODRIVES"
-          />
-        </button>
+        <ArrowContactButton />
       </div>
-      <div className="my-14 h-px w-full bg-[#0c8cbf]" />
-      <div className="flex flex-col gap-4 px-6">
+      <div className="my-16 h-px w-full bg-[#0c8cbf]" />
+      <div className="flex justify-between gap-9 px-6 max-md:flex-col">
         <div className="flex flex-col gap-2 text-secondary200">
           <p>Siga as nossas redes sociais</p>
           <ul className="flex">
@@ -43,13 +36,16 @@ export default function Footer() {
                 // className="min-w-max opacity-80 mix-blend-overlay"
                 alt="Ícone link Facebook"
               />
-              <Image
-                src={"/instagram.png"}
-                width={40}
-                height={40}
-                // className="min-w-max opacity-80 mix-blend-overlay"
-                alt="Ícone link Instagram"
-              />
+              <Link href={"https://www.instagram.com/go.drives/"}>
+                <Image
+                  src={"/instagram.png"}
+                  width={40}
+                  height={40}
+                  // className="min-w-max opacity-80 mix-blend-overlay"
+                  alt="Ícone link Instagram"
+                />
+              </Link>
+
               <Image
                 src={"/Linkedin.png"}
                 width={40}
@@ -60,7 +56,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex gap-8 max-md:flex-col">
           <Link
             href={"/"}
             className="text-sm font-bold text-primaryBlue transition-all hover:brightness-150"
@@ -97,7 +93,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="my-14 h-px w-full bg-[#0c8cbf]" />
+      <div className="my-16 h-px w-full bg-[#0c8cbf]" />
       <div className="flex flex-col justify-center gap-2 text-center text-sm text-secondary200">
         <p>©2018 - GODRIVES | Todos os direitos reservardos</p>
         <p className="text-xs opacity-70">Desenvolvido por Gabriel Manicucci</p>

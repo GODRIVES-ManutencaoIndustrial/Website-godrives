@@ -102,17 +102,48 @@ export default function Navbar() {
         {screenX <= 768 && (
           <Sheet>
             <SheetTrigger>
-              {" "}
               <HiOutlineMenuAlt3 size={42} className="text-primaryBlue" />
             </SheetTrigger>
-            <SheetContent className="">
-              <SheetHeader className="">
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
-                </SheetDescription>
+            <SheetContent className="flex flex-col items-center gap-10 bg-primaryBlue p-0 pt-10">
+              <SheetHeader className="m-0 mt-10 w-full space-y-0">
+                <Link
+                  href={"/"}
+                  className="h-full w-full py-5 text-center transition-all hover:bg-blue600"
+                >
+                  Início
+                </Link>
+                <Link
+                  href={"/routes/empresa"}
+                  className="h-full w-full py-5 text-center transition-all hover:bg-blue600"
+                >
+                  Empresa
+                </Link>
+                <Link
+                  href={"/routes/servicos"}
+                  className="h-full w-full py-5 text-center transition-all hover:bg-blue600"
+                >
+                  Serviços
+                </Link>
               </SheetHeader>
+
+              <button
+                onClick={() =>
+                  (window.location.href = "https://wa.me/5562998817695")
+                }
+                className="inline-flex h-[56px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-secondary900 bg-primaryBlue fill-secondary900 py-3 text-blue900 transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue"
+              >
+                <p className="font-['Poppins'] text-xl font-normal ">
+                  Contate-nos
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                >
+                  <path d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM0 9H26V7H0V9Z" />
+                </svg>
+              </button>
             </SheetContent>
           </Sheet>
         )}
@@ -120,18 +151,18 @@ export default function Navbar() {
         {screenX > 768 && (
           <>
             <ul className="flex items-center gap-8 text-primaryBlue">
-              <li>
+              <li className="transition-all hover:brightness-150">
                 <a href="/">Início</a>
               </li>
-              <li>
+              <li className="transition-all hover:brightness-150">
                 <a href="/routes/empresa">Empresa</a>
               </li>
-              <li>
+              <li className="transition-all hover:brightness-150">
                 <a href="/routes/servicos">Serviços</a>
               </li>
             </ul>
 
-            <button className="rounded-3xl border-2 border-primaryBlue bg-transparent px-7 py-3 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-backgroundBlue">
+            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-primaryBlue px-7 py-3 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
               Contate-nos
             </button>
           </>
