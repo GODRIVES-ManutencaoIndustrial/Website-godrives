@@ -1,10 +1,11 @@
 import Image from "next/image"
+import heroWallpaper from "../../../public/heroWallpaper.svg"
 
-export default function Hero() {
+export default function HeroBackground() {
   return (
     <>
       <Image
-        src={"/heroWallpaper.svg"}
+        src={heroWallpaper}
         width={0}
         height={0}
         className="min-w-max opacity-80 mix-blend-overlay"
