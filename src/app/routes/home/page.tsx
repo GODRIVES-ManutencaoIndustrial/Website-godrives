@@ -1,10 +1,13 @@
 import Hero from "@/components/heroBackground/heroBackground"
-import Serviços from "../servicos/page"
 import Image from "next/image"
+import marca from "../../../../public/marca.svg"
+import equipe from "../../../../public/equipeGODRIVES.png"
+import Carousel from "@/components/carousel/carousel"
+import Card from "@/components/card/card"
 
 export default function Home() {
   return (
-    <>
+    <div>
       <div className="absolute left-0 top-0 -z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-secondary900">
         <Hero />
       </div>
@@ -39,10 +42,91 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="h-[650px] w-full bg-white">Teste</div>
-      <div className="h-[650px] w-full bg-white">Teste</div>
+      <div className="bg-gray50 px-3 py-28 shadow-lg min-[800px]:grid">
+        <div className="mb-7 flex flex-col gap-7">
+          <div>
+            <p className="text-[38px] font-semibold leading-10 text-secondary500">
+              Seja muito bem vindo a{" "}
+              <Image
+                src={marca}
+                width={170}
+                alt="marca GODRIVES"
+                className="mt-2"
+              />
+            </p>
+          </div>
+          <div>
+            <Image
+              src={equipe}
+              width={700}
+              alt="Equipe GODRIVES"
+              className="rounded-lg"
+            />
+          </div>
+          <div>
+            <p className="text-xl text-secondary300">
+              Fundada em 2013, a GODRIVES tem sido um pilar de excelência no
+              setor de manutenção eletrônica industrial de Goiás. Com sede em
+              Aparecida de Goiânia GO, nossa empresa se dedica a fornecer
+              serviços especializados de manutenção, reparo e atualização de
+              equipamentos eletrônicos industriais, garantindo a máxima
+              eficiência e produtividade para nossos clientes dos seguintes
+              setores:
+            </p>
+          </div>
+        </div>
+        <Carousel />
 
-      <div className="h-[650px] w-full bg-white">Teste</div> */}
-    </>
+        <div className="mt-12 flex items-center px-6 max-md:flex-col max-md:gap-10 max-sm:gap-16">
+          <div className="max-w flex w-full items-center">
+            <div className="flex h-[100px] w-36 flex-1 flex-col items-center border-l border-r border-gray400">
+              <p className="w-20 text-center text-[40px] font-semibold text-primaryBlue">
+                2
+              </p>
+              <p className="w-20 text-center text-sm text-secondary300">
+                Unidades
+              </p>
+            </div>
+            <div className="flex h-[100px] w-36 flex-1 flex-col items-center border-r border-gray400">
+              <p className="w-20 text-center text-[40px] font-semibold text-primaryBlue">
+                +10
+              </p>
+              <p className="w-20 text-center text-sm text-secondary300">
+                Anos de mercado
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full items-center ">
+            <div className="flex w-36 flex-1 flex-col items-center border-r border-gray400 max-md:border-l">
+              <p className="w-20 text-center text-[40px] font-semibold text-primaryBlue">
+                +50
+              </p>
+              <p className="w-20 text-center text-sm text-secondary300">
+                Empresas Atendidas
+              </p>
+            </div>
+            <div className="flex w-36 flex-1 flex-col items-center border-r border-gray400">
+              <p className="w-20 text-center text-[40px] font-semibold text-primaryBlue">
+                +10
+              </p>
+              <p className="w-20 text-center text-sm text-secondary300">
+                Especialistas disponíveis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-3 py-24">
+        <div className="mb-12 flex flex-col gap-1">
+          <p className="text-primaryRed">Serviços</p>
+          <h2 className="text-4xl font-semibold text-secondary500">
+            Como podemos solucionar o seu serviço ?
+          </h2>
+        </div>
+
+        <Card />
+      </div>
+    </div>
   )
 }

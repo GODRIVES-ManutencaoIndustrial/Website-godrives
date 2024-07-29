@@ -23,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${poppins.className}`}>
+      <body
+        suppressHydrationWarning={true}
+        className={`${poppins.className} bg-gray100`}
+      >
         <Navbar />
 
         {children}
