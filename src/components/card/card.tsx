@@ -3,11 +3,11 @@ import { DataCard } from "./card.data"
 
 export default function Card() {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-10">
       {DataCard.map((data, index) => (
         <div
           key={index}
-          className="shadow-m5 flex flex-col gap-10 rounded-md border border-secondary50 bg-gray50 px-9 py-12"
+          className="flex flex-col gap-10 rounded-md border border-secondary50 bg-gray50 px-9 py-12 shadow-lg"
         >
           <Image src={data.src} alt={data.description} width={28} height={28} />
           <div className="flex flex-col gap-3">

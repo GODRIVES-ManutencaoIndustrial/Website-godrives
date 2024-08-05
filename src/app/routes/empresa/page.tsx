@@ -1,3 +1,5 @@
+import CarouselProcess from "@/components/carouselProcess/carouselProcess"
+
 export default function Empresa() {
   return (
     <main className="">

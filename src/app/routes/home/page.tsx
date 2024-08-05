@@ -4,6 +4,7 @@ import marca from "../../../../public/marca.svg"
 import equipe from "../../../../public/equipeGODRIVES.png"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
+import CarouselProcess from "@/components/carouselProcess/carouselProcess"
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray50 px-3 py-28 shadow-lg min-[800px]:grid">
+      <div className="bg-gray50 px-3 py-28 shadow-xl min-[800px]:grid">
         <div className="mb-7 flex flex-col gap-7">
           <div>
             <p className="text-[38px] font-semibold leading-10 text-secondary500">
@@ -117,7 +118,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-3 py-24">
+      <div className="px-3 py-14">
         <div className="mb-12 flex flex-col gap-1">
           <p className="text-primaryRed">Serviços</p>
           <h2 className="text-4xl font-semibold text-secondary500">
@@ -126,6 +127,22 @@ export default function Home() {
         </div>
 
         <Card />
+      </div>
+
+      <div className="px-3 py-14">
+        <div className="mb-12 flex flex-col gap-2">
+          <p className="text-primaryRed">Processos</p>
+          <h2 className="text-4xl font-semibold text-secondary500">
+            Saiba mais sobre nosso trabalho
+          </h2>
+          <p className="text-xl text-secondary300">
+            Nosso processo de trabalho foi pensado para conseguir entregar o
+            melhor resultado para o cleinte, desde o reconhecimento até a
+            entrega da solução
+          </p>
+        </div>
+
+        <CarouselProcess />
       </div>
     </div>
   )
