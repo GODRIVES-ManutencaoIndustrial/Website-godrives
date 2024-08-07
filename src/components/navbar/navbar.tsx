@@ -181,9 +181,11 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-primaryBlue px-7 py-2.5 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
-              Contate-nos
-            </button>
+            <Link href="https://wa.me/5562998817695" target="_blank">
+              <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-primaryBlue px-7 py-2.5 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
+                Contate-nos
+              </button>
+            </Link>
           </>
         )}
 

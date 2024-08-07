@@ -1,10 +1,16 @@
 import Hero from "@/components/heroBackground/heroBackground"
 import Image from "next/image"
 import marca from "../../../../public/marca.svg"
+import ilustration from "../../../../public/ilustration.svg"
+import location from "../../../../public/Location.svg"
+import phone from "../../../../public/Phone.svg"
+import email from "../../../../public/Mail_inverse.svg"
 import equipe from "../../../../public/equipeGODRIVES.png"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
+import ArrowContactButton from "@/components/arrowContactButton/arrowContactButton"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -36,9 +42,12 @@ export default function Home() {
             <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary900">
               Leia mais
             </button>
-            <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryBlue px-7 py-3 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
-              Contate-nos
-            </button>
+
+            <Link href="https://wa.me/5562998817695" target="_blank">
+              <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryBlue px-7 py-3 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
+                Contate-nos
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -143,6 +152,83 @@ export default function Home() {
         </div>
 
         <CarouselProcess />
+      </div>
+
+      <div className="mb-3 flex w-full items-center justify-center bg-secondary900 px-14 py-24 max-xl:px-0 max-lg:flex-col max-lg:gap-2 max-lg:overflow-hidden">
+        <div className="z-10 w-[60%] px-10 max-xl:w-full max-lg:px-6">
+          <h1 className="text-left text-4xl font-semibold leading-10 text-primaryWhite max-lg:text-center max-lg:leading-[50px]">
+            A manutenção que você precisa{" "}
+            <span className="text-primaryBlue">em um só lugar</span>{" "}
+          </h1>
+        </div>
+        <div className="relative flex w-[40%] items-center justify-center max-xl:w-full">
+          <Image
+            src={ilustration}
+            width={449}
+            height={437}
+            alt="ilustração da marca"
+            className="left-0 top-0 h-[520px] w-[550px] animate-spin-slow opacity-90 max-xl:h-[437px] max-xl:w-[449px]"
+          />
+
+          <Link
+            href="https://wa.me/5562998817695"
+            target="_blank"
+            className="absolute z-10 flex h-[64px] w-64 items-center"
+          >
+            <button className="absolute  flex h-full w-full  items-center justify-center gap-5 rounded-[28px] border-2 border-primaryBlue bg-primaryBlue fill-secondary900 text-xl text-blue900 shadow-2xl drop-shadow-3xl transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue">
+              Contate-nos
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      <div className="px-5 pb-32 pt-16">
+        <div>
+          <div className="mb-12 flex flex-col gap-5">
+            <div className="flex gap-2 max-lg:flex-col">
+              <p className="text-primaryRed">Contato</p>
+              <h2 className="text-4xl font-bold text-secondary500">
+                Entre em contato
+              </h2>
+            </div>
+
+            <p className="text-xl text-secondary300">
+              Nossa equipe de atendimento ao cliente está disponível para
+              responder às suas perguntas e fornecer o suporte necessário.
+            </p>
+          </div>
+
+          <ul className="flex flex-col gap-7">
+            <li className="flex items-center gap-7">
+              <Image width={28} height={28} src={location} alt="location svg" />{" "}
+              <p className=" text-secondary300">
+                R. 42, 2 - QD 64 LT 28 - Cardoso, Aparecida de Goiânia - GO
+              </p>
+            </li>
+            <li className="flex items-center gap-7">
+              <Image width={28} height={28} src={phone} alt="Phone svg" />
+              <p className=" text-secondary300">+55 62 99881-7695</p>
+            </li>
+            <li className="flex items-center gap-7">
+              <Image width={28} height={28} src={email} alt="Email svg" />{" "}
+              <p className=" text-secondary300">adm@godrives.com.br</p>
+            </li>
+          </ul>
+
+          <div className="my-14 h-[2px] w-full bg-secondary500" />
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-bold text-secondary500">Unidades</p>
+            <div className="flex items-center gap-7">
+              <Image width={28} height={28} src={location} alt="location svg" />{" "}
+              <p className=" text-secondary300">
+                Mato Grosso - Rua Ipê, 01 - Jardim Imperial II, Cuiabá
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form action=""></form>
       </div>
     </div>
   )

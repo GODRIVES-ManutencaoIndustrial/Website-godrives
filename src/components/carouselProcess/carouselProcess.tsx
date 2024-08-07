@@ -18,7 +18,7 @@ export default function CarouselProcess() {
       opts={{ align: "start" }}
     >
       <div className="flex items-center justify-end gap-2">
-        <CarouselPrevious className="border-2 border-secondary500 text-secondary300" />
+        <CarouselPrevious className="border-2 border-secondary500 text-secondary500" />
         <CarouselNext className="border-2 border-secondary500 text-secondary500" />
       </div>
 
@@ -40,7 +40,7 @@ export default function CarouselProcess() {
                 <p className="mb-4 text-[13px] leading-5 text-secondary300">
                   {data.description}
                 </p>
-                <button className="rounded-3xl border-2 bg-primaryBlue px-7 py-3 font-medium text-primaryWhite transition-all">
+                <button className="rounded-3xl border-2 bg-primaryBlue px-7 py-3 font-normal text-primaryWhite transition-all">
                   Contante-nos
                 </button>
               </div>
