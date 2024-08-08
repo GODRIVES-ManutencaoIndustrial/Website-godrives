@@ -15,13 +15,13 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Recebimento",
     description:
-      "Todos os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
+      "Os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
     src: recebimento,
   },
   {
     title: "Inspeção",
     description:
-      "O equipamento é levado ao laboratório para realizamos testes em busca de possíveis problemas. Ao encontrar os problemas, apontamos no sistema de acordo com cada Ordem de Serviço e passamos para a equipe de orçamentos.",
+      "O equipamento é levado ao laboratório para realizarmos testes em busca problemas. Ao encontrar os problemas, apontamos no sistema de acordo com cada Ordem de Serviço e passamos para a equipe de orçamentos.",
     src: inspecao,
   },
   {

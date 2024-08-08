@@ -6,7 +6,7 @@ import ArrowContactButton from "../arrowContactButton/arrowContactButton"
 
 export default function Footer() {
   return (
-    <div className="w-full bg-secondary900 px-5 pb-14 pt-16">
+    <div className="w-full bg-secondary900 px-5 pb-14 pt-20">
       <div className="flex justify-between gap-6 max-md:flex-col">
         <div className="flex flex-col gap-1">
           <Image

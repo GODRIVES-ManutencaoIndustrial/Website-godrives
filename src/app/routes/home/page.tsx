@@ -11,6 +11,8 @@ import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
 import ArrowContactButton from "@/components/arrowContactButton/arrowContactButton"
 import Link from "next/link"
+import ContactForm from "@/components/contactForm/contactForm"
+import { ArrowBigDown } from "lucide-react"
 
 export default function Home() {
   return (
@@ -55,7 +57,7 @@ export default function Home() {
       <div className="bg-gray50 px-3 py-28 shadow-xl min-[800px]:grid">
         <div className="mb-7 flex flex-col gap-7">
           <div>
-            <p className="text-[38px] font-semibold leading-10 text-secondary500">
+            <p className="text-[38px] font-bold leading-10 text-secondary500">
               Seja muito bem vindo a{" "}
               <Image
                 src={marca}
@@ -130,7 +132,7 @@ export default function Home() {
       <div className="px-3 py-14">
         <div className="mb-12 flex flex-col gap-1">
           <p className="text-primaryRed">Serviços</p>
-          <h2 className="text-4xl font-semibold text-secondary500">
+          <h2 className="text-4xl font-bold text-secondary500">
             Como podemos solucionar o seu serviço ?
           </h2>
         </div>
@@ -141,7 +143,7 @@ export default function Home() {
       <div className="px-3 py-14">
         <div className="mb-12 flex flex-col gap-2">
           <p className="text-primaryRed">Processos</p>
-          <h2 className="text-4xl font-semibold text-secondary500">
+          <h2 className="text-4xl font-bold text-secondary500">
             Saiba mais sobre nosso trabalho
           </h2>
           <p className="text-xl text-secondary300">
@@ -182,8 +184,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-5 pb-32 pt-16">
-        <div>
+      <div className="px-5 pb-24 pt-16">
+        <div className="mb-10">
           <div className="mb-12 flex flex-col gap-5">
             <div className="flex gap-2 max-lg:flex-col">
               <p className="text-primaryRed">Contato</p>
@@ -215,7 +217,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <div className="my-14 h-[2px] w-full bg-secondary500" />
+          <div className="my-12 h-[2px] w-full bg-secondary500" />
 
           <div className="flex flex-col gap-4">
             <p className="text-xl font-bold text-secondary500">Unidades</p>
@@ -228,7 +230,7 @@ export default function Home() {
           </div>
         </div>
 
-        <form action=""></form>
+        <ContactForm />
       </div>
     </div>
   )
