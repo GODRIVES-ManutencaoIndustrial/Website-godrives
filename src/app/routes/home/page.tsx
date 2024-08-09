@@ -13,6 +13,7 @@ import ArrowContactButton from "@/components/arrowContactButton/arrowContactButt
 import Link from "next/link"
 import ContactForm from "@/components/contactForm/contactForm"
 import { ArrowBigDown } from "lucide-react"
+import GoogleMap from "@/components/googleMap/googleMap"
 
 export default function Home() {
   return (
@@ -231,6 +232,8 @@ export default function Home() {
         </div>
 
         <ContactForm />
+
+        <GoogleMap />
       </div>
     </div>
   )
