@@ -16,6 +16,8 @@ import { ArrowBigDown } from "lucide-react"
 import GoogleMap from "@/components/googleMap/googleMap"
 
 export default function Home() {
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY
+
   return (
     <div>
       <div className="absolute left-0 top-0 -z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-secondary900">
@@ -233,7 +235,7 @@ export default function Home() {
 
         <ContactForm />
 
-        <GoogleMap />
+        <GoogleMap apiKey={apiKey} />
       </div>
     </div>
   )

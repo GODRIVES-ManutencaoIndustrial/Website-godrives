@@ -1,8 +1,11 @@
 "use client"
-
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps"
 
-export default function GoogleMap() {
+type TypeGoogleMap = {
+  apiKey: string | undefined
+}
+
+export default function GoogleMap({ apiKey }: TypeGoogleMap) {
   const position = { lat: -16.76725196838379, lng: -49.30858612060547 }
 
   return (
@@ -10,7 +13,7 @@ export default function GoogleMap() {
       <h2 className="text-center text-2xl font-bold text-secondary500">
         Localização
       </h2>
-      <APIProvider apiKey={`${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`}>
+      <APIProvider apiKey={`${apiKey}`}>
         <Map defaultCenter={position} defaultZoom={14}>
           <Marker position={position} />
         </Map>
