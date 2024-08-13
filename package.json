@@ -2,6 +2,7 @@
   "name": "godrives",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,7 +19,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.1.8",
-    "lucide-react": "^0.378.0",
+    "lucide-react": "0.427.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
@@ -32,11 +33,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
+    "eslint": "9.9.0",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.14",
+    "prettier-plugin-tailwindcss": "0.6.6",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

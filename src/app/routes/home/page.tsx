@@ -5,7 +5,7 @@ import ilustration from "../../../../public/ilustration.svg"
 import location from "../../../../public/Location.svg"
 import phone from "../../../../public/Phone.svg"
 import email from "../../../../public/Mail_inverse.svg"
-import equipe from "../../../../public/equipeGODRIVES.png"
+import equipe from "../../../../public/EquipeGODRIVES.png"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
@@ -14,7 +14,6 @@ import Link from "next/link"
 import ContactForm from "@/components/contactForm/contactForm"
 import { ArrowBigDown } from "lucide-react"
 import GoogleMap from "@/components/googleMap/googleMap"
-
 export default function Home() {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY
 
@@ -111,7 +110,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex w-full items-center ">
+          <div className="flex w-full items-center">
             <div className="flex w-36 flex-1 flex-col items-center border-r border-gray400 max-md:border-l">
               <p className="w-20 text-center text-[40px] font-semibold text-primaryBlue">
                 +50
@@ -180,7 +179,7 @@ export default function Home() {
             target="_blank"
             className="absolute z-10 flex h-[64px] w-64 items-center"
           >
-            <button className="absolute  flex h-full w-full  items-center justify-center gap-5 rounded-[28px] border-2 border-primaryBlue bg-primaryBlue fill-secondary900 text-xl text-blue900 shadow-2xl drop-shadow-3xl transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue">
+            <button className="absolute flex h-full w-full items-center justify-center gap-5 rounded-[28px] border-2 border-primaryBlue bg-primaryBlue fill-secondary900 text-xl text-blue900 shadow-2xl drop-shadow-3xl transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue">
               Contate-nos
             </button>
           </Link>
@@ -188,6 +187,18 @@ export default function Home() {
       </div>
 
       <div className="px-5 pb-24 pt-16">
+        <h2 className="mb-9 text-center text-4xl font-bold text-secondary500">
+          Conheça nossa empresa
+        </h2>
+        <video
+          autoPlay
+          controls
+          muted
+          className="mb-20 h-[500px] w-full rounded-xl border border-gray200 shadow-xl"
+        >
+          <source src="/institutionalVideo.mp4" type="video/mp4" />
+        </video>
+
         <div className="mb-10">
           <div className="mb-12 flex flex-col gap-5">
             <div className="flex gap-2 max-lg:flex-col">
@@ -204,31 +215,45 @@ export default function Home() {
           </div>
 
           <ul className="flex flex-col gap-7">
-            <li className="flex items-center gap-7">
+            <li className="flex items-center gap-6">
               <Image width={28} height={28} src={location} alt="location svg" />{" "}
-              <p className=" text-secondary300">
+              <p className="text-secondary300">
                 R. 42, 2 - QD 64 LT 28 - Cardoso, Aparecida de Goiânia - GO
               </p>
             </li>
-            <li className="flex items-center gap-7">
+            <li className="flex items-center gap-6">
               <Image width={28} height={28} src={phone} alt="Phone svg" />
-              <p className=" text-secondary300">+55 62 99881-7695</p>
+              <p className="text-secondary300">+55 62 99881-7695</p>
             </li>
-            <li className="flex items-center gap-7">
+            <li className="flex items-center gap-6">
               <Image width={28} height={28} src={email} alt="Email svg" />{" "}
-              <p className=" text-secondary300">adm@godrives.com.br</p>
+              <p className="text-secondary300">adm@godrives.com.br</p>
             </li>
           </ul>
 
           <div className="my-12 h-[2px] w-full bg-secondary500" />
 
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-bold text-secondary500">Unidades</p>
-            <div className="flex items-center gap-7">
-              <Image width={28} height={28} src={location} alt="location svg" />{" "}
-              <p className=" text-secondary300">
-                Mato Grosso - Rua Ipê, 01 - Jardim Imperial II, Cuiabá
-              </p>
+          <div className="flex flex-col gap-5">
+            <h3 className="text-2xl font-bold text-secondary500">Unidades</h3>
+            <div className="flex flex-col gap-2">
+              <h4 className="text-[17px] font-extrabold text-primaryBlue">
+                MT<span className="text-primaryRed">DRIVES</span>
+              </h4>
+
+              <Link
+                className="flex items-center gap-6 rounded-2xl border border-secondary50 bg-gray200 p-3 shadow transition-all last:text-secondary500 hover:cursor-pointer hover:brightness-90"
+                href={"https://mtdrives.com.br/"}
+                target="_blanck"
+                title="Visite https://mtdrives.com.br"
+              >
+                <Image
+                  width={28}
+                  height={28}
+                  src={location}
+                  alt="location svg"
+                />{" "}
+                <p>Mato Grosso - Rua Ipê, 01 - Jardim Imperial II, Cuiabá</p>
+              </Link>
             </div>
           </div>
         </div>
