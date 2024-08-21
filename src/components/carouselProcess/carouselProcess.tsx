@@ -19,8 +19,8 @@ export default function CarouselProcess() {
       opts={{ align: "start" }}
     >
       <div className="flex items-center justify-end gap-2">
-        <CarouselPrevious className="border-2 border-secondary500 text-secondary500" />
-        <CarouselNext className="border-2 border-secondary500 text-secondary500" />
+        <CarouselPrevious className="border-secondary-500 text-secondary-500 border-2" />
+        <CarouselNext className="border-secondary-500 text-secondary-500 border-2" />
       </div>
 
       <CarouselContent>
@@ -38,14 +38,14 @@ export default function CarouselProcess() {
                 alt={data.description}
               />
               <div className="px-5 py-6">
-                <h3 className="mb-4 text-3xl font-semibold text-secondary500">
+                <h3 className="text-secondary-500 mb-4 text-3xl font-semibold">
                   {data.title}
                 </h3>
-                <p className="mb-2 text-[13px] leading-5 text-secondary300">
+                <p className="text-secondary-300 mb-2 text-[13px] leading-5">
                   {data.description}
                 </p>
                 <Link href={"https://wa.me/5562998817695"} target="_blank">
-                  <button className="rounded-3xl border-2 bg-primaryBlue px-7 py-3 font-normal text-primaryWhite transition-all hover:brightness-75">
+                  <button className="bg-blue rounded-3xl border-2 px-7 py-3 font-normal text-primaryWhite transition-all hover:brightness-75">
                     Contante-nos
                   </button>
                 </Link>

@@ -10,7 +10,7 @@ export default function GoogleMap({ apiKey }: TypeGoogleMap) {
 
   return (
     <div className="relative my-10 flex h-[536px] w-full flex-col items-center gap-5 p-2">
-      <h2 className="text-center text-2xl font-bold text-secondary500">
+      <h2 className="text-secondary-500 text-center text-2xl font-bold">
         Localização
       </h2>
       <APIProvider apiKey={`${apiKey}`}>

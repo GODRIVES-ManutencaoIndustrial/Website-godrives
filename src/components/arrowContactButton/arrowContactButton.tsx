@@ -6,8 +6,8 @@ const ArrowContactButton = () => {
   return (
     <div>
       <Link href={"https://wa.me/5562998817695"} target="_blank">
-        <button className="inline-flex h-[54px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-primaryBlue bg-primaryBlue fill-secondary900 py-3 text-blue900 transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue">
-          <p className="font-['Poppins'] text-xl font-normal ">Contate-nos</p>
+        <button className="inline-flex h-[54px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-blue bg-blue fill-secondary-900 py-3 text-blue-900 transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue">
+          <p className="text-xl font-medium">Contate-nos</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="27"

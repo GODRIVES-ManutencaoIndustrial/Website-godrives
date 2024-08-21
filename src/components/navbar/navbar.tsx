@@ -35,9 +35,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed z-50 w-full ${scrolled ? "bg-backgroundNavBar" : "bg-transparent"}`}
+      className={`fixed z-50 w-full px-5 ${scrolled ? "bg-backgroundNavBar" : "bg-transparent"}`}
     >
-      <nav className="mx-auto my-0 flex h-[74px] max-w-7xl items-center  justify-between px-5">
+      <nav className="mx-auto my-0 flex h-[74px] max-w-7xl items-center justify-between max-lg:max-w-lg">
         <div className="pr-36">
           <Link href={"/"}>
             <Image
@@ -51,35 +51,44 @@ export default function Navbar() {
         </div>
 
         <Sheet>
-          <SheetTrigger className="md:hidden">
-            <HiOutlineMenuAlt3 size={42} className="text-primaryBlue" />
+          <SheetTrigger className="lg:hidden">
+            <HiOutlineMenuAlt3 size={42} className="text-blue" />
           </SheetTrigger>
-          <SheetContent className="flex flex-col items-center gap-10 bg-primaryBlue p-0 pt-10">
+          <SheetContent className="flex flex-col items-center gap-10 bg-blue p-0 pt-10">
             <SheetHeader className="m-0 mt-10 w-full space-y-0">
               <SheetClose asChild>
                 <Link
                   href={"/"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue600 ${pathname === "/" ? "bg-blue400" : ""}`}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/" ? "bg-blue-400" : ""}`}
                 >
                   Início
                 </Link>
               </SheetClose>
 
-              <SheetClose asChild>
+              {/* <SheetClose asChild>
                 <Link
                   href={"/routes/empresa"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue600 ${pathname === "/routes/empresa" ? "bg-blue400" : ""}`}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/empresa" ? "bg-blue-400" : ""}`}
                 >
                   Empresa
+                </Link>
+              </SheetClose> */}
+
+              <SheetClose asChild>
+                <Link
+                  href={"/routes/servicos"}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/servicos" ? "bg-blue-400" : ""}`}
+                >
+                  Serviços
                 </Link>
               </SheetClose>
 
               <SheetClose asChild>
                 <Link
-                  href={"/routes/servicos"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue600 ${pathname === "/routes/servicos" ? "bg-blue400" : ""}`}
+                  href={"/routes/contact"}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/contact" ? "bg-blue-400" : ""}`}
                 >
-                  Serviços
+                  Trabalhe Conosco
                 </Link>
               </SheetClose>
             </SheetHeader>
@@ -89,14 +98,12 @@ export default function Navbar() {
                 onClick={() =>
                   (window.location.href = "https://wa.me/5562998817695")
                 }
-                className="inline-flex h-[56px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-secondary900 bg-primaryBlue fill-secondary900 py-3 text-blue900 transition-all hover:bg-secondary900 hover:fill-primaryBlue hover:text-primaryBlue"
+                className="inline-flex h-[56px] w-52 items-center justify-center gap-4 rounded-[28px] border-2 border-secondary-900 bg-blue fill-secondary-900 py-3 text-blue-900 transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue"
               >
-                <p className="font-['Poppins'] text-xl font-normal ">
-                  Contate-nos
-                </p>
+                <p className="text-lg font-medium">Contate-nos</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="27"
+                  width="24"
                   height="16"
                   viewBox="0 0 27 16"
                 >
@@ -108,30 +115,35 @@ export default function Navbar() {
         </Sheet>
 
         <>
-          <ul className="hidden items-center gap-8 text-primaryBlue md:flex">
+          <ul className="hidden items-center gap-8 text-blue lg:flex">
             <li
-              className={`text-primaryBlue transition-all hover:brightness-150 ${pathname === "/" ? "brightness-150" : ""}`}
+              className={`text-blue transition-all hover:brightness-150 ${pathname === "/" ? "brightness-150" : ""}`}
             >
               <a href="/">Início</a>
             </li>
-            <li
-              className={`text-primaryBlue transition-all hover:brightness-150 ${pathname === "/routes/empresa" ? "brightness-150" : ""}`}
+            {/* <li
+              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/empresa" ? "brightness-150" : ""}`}
             >
               <a href="/routes/empresa">Empresa</a>
-            </li>
+            </li> */}
             <li
-              className={`text-primaryBlue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "brightness-150" : ""}`}
+              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "brightness-150" : ""}`}
             >
               <a href="/routes/servicos">Serviços</a>
+            </li>
+            <li
+              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "brightness-150" : ""}`}
+            >
+              <a href="/routes/contact">Trabalhe Conosco</a>
             </li>
           </ul>
 
           <Link
             href="https://wa.me/5562998817695"
             target="_blank"
-            className="hidden md:flex"
+            className="hidden lg:flex"
           >
-            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-primaryBlue px-7 py-2.5 font-medium text-primaryBlue transition-all hover:bg-primaryBlue hover:text-secondary900">
+            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-blue px-7 py-2.5 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
               Contate-nos
             </button>
           </Link>
