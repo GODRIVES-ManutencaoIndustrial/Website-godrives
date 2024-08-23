@@ -8,12 +8,12 @@ import email from "../../../../public/Mail_inverse.svg"
 import Link from "next/link"
 import ContactFormCollaborators from "@/components/contactFormCollaborators/contactForm"
 
-export default function Contact() {
+export default function WorkUs() {
   return (
     <main>
       <div className="h-20 w-full bg-secondary-900"></div>
-      <div className="flex w-full justify-center bg-secondary-900 px-6 shadow-2xl drop-shadow-xl max-lg:px-0">
-        <div className="flex max-w-7xl items-center justify-center gap-4 overflow-hidden max-lg:w-80 max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
+      <div className="flex w-full justify-center bg-secondary-900 px-10 shadow-2xl drop-shadow-xl max-lg:px-0">
+        <div className="flex w-full max-w-6xl items-center justify-between gap-4 overflow-hidden max-lg:w-80 max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
           <div className="flex max-w-3xl flex-col gap-6 max-lg:items-center">
             <Image
               src={tertiaryLogo}
@@ -37,7 +37,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="my-24 flex flex-col items-center bg-gray-100 px-6 max-lg:px-3">
-        <div className="max-w-7xl px-3 max-lg:w-80">
+        <div className="max-w-6xl px-3 max-lg:w-80">
           <h2 className="text-center text-[38px] font-bold leading-10 text-secondary-500">
             Trabalhe conosco
           </h2>

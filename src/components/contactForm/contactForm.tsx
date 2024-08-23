@@ -22,25 +22,25 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col gap-6 py-3"
+      className="flex w-full flex-col gap-6 py-3"
     >
       <div className="flex flex-col gap-2">
-        <label className="text-secondary-300 text-sm" htmlFor="name">
+        <label className="text-sm text-secondary-300" htmlFor="name">
           Nome
         </label>
         <input
           {...register("name")}
           id="name"
           placeholder="Nome"
-          className="text-secondary-300 border-secondary-50 h-16 rounded-md border px-3"
+          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
         />
         {errors.name && (
-          <span className="text-red-600 text-sm">{errors.name?.message}</span>
+          <span className="text-sm text-red-600">{errors.name?.message}</span>
         )}
       </div>
 
       <div className="flex flex-col gap-2">
-        <label className="text-secondary-300 text-sm" htmlFor="number">
+        <label className="text-sm text-secondary-300" htmlFor="number">
           Número
         </label>
         <input
@@ -48,15 +48,15 @@ export default function ContactForm() {
           type="text"
           id="number"
           placeholder="Número"
-          className="text-secondary-300 border-secondary-50 h-16 rounded-md border px-3"
+          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
         />
         {errors.number && (
-          <span className="text-red-600 text-sm">{errors.number?.message}</span>
+          <span className="text-sm text-red-600">{errors.number?.message}</span>
         )}
       </div>
 
       <div className="flex flex-col gap-2">
-        <label className="text-secondary-300 text-sm" htmlFor="email">
+        <label className="text-sm text-secondary-300" htmlFor="email">
           Email
         </label>
         <input
@@ -64,25 +64,25 @@ export default function ContactForm() {
           type="text"
           id="email"
           placeholder="Email"
-          className="text-secondary-300 border-secondary-50 h-16 rounded-md border px-3"
+          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
         />
         {errors.email && (
-          <span className="text-red-600 text-sm">{errors.email?.message}</span>
+          <span className="text-sm text-red-600">{errors.email?.message}</span>
         )}
       </div>
 
       <div className="flex flex-col gap-2">
-        <label className="text-secondary-300 text-sm" htmlFor="message">
+        <label className="text-sm text-secondary-300" htmlFor="message">
           Mensagem
         </label>
         <textarea
           {...register("textarea")}
           placeholder="Escreva algo..."
           id="message"
-          className="text-secondary-300 border-secondary-50 h-28 rounded-md border px-3 py-3"
+          className="h-32 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300"
         />
         {errors.textarea && (
-          <span className="text-red-600 text-sm">
+          <span className="text-sm text-red-600">
             {errors.textarea?.message}
           </span>
         )}
@@ -92,7 +92,7 @@ export default function ContactForm() {
         <input
           type="submit"
           value={"Enviar"}
-          className="bg-secondary-500 inline-flex h-16 w-full items-center justify-center rounded-md text-sm font-medium text-primaryWhite transition-all hover:brightness-150"
+          className="inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150"
         />
       </div>
     </form>

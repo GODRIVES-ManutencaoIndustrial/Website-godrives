@@ -4,14 +4,19 @@ import Link from "next/link"
 
 export default function CardServices() {
   return (
-    <div className="my-20 flex w-full flex-col items-center gap-24 max-lg:gap-20">
+    <div className="my-20 flex w-full flex-col items-center gap-32 max-lg:gap-20">
       {DataCardServices.map(
         ({ title, description, src }: DataCardServicesType) => (
-          <div className="flex w-full items-center justify-between gap-16 max-lg:flex-col max-lg:gap-12">
-            {/* <Image src={src} width={400} height={400} alt={description} /> */}
-            <div className="min-h-96 min-w-96 rounded-3xl bg-gray-50 shadow-2xl max-lg:min-h-[300px] max-lg:min-w-[300px]"></div>
+          <div className="flex w-full items-center justify-between gap-20 max-xl:gap-16 max-lg:flex-col max-lg:gap-12">
+            <Image
+              className="min-h-96 min-w-96 rounded-3xl bg-gray-50 shadow-2xl max-lg:min-h-[300px] max-lg:min-w-[300px]"
+              src={src}
+              // width={300}
+              // height={300}
+              alt={description}
+            />
             <div className="flex h-96 items-center max-lg:h-auto max-lg:px-4">
-              <div className="w-full max-w-2xl max-lg:w-full">
+              <div className="w-full">
                 <h3 className="text-left text-3xl font-light text-secondary-500">
                   {title}
                 </h3>

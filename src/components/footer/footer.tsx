@@ -69,32 +69,12 @@ export default function Footer() {
             >
               Serviços
             </Link>
-
-            <div className="flex flex-col">
-              <p className="text-sm font-bold text-blue transition-all hover:brightness-150">
-                <a href="/routes/empresa">Empresa</a>
-              </p>
-              <Link
-                href={"/"}
-                content="Sobre Nós"
-                className="text-secondary-200"
-              />
-              <Link
-                href={"/"}
-                content="Contatos"
-                className="text-secondary-200"
-              />
-              <Link
-                href={"/"}
-                content="Perguntas frequentes"
-                className="text-secondary-200"
-              />
-              <Link
-                href={"/"}
-                content="Trabalhe conosco"
-                className="text-secondary-200"
-              />
-            </div>
+            <Link
+              href={"/routes/workUs"}
+              className="text-sm font-bold text-blue transition-all hover:brightness-150"
+            >
+              Trabalhe Conosco
+            </Link>
           </div>
         </div>
         <div className="my-16 h-px w-full bg-[#0c8cbf]" />

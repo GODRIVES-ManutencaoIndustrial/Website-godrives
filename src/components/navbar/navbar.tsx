@@ -85,7 +85,7 @@ export default function Navbar() {
 
               <SheetClose asChild>
                 <Link
-                  href={"/routes/contact"}
+                  href={"/routes/workUs"}
                   className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/contact" ? "bg-blue-400" : ""}`}
                 >
                   Trabalhe Conosco
@@ -132,9 +132,9 @@ export default function Navbar() {
               <a href="/routes/servicos">Serviços</a>
             </li>
             <li
-              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "brightness-150" : ""}`}
+              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/workUs" ? "brightness-150" : ""}`}
             >
-              <a href="/routes/contact">Trabalhe Conosco</a>
+              <a href="/routes/workUs">Trabalhe Conosco</a>
             </li>
           </ul>
 
