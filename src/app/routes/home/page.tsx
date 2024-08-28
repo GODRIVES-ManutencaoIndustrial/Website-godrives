@@ -175,7 +175,7 @@ export default function Home() {
               width={449}
               height={437}
               alt="ilustração da marca"
-              className="left-0 top-0 h-[520px] w-[550px] opacity-90 max-xl:h-[437px] max-xl:w-[449px]"
+              className="left-0 top-0 h-[520px] w-[550px] animate-spin-slow opacity-90 max-xl:h-[437px] max-xl:w-[449px]"
             />
 
             <Link
