@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 import recebimento from "../../../public/recebimento.png"
-import inspecao from "../../../public/inspeçao.png"
+import inspecao from "../../../public/inspecao.png"
 import manutençao from "../../../public/manutençao.png"
 import limpeza from "../../../public/limpeza.png"
 import testes from "../../../public/testes.png"

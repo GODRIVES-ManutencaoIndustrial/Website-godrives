@@ -207,7 +207,7 @@ export default function Home() {
           </video>
 
           <div className="flex justify-between gap-16 max-lg:flex-col">
-            <div className="min-w-[528px] max-w-[570px]">
+            <div className="max-w-[570px]">
               <div className="mb-12 flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
                   <p className="text-red">Contato</p>
