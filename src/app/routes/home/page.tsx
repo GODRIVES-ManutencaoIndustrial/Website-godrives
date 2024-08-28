@@ -58,28 +58,27 @@ export default function Home() {
 
       <div className="flex w-full justify-center bg-gray-50 px-3 py-28 shadow-xl lg:px-10">
         <div className="max-w-6xl max-lg:w-80">
-          <div className="mb-7 grid grid-cols-2 gap-14 max-lg:flex max-lg:flex-col max-lg:gap-7">
-            <div className="flex flex-col gap-6">
-              <p className="text-[38px] font-bold leading-10 text-secondary-500">
-                Seja muito bem vindo a{" "}
+          <div className="mb-7 grid grid-cols-2 gap-8 max-lg:flex max-lg:flex-col max-lg:gap-7 xl:gap-16">
+            <div className="flex flex-col gap-6 xl:gap-8">
+              <h2 className="text-[38px] font-bold leading-10 text-secondary-500">
+                Seja Bem vindo a{" "}
                 <Image
                   src={marca}
                   width={170}
                   alt="marca GODRIVES"
                   className="mt-2"
                 />
-              </p>
-              <p className="text-xl text-secondary-300">
-                Fundada em 2013, a GODRIVES tem sido um pilar de excelência no
-                setor de manutenção eletrônica industrial de Goiás. Com sede em
-                Aparecida de Goiânia GO, nossa empresa se dedica a fornecer
-                serviços especializados de manutenção, reparo e atualização de
+              </h2>
+              <p className="text-lg text-secondary-300 xl:text-xl">
+                Fundada em 2013, a GODRIVES é um pilar de excelência no setor de
+                manutenção eletrônica industrial de Goiás. Com sede em Aparecida
+                de Goiânia GO, nossa empresa se dedica a fornecer serviços
+                especializados de manutenção, reparo e atualização de
                 equipamentos eletrônicos industriais, garantindo a máxima
-                eficiência e produtividade para nossos clientes dos seguintes
-                setores:
+                eficiência e produtividade para os clientes dos setores:
               </p>
             </div>
-            <div className="row-span-2">
+            <div className="row-span-2 lg:min-w-[488px]">
               <Image
                 src={equipe}
                 width={0}
@@ -207,7 +206,7 @@ export default function Home() {
           </video>
 
           <div className="flex justify-between gap-16 max-lg:flex-col">
-            <div className="max-w-[570px]">
+            <div className="lg:min-w-[545px]">
               <div className="mb-12 flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
                   <p className="text-red">Contato</p>

@@ -27,17 +27,17 @@ export default function CarouselProcess() {
         {DataCarouselProcess.map((data, index) => (
           <CarouselItem
             key={index}
-            className="flex justify-center lg:basis-1/3"
+            className="flex lg:h-[21.25rem] lg:min-w-[45rem] lg:basis-1/3"
           >
-            <div className="h-min max-w-[340px] rounded-xl bg-primaryWhite shadow-lg">
+            <div className="rounded-xl bg-primaryWhite shadow-lg lg:flex lg:items-center">
               <Image
                 src={data.src}
                 width={340}
                 height={400}
-                className="rounded-t-xl"
+                className="max-lg:rounded-t-xl lg:rounded-l-xl"
                 alt={data.description}
               />
-              <div className="px-5 py-6">
+              <div className="flex flex-col px-5 py-6 lg:px-10">
                 <h3 className="mb-4 text-3xl font-semibold text-secondary-500">
                   {data.title}
                 </h3>
@@ -45,7 +45,7 @@ export default function CarouselProcess() {
                   {data.description}
                 </p>
                 <Link href={"https://wa.me/5562998817695"} target="_blank">
-                  <button className="rounded-3xl border-2 bg-blue px-7 py-3 font-normal text-primaryWhite transition-all hover:brightness-75">
+                  <button className="rounded-3xl bg-blue px-7 py-3 font-normal text-primaryWhite transition-all hover:brightness-75">
                     Contante-nos
                   </button>
                 </Link>

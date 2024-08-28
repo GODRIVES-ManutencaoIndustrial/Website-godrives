@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image"
 import recebimento from "../../../public/recebimento.png"
 import inspecao from "../../../public/inspecao.png"
-import manutençao from "../../../public/manutençao.png"
+import manutençao from "../../../public/manutencao.png"
 import limpeza from "../../../public/limpeza.png"
-import testes from "../../../public/testes.png"
+import testes from "../../../public/testesOficial.png"
 
 type TypeDataCarouselProcess = {
   title: string
@@ -15,7 +15,7 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Recebimento",
     description:
-      "Os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
+      "No momento do recebimento, os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
     src: recebimento,
   },
   {
@@ -27,7 +27,7 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Limpeza",
     description:
-      "Os equipamentos são destinados a limpeza industrial, local interno onde utilizamos produtos apropriados para cada peça do equipamento. Sabemos que o pó pode se tornar um condutor de eletricidade e danificar o equipamento, por isso levamos muito a sério a limpeza.",
+      "Equipamentos são levados a limpeza industrial, onde utilizamos produtos apropriados no seu equipamento. Sabemos que o pó pode se tornar um condutor de eletricidade e danificar o equipamento, por isso levamos muito a sério a limpeza.",
     src: limpeza,
   },
   {
