@@ -27,7 +27,7 @@ export default function CarouselProcess() {
         {DataCarouselProcess.map((data, index) => (
           <CarouselItem
             key={index}
-            className="flex lg:h-[21.25rem] lg:min-w-[45rem] lg:basis-1/3"
+            className="flex h-[35.37rem] lg:h-[21.25rem] lg:min-w-[45rem] lg:basis-1/3"
           >
             <div className="rounded-xl bg-primaryWhite shadow-lg lg:flex lg:items-center">
               <Image
