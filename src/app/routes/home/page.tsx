@@ -18,7 +18,7 @@ export default function Home() {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="absolute left-0 top-0 -z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-secondary-900">
         <Hero />
       </div>
@@ -144,7 +144,7 @@ export default function Home() {
       </div>
 
       <div className="mx-auto my-0 flex w-full max-w-6xl flex-col justify-center px-3 py-14 max-lg:w-80 lg:px-10">
-        <div className="mb-12 flex flex-col gap-2">
+        <div className="mb-9 flex flex-col gap-2">
           <p className="text-red">Processos</p>
           <h2 className="text-4xl font-bold text-secondary-500">
             Saiba mais sobre nosso trabalho

@@ -37,16 +37,16 @@ export default function CarouselProcess() {
                 className="max-lg:rounded-t-xl lg:rounded-l-xl"
                 alt={data.description}
               />
-              <div className="flex flex-col px-5 py-6 lg:px-10">
-                <h3 className="mb-4 text-3xl font-semibold text-secondary-500">
+              <div className="flex flex-col px-5 py-5 lg:px-10">
+                <h3 className="mb-2 text-2xl font-semibold text-secondary-500 lg:mb-4 lg:text-3xl">
                   {data.title}
                 </h3>
                 <p className="mb-2 text-[13px] leading-5 text-secondary-300">
                   {data.description}
                 </p>
                 <Link href={"https://wa.me/5562998817695"} target="_blank">
-                  <button className="rounded-3xl bg-blue px-7 py-3 font-normal text-primaryWhite transition-all hover:brightness-75">
-                    Contante-nos
+                  <button className="rounded-3xl bg-blue px-7 py-2.5 text-sm text-primaryWhite transition-all hover:brightness-75 lg:py-3 lg:text-base lg:font-normal">
+                    Contate-nos
                   </button>
                 </Link>
               </div>
