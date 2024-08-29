@@ -61,7 +61,7 @@ export default function Home() {
           <div className="mb-7 grid grid-cols-2 gap-8 max-lg:flex max-lg:flex-col max-lg:gap-7 xl:gap-16">
             <div className="flex flex-col gap-6 xl:gap-8">
               <h2 className="text-[38px] font-bold leading-10 text-secondary-500">
-                Seja Bem vindo a{" "}
+                Bem vindo a{" "}
                 <Image
                   src={marca}
                   width={170}
@@ -109,7 +109,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex w-full items-center">
-              <div className="flex w-36 flex-1 flex-col items-center border-r border-gray-400 max-md:border-l">
+              <div className="flex w-36 flex-1 flex-col items-center border-r border-gray-400 max-lg:border-l">
                 <p className="w-20 text-center text-[40px] font-semibold text-blue">
                   +50
                 </p>
@@ -143,22 +143,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex w-full justify-center px-3 py-14 lg:px-10">
-        <div className="max-w-6xl px-3 max-lg:w-80">
-          <div className="mb-12 flex flex-col gap-2">
-            <p className="text-red">Processos</p>
-            <h2 className="text-4xl font-bold text-secondary-500">
-              Saiba mais sobre nosso trabalho
-            </h2>
-            <p className="text-xl text-secondary-300">
-              Nosso processo de trabalho foi pensado para conseguir entregar o
-              melhor resultado para o cleinte, desde o reconhecimento até a
-              entrega da solução
-            </p>
-          </div>
-
-          <CarouselProcess />
+      <div className="mx-auto my-0 flex w-full max-w-6xl flex-col justify-center px-3 py-14 max-lg:w-80 lg:px-10">
+        <div className="mb-12 flex flex-col gap-2">
+          <p className="text-red">Processos</p>
+          <h2 className="text-4xl font-bold text-secondary-500">
+            Saiba mais sobre nosso trabalho
+          </h2>
+          <p className="text-xl text-secondary-300">
+            Nosso processo de trabalho foi pensado para conseguir entregar o
+            melhor resultado para o cleinte, desde o reconhecimento até a
+            entrega da solução
+          </p>
         </div>
+
+        <CarouselProcess />
       </div>
 
       <div className="flex w-full justify-center bg-secondary-900">
@@ -169,13 +167,13 @@ export default function Home() {
               <span className="text-blue">em um só lugar</span>{" "}
             </h1>
           </div>
-          <div className="relative flex w-[40%] items-center justify-center max-xl:w-full">
+          <div className="relative flex w-[40%] items-center justify-center overflow-hidden max-xl:w-full">
             <Image
               src={ilustration}
               width={449}
               height={437}
               alt="ilustração da marca"
-              className="left-0 top-0 h-[520px] w-[550px] animate-spin-slow opacity-90 max-xl:h-[437px] max-xl:w-[449px]"
+              className="left-0 top-0 h-[520px] w-[550px] animate-spin-slow overflow-hidden opacity-90 max-xl:h-[437px] max-xl:w-[449px]"
             />
 
             <Link

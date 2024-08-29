@@ -7,7 +7,10 @@ export default function CardServices() {
     <div className="my-20 flex w-full flex-col items-center gap-32 max-lg:gap-20">
       {DataCardServices.map(
         ({ title, description, src }: DataCardServicesType) => (
-          <div className="flex w-full items-center justify-between gap-20 max-xl:gap-16 max-lg:flex-col max-lg:gap-12">
+          <div
+            key={title}
+            className="flex w-full items-center justify-between gap-20 max-xl:gap-16 max-lg:flex-col max-lg:gap-12"
+          >
             <Image
               className="min-h-96 min-w-96 rounded-3xl bg-gray-50 shadow-2xl max-lg:min-h-[300px] max-lg:min-w-[300px]"
               src={src}

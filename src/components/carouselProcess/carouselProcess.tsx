@@ -18,12 +18,12 @@ export default function CarouselProcess() {
       orientation="horizontal"
       opts={{ align: "start" }}
     >
-      <div className="flex items-center justify-end gap-2">
+      <div className="flex w-full items-center justify-end gap-2">
         <CarouselPrevious className="border-2 border-secondary-500 text-secondary-500" />
         <CarouselNext className="border-2 border-secondary-500 text-secondary-500" />
       </div>
 
-      <CarouselContent>
+      <CarouselContent className="">
         {DataCarouselProcess.map((data, index) => (
           <CarouselItem
             key={index}
