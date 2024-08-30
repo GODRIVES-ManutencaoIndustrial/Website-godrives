@@ -8,7 +8,7 @@ export const frequencesQuestion: FrequencesQuestionType[] = [
   {
     question: "Onde a GODRIVES se encontra ?",
     response:
-      "A Go Drives está localizada em Aparecida de Goiânia, Goiás, no endereço: R. 42, 2 - QD 64 LT 24 - Cardoso, Aparecida de Goiânia - GO.",
+      "Estamos localizados em Aparecida de Goiânia, Goiás, no endereço: R. 42, 2 - QD 64 LT 24 - Cardoso, Aparecida de Goiânia - GO.",
     value: "item 1",
   },
   {
@@ -20,7 +20,7 @@ export const frequencesQuestion: FrequencesQuestionType[] = [
   {
     question: "A GODRIVES é certificada ?",
     response:
-      "Sim, a Go Drives é uma empresa certificada pela Danfoss, garantindo qualidade e confiabilidade nos serviços de manutenção",
+      "Sim, somos uma empresa certificada pela Danfoss, garantindo qualidade e confiabilidade nos serviços de manutenção",
     value: "item 3",
   },
   {
