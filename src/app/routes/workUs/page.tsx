@@ -46,7 +46,7 @@ export default function WorkUs() {
             que fazem parte da nossa equipe. Estamos sempre em busca de
             profissionais talentosos e dedicados que queiram fazer a diferença.
             Se você é apaixonado por tecnologia, inovação e busca constante por
-            excelência, aQUI é o lugar certo para você.
+            excelência, aqui é o lugar certo para você.
           </p>
 
           <ul className="flex justify-around gap-7 max-lg:flex-col">
@@ -62,7 +62,7 @@ export default function WorkUs() {
             </li>
             <li className="flex items-center gap-6">
               <Image width={28} height={28} src={email} alt="Email svg" />{" "}
-              <p className="text-secondary-300">adm@godrives.com.br</p>
+              <p className="text-secondary-300">comercial@godrives.com.br</p>
             </li>
           </ul>
 

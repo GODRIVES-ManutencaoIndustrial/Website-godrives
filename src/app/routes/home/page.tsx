@@ -60,15 +60,19 @@ export default function Home() {
         <div className="max-w-6xl max-lg:w-80">
           <div className="mb-7 grid grid-cols-2 gap-8 max-lg:flex max-lg:flex-col max-lg:gap-7 xl:gap-16">
             <div className="flex flex-col gap-6 xl:gap-8">
-              <h2 className="text-[38px] font-bold leading-10 text-secondary-500">
-                Bem vindo a{" "}
-                <Image
-                  src={marca}
-                  width={170}
-                  alt="marca GODRIVES"
-                  className="mt-2"
-                />
-              </h2>
+              <div>
+                <p className="mb-1 text-red">Sobre</p>
+                <h2 className="text-[38px] font-bold leading-10 text-secondary-500">
+                  Bem vindo a{" "}
+                  <Image
+                    src={marca}
+                    width={170}
+                    alt="marca GODRIVES"
+                    className="mt-2"
+                  />
+                </h2>
+              </div>
+
               <p className="text-lg text-secondary-300 xl:text-xl">
                 Fundada em 2013, a GODRIVES é um pilar de excelência no setor de
                 manutenção eletrônica industrial de Goiás. Com sede em Aparecida
@@ -143,20 +147,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto my-0 flex w-full max-w-6xl flex-col justify-center px-3 py-14 max-lg:w-80 lg:px-10">
-        <div className="mb-9 flex flex-col gap-2">
-          <p className="text-red">Processos</p>
-          <h2 className="text-4xl font-bold text-secondary-500">
-            Saiba mais sobre nosso trabalho
-          </h2>
-          <p className="text-xl text-secondary-300">
-            Nosso processo de trabalho foi pensado para conseguir entregar o
-            melhor resultado para o cleinte, desde o reconhecimento até a
-            entrega da solução
-          </p>
-        </div>
+      <div className="w-full px-3 py-14 lg:px-10">
+        <div className="mx-auto my-0 max-w-6xl max-lg:w-80">
+          <div className="mb-9 flex flex-col gap-2">
+            <p className="text-red">Processos</p>
+            <h2 className="text-4xl font-bold text-secondary-500">
+              Saiba mais sobre nosso trabalho
+            </h2>
+            <p className="text-xl text-secondary-300">
+              Nosso processo de trabalho foi pensado para conseguir entregar o
+              melhor resultado para a sua empresa, desde o reconhecimento até a
+              entrega da solução
+            </p>
+          </div>
 
-        <CarouselProcess />
+          <CarouselProcess />
+        </div>
       </div>
 
       <div className="flex w-full justify-center bg-secondary-900">
@@ -237,7 +243,9 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-6">
                   <Image width={28} height={28} src={email} alt="Email svg" />{" "}
-                  <p className="text-secondary-300">adm@godrives.com.br</p>
+                  <p className="text-secondary-300">
+                    comercial@godrives.com.br
+                  </p>
                 </li>
               </ul>
 

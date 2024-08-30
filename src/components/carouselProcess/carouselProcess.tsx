@@ -41,7 +41,7 @@ export default function CarouselProcess() {
                 <h3 className="mb-2 text-2xl font-semibold text-secondary-500 lg:mb-4 lg:text-3xl">
                   {data.title}
                 </h3>
-                <p className="mb-2 text-[13px] leading-5 text-secondary-300">
+                <p className="mb-2 text-[13px] leading-5 text-secondary-300 lg:text-sm">
                   {data.description}
                 </p>
                 <Link href={"https://wa.me/5562998817695"} target="_blank">
