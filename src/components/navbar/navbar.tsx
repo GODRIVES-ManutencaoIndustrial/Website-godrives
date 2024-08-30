@@ -115,24 +115,19 @@ export default function Navbar() {
         </Sheet>
 
         <>
-          <ul className="hidden items-center gap-8 text-blue lg:flex">
+          <ul className="hidden h-full items-end gap-8 text-blue lg:flex">
             <li
-              className={`text-blue transition-all hover:brightness-150 ${pathname === "/" ? "brightness-150" : ""}`}
+              className={`h-11 text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
               <a href="/">Início</a>
             </li>
-            {/* <li
-              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/empresa" ? "brightness-150" : ""}`}
-            >
-              <a href="/routes/empresa">Empresa</a>
-            </li> */}
             <li
-              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "brightness-150" : ""}`}
+              className={`h-11 text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
               <a href="/routes/servicos">Serviços</a>
             </li>
             <li
-              className={`text-blue transition-all hover:brightness-150 ${pathname === "/routes/workUs" ? "brightness-150" : ""}`}
+              className={`h-11 text-blue transition-all hover:brightness-150 ${pathname === "/routes/workUs" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
               <a href="/routes/workUs">Trabalhe Conosco</a>
             </li>
