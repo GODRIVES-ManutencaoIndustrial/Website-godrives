@@ -117,17 +117,17 @@ export default function Navbar() {
         <>
           <ul className="hidden h-full items-end gap-8 text-blue lg:flex">
             <li
-              className={`h-11 text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
+              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
               <a href="/">Início</a>
             </li>
             <li
-              className={`h-11 text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
+              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
               <a href="/routes/servicos">Serviços</a>
             </li>
             <li
-              className={`h-11 text-blue transition-all hover:brightness-150 ${pathname === "/routes/workUs" ? "border-b-2 border-blue brightness-150" : ""}`}
+              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/routes/workUs" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
               <a href="/routes/workUs">Trabalhe Conosco</a>
             </li>
