@@ -75,7 +75,7 @@ export default function Home() {
                 de Goiânia GO, nossa empresa se dedica a fornecer serviços
                 especializados de manutenção, reparo e atualização de
                 equipamentos eletrônicos industriais, garantindo a máxima
-                eficiência e produtividade para os clientes dos setores:
+                eficiência e produtividade para os clientes nos setores abaixo:
               </p>
             </div>
             <div className="row-span-2 lg:min-w-[488px]">
