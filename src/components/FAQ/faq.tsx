@@ -10,7 +10,7 @@ export default function Faq() {
   return (
     <div className="bg-secondary-900 px-3 py-20">
       <div className="mx-auto my-0 max-w-lg lg:max-w-7xl">
-        <h2 className="mx-auto my-0 mb-12 w-64 text-center text-4xl font-semibold leading-[2.5rem] text-primaryWhite">
+        <h2 className="mx-auto my-0 mb-12 text-center text-4xl font-semibold leading-[2.5rem] text-primaryWhite">
           Perguntas frequentes
         </h2>
         <Accordion type="single" collapsible className="">
