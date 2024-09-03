@@ -3,8 +3,10 @@
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { contactFormSchema, ContactFormSchema } from "./contactForm.schema"
-import { Span } from "next/dist/trace"
-import { spawn } from "child_process"
+import { useToast } from "@/hooks/use-toast"
+import { LoaderCircle } from "lucide-react"
+import { useState } from "react"
+import InputMask from "react-input-mask"
 
 export default function ContactForm() {
   const {
@@ -15,8 +17,34 @@ export default function ContactForm() {
     resolver: zodResolver(contactFormSchema),
   })
 
-  const onSubmit = (data: ContactFormSchema) => {
-    console.log(data)
+  const [loading, setLoading] = useState<boolean>()
+  const { toast } = useToast()
+
+  const onSubmit = async (formData: any) => {
+    setLoading(true)
+    try {
+      const response = await fetch(
+        "http://localhost:3000/api/sendEmail/contactUs",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+        },
+      )
+
+      if (!response.ok) {
+        throw new Error()
+      }
+
+      toast({ description: "Email enviado com sucesso" })
+    } catch (error) {
+      toast({
+        title: "Email não foi enviado",
+        description: "Aconteceu algo de errado",
+        variant: "destructive",
+      })
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -43,9 +71,10 @@ export default function ContactForm() {
         <label className="text-sm text-secondary-300" htmlFor="number">
           Número
         </label>
-        <input
+
+        <InputMask
           {...register("number")}
-          type="text"
+          mask="(99) 99999-9999"
           id="number"
           placeholder="Número"
           className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
@@ -88,13 +117,16 @@ export default function ContactForm() {
         )}
       </div>
 
-      <div>
-        <input
-          type="submit"
-          value={"Enviar"}
-          className="inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150"
-        />
-      </div>
+      <button
+        type="submit"
+        className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 ${loading ? "brightness-150" : ""}`}
+      >
+        {loading ? (
+          <LoaderCircle className="animate-spin" size={24} />
+        ) : (
+          "Enviar"
+        )}
+      </button>
     </form>
   )
 }
