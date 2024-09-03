@@ -24,7 +24,7 @@ export default function ContactForm() {
     setLoading(true)
     try {
       const response = await fetch(
-        "http://localhost:3000/api/sendEmail/contactUs",
+        `${process.env.URL}/api/sendEmail/contactUs`,
         {
           method: "POST",
           body: JSON.stringify(formData),
