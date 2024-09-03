@@ -15,7 +15,7 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Recebimento",
     description:
-      "No momento do recebimento, os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
+      "No recebimento, os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
     src: recebimento,
   },
   {
