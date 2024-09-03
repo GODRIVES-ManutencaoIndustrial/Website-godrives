@@ -27,7 +27,7 @@ export default function ContactForm({ url }: ContactFormProps) {
   const onSubmit = async (formData: any) => {
     setLoading(true)
     try {
-      const response = await fetch(`${url}/api/sendEmail/ContactUs`, {
+      const response = await fetch(`${url}/api/sendEmail/contactUs`, {
         method: "POST",
         body: JSON.stringify(formData),
       })
