@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
 
   const message = {
     from: process.env.EMAIL,
-    to: body.email,
+    to: process.env.EMAIL,
     subject: "Email do projeto GODRIVES",
     html: `
       <h3>Email enviado por ${body.name}, ${body.email}, ${body.number}</h3>
@@ -24,6 +24,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const sendEmail = await transporter.sendMail(message)
+    console.log(sendEmail)
     return new Response(`Email send sucessfull: ${sendEmail.response}`, {
       status: 200,
     })
