@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 
-const allowedOrigins = [process.env.URL]
+const allowedOrigins = [`${process.env.URL}`]
 
 const corsOptions = {
   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
@@ -11,6 +11,8 @@ export function middleware(request: NextRequest) {
   // Check the origin from the request
   const origin = request.headers.get("origin") ?? ""
   const isAllowedOrigin = allowedOrigins.includes(origin)
+
+  console.log(allowedOrigins)
 
   // Handle simple requests
   const response = NextResponse.next()
