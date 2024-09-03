@@ -16,6 +16,7 @@ import { ArrowBigDown } from "lucide-react"
 import GoogleMap from "@/components/googleMap/googleMap"
 export default function Home() {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY
+  const url = process.env.URL
 
   return (
     <div className="overflow-hidden">
@@ -280,7 +281,7 @@ export default function Home() {
               </div>
             </div>
 
-            <ContactForm />
+            <ContactForm url={url} />
           </div>
         </div>
       </div>

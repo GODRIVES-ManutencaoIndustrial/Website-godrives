@@ -11,21 +11,14 @@ type BodyType = {
 export async function POST(request: NextRequest) {
   const body: BodyType = await request.json()
 
-  const emailSendData = {
-    name: body.name,
-    email: body.email,
-    number: body.number,
-    message: body.textarea,
-  }
-
   const message = {
     from: process.env.EMAIL,
-    to: emailSendData.email,
+    to: body.email,
     subject: "Email do projeto GODRIVES",
     html: `
-      <h3>Email enviado por ${emailSendData.name}, ${emailSendData.email}, ${emailSendData.number}</h3>
+      <h3>Email enviado por ${body.name}, ${body.email}, ${body.number}</h3>
   
-      <p>${emailSendData.message}</p>
+      <p>${body.textarea}</p>
     `,
   }
 

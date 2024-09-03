@@ -8,7 +8,11 @@ import { LoaderCircle } from "lucide-react"
 import { useState } from "react"
 import InputMask from "react-input-mask"
 
-export default function ContactForm() {
+type ContactFormProps = {
+  url: string | undefined
+}
+
+export default function ContactForm({ url }: ContactFormProps) {
   const {
     register,
     handleSubmit,
@@ -23,13 +27,10 @@ export default function ContactForm() {
   const onSubmit = async (formData: any) => {
     setLoading(true)
     try {
-      const response = await fetch(
-        "https://website-tau-pink.vercel.app/api/sendEmail/contactUs",
-        {
-          method: "POST",
-          body: JSON.stringify(formData),
-        },
-      )
+      const response = await fetch(`${url}/api/sendEmail/ContactUs`, {
+        method: "POST",
+        body: JSON.stringify(formData),
+      })
 
       if (!response.ok) {
         throw new Error()
