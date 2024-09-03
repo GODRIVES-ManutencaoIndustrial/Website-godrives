@@ -8,11 +8,7 @@ import { LoaderCircle } from "lucide-react"
 import { useState } from "react"
 import InputMask from "react-input-mask"
 
-type TypeContactFormProps = {
-  URL: string | undefined
-}
-
-export default function ContactForm({ URL }: TypeContactFormProps) {
+export default function ContactForm() {
   const {
     register,
     handleSubmit,
@@ -21,18 +17,19 @@ export default function ContactForm({ URL }: TypeContactFormProps) {
     resolver: zodResolver(contactFormSchema),
   })
 
-  console.log(URL)
-
   const [loading, setLoading] = useState<boolean>()
   const { toast } = useToast()
 
   const onSubmit = async (formData: any) => {
     setLoading(true)
     try {
-      const response = await fetch(`${URL}/api/sendEmail/contactUs`, {
-        method: "POST",
-        body: JSON.stringify(formData),
-      })
+      const response = await fetch(
+        "https://website-tau-pink.vercel.app/api/sendEmail/contactUs",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+        },
+      )
 
       if (!response.ok) {
         throw new Error()
