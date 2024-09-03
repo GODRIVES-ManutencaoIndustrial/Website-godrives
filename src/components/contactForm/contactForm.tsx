@@ -21,6 +21,8 @@ export default function ContactForm({ URL }: TypeContactFormProps) {
     resolver: zodResolver(contactFormSchema),
   })
 
+  console.log(URL)
+
   const [loading, setLoading] = useState<boolean>()
   const { toast } = useToast()
 
