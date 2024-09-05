@@ -1,23 +1,65 @@
 "use client"
-
-import { useForm } from "react-hook-form"
+import { Controller, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
+import InputMask from "react-input-mask"
 import {
   contactFormCollaboratorsSchema,
   TypeContactFormCollaboratorsSchema,
-} from "./contactForm.schema"
+} from "./contactFormCollaborators.schema"
+import { useState } from "react"
+import { useToast } from "@/hooks/use-toast"
+import { LoaderCircle } from "lucide-react"
 
-export default function ContactFormCollaborators() {
+type ContactFormCollaboratorsProps = {
+  url: string | undefined
+}
+
+export default function ContactFormCollaborators({
+  url,
+}: ContactFormCollaboratorsProps) {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm<TypeContactFormCollaboratorsSchema>({
     resolver: zodResolver(contactFormCollaboratorsSchema),
   })
 
-  const onSubmit = (data: TypeContactFormCollaboratorsSchema) => {
-    console.log(data)
+  const [loading, setLoading] = useState<boolean>()
+  const { toast } = useToast()
+
+  const onSubmit = async (data: TypeContactFormCollaboratorsSchema) => {
+    const formData = new FormData()
+    formData.append("name", data.name)
+    formData.append("number", data.number)
+    formData.append("email", data.email)
+    formData.append("vaga", data.vaga)
+    formData.append("textarea", data.textarea)
+
+    if (data.file && data.file.length > 0) {
+      formData.append("file", data.file[0])
+    }
+
+    setLoading(true)
+    try {
+      const response = await fetch(`${url}/api/sendEmail/workUs`, {
+        method: "POST",
+        body: formData,
+      })
+      if (!response.ok) {
+        throw new Error()
+      }
+      toast({ description: "Email enviado com sucesso" })
+    } catch (error) {
+      toast({
+        title: "Email não foi enviado",
+        description: "Aconteceu algo de errado",
+        variant: "destructive",
+      })
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -48,8 +90,9 @@ export default function ContactFormCollaborators() {
             <label className="text-sm text-secondary-300" htmlFor="number">
               Número
             </label>
-            <input
+            <InputMask
               {...register("number")}
+              mask="(99) 99999-9999"
               type="text"
               id="number"
               placeholder="Número"
@@ -79,41 +122,23 @@ export default function ContactFormCollaborators() {
               </span>
             )}
           </div>
-
-          <div className="flex flex-col gap-2">
-            <label className="text-sm text-secondary-300" htmlFor="email">
-              Setor
-            </label>
-            <input
-              {...register("email")}
-              type="text"
-              id="email"
-              placeholder="Setor"
-              className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300 placeholder:brightness-125"
-            />
-            {errors.email && (
-              <span className="text-sm text-red-600">
-                {errors.email?.message}
-              </span>
-            )}
-          </div>
         </div>
 
         <div className="flex w-1/2 flex-col gap-5 max-lg:w-full">
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-secondary-300" htmlFor="email">
-              Vaga pretendida
+            <label className="text-sm text-secondary-300" htmlFor="vaga">
+              Área de interesse
             </label>
             <input
-              {...register("email")}
+              {...register("vaga")}
               type="text"
               id="email"
-              placeholder="Vaga pretendida"
+              placeholder="Vaga de interesse..."
               className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300 placeholder:brightness-125"
             />
-            {errors.email && (
+            {errors.vaga && (
               <span className="text-sm text-red-600">
-                {errors.email?.message}
+                {errors.vaga?.message}
               </span>
             )}
           </div>
@@ -126,7 +151,7 @@ export default function ContactFormCollaborators() {
               {...register("textarea")}
               placeholder="Fale sobre você..."
               id="message"
-              className="h-72 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300 placeholder:brightness-125"
+              className="h-44 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300 placeholder:brightness-125"
             />
             {errors.textarea && (
               <span className="text-sm text-red-600">
@@ -137,24 +162,34 @@ export default function ContactFormCollaborators() {
         </div>
       </div>
 
-      <div className="my-8 flex w-full justify-center">
-        <div className="flex items-center gap-5">
-          <button className="w-40 rounded-xl bg-red py-3 text-red-900 transition-all hover:brightness-[0.8]">
-            Choose file
-          </button>
-          <p className="text-center text-secondary-300 max-lg:text-sm">
-            Anexe seu currículo
-          </p>
+      <div className="my-7 flex w-full justify-center">
+        <div className="flex w-full flex-col items-center justify-center gap-3 lg:flex-row">
+          <input
+            className="w-64 transition-all file:rounded-xl file:border-none file:bg-red file:px-4 file:py-3 file:text-red-900 file:hover:brightness-[0.8]"
+            type="file"
+            accept=".pdf"
+            id="file"
+            {...register("file")}
+          />
+          {errors.file && (
+            <span className="text-sm text-red-600">{errors.file?.message}</span>
+          )}
+          <label className="text-center text-secondary-300 max-lg:text-sm">
+            Anexe seu currículo PDF
+          </label>
         </div>
       </div>
 
-      <div className="flex w-1/2 justify-center max-lg:w-full">
-        <input
-          type="submit"
-          value={"Enviar"}
-          className="flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150"
-        />
-      </div>
+      <button
+        type="submit"
+        className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 lg:w-1/2 ${loading ? "brightness-150" : ""}`}
+      >
+        {loading ? (
+          <LoaderCircle className="animate-spin" size={24} />
+        ) : (
+          "Enviar"
+        )}
+      </button>
     </form>
   )
 }

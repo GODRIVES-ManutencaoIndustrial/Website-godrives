@@ -24,18 +24,16 @@ export default function ContactForm({ url }: ContactFormProps) {
   const [loading, setLoading] = useState<boolean>()
   const { toast } = useToast()
 
-  const onSubmit = async (formData: any) => {
+  const onSubmit = async (formData: ContactFormSchema) => {
     setLoading(true)
     try {
       const response = await fetch(`${url}/api/sendEmail/contactUs`, {
         method: "POST",
         body: JSON.stringify(formData),
       })
-
       if (!response.ok) {
         throw new Error()
       }
-
       toast({ description: "Email enviado com sucesso" })
     } catch (error) {
       toast({
@@ -46,6 +44,7 @@ export default function ContactForm({ url }: ContactFormProps) {
     } finally {
       setLoading(false)
     }
+    console.log("teste")
   }
 
   return (

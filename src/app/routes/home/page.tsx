@@ -59,22 +59,22 @@ export default function Home() {
 
       <div className="flex w-full justify-center bg-gray-50 px-3 py-28 shadow-xl lg:px-10">
         <div className="max-w-6xl max-lg:w-80">
-          <div className="mb-7 grid grid-cols-2 gap-8 max-lg:flex max-lg:flex-col max-lg:gap-7 xl:gap-16">
+          <div className="mb-7 grid grid-cols-2 gap-10 max-lg:flex max-lg:flex-col max-lg:gap-7 xl:gap-12">
             <div className="flex flex-col gap-6 xl:gap-8">
               <div>
-                <p className="mb-1 text-red">Sobre</p>
+                <p className="text-red">Sobre</p>
                 <h2 className="text-[38px] font-bold leading-10 text-secondary-500">
                   Bem vindo a{" "}
                   <Image
                     src={marca}
                     width={170}
                     alt="marca GODRIVES"
-                    className="mt-2"
+                    className="mt-1"
                   />
                 </h2>
               </div>
 
-              <p className="text-lg text-secondary-300 xl:text-xl">
+              <p className="text-lg text-secondary-300 lg:text-base xl:text-lg">
                 Fundada em 2013, a GODRIVES é um pilar de excelência no setor de
                 manutenção eletrônica industrial de Goiás. Com sede em Aparecida
                 de Goiânia GO, nossa empresa se dedica a fornecer serviços
