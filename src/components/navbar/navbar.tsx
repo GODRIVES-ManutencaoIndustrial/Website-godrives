@@ -11,6 +11,18 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+
 import { usePathname } from "next/navigation"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
 
@@ -123,6 +135,45 @@ export default function Navbar() {
               <a href="/trabalheConosco">Trabalhe Conosco</a>
             </li>
           </ul>
+
+          {/* <NavigationMenu className="hidden h-full items-end text-blue lg:flex">
+            <NavigationMenuList className="gap-8">
+              <NavigationMenuItem
+                className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
+              >
+                <Link href={"/"}>Início</Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem
+                className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
+              >
+                <NavigationMenuTrigger className="items-start p-0">
+                  Item One
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-backgroundNavBar p-5">
+                  <ul className="flex flex-col gap-2">
+                    <Link href="#about" title="Introduction">
+                      Sobre Nós
+                    </Link>
+                    <Link href="#contact" title="Introduction">
+                      Contato
+                    </Link>
+                    <Link href="/trabalheConosco" title="Introduction">
+                      Trabalhe Conosco
+                    </Link>
+                    <Link href="#FAQ" title="Introduction">
+                      Perguntas Frequentes
+                    </Link>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu> */}
 
           <Link
             href="https://wa.me/5562998817695"

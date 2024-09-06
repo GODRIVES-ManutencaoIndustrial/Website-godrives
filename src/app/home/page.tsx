@@ -67,9 +67,12 @@ export default function Home() {
                   <span className="text-blue">eletrônicos industriais</span>{" "}
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 lg:flex-row">
-                  <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900">
+                  <Link
+                    href={"#about"}
+                    className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900"
+                  >
                     Leia mais
-                  </button>
+                  </Link>
 
                   <Link href="https://wa.me/5562998817695" target="_blank">
                     <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
@@ -83,7 +86,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex w-full justify-center bg-gray-50 px-3 py-28 shadow-xl lg:px-10">
+      <div
+        id="about"
+        className="flex w-full justify-center bg-gray-50 px-3 py-28 shadow-xl lg:px-10"
+      >
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7 }}
@@ -283,7 +289,7 @@ export default function Home() {
             className="flex justify-between gap-16 max-lg:flex-col"
             children={
               <>
-                <div className="lg:min-w-[545px]">
+                <div id="contact" className="lg:min-w-[545px]">
                   <div className="mb-12 flex flex-col gap-5">
                     <div className="flex flex-col gap-2">
                       <p className="text-red">Contato</p>
