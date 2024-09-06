@@ -76,8 +76,8 @@ export default function Navbar() {
 
               <SheetClose asChild>
                 <Link
-                  href={"/workUs"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/contact" ? "bg-blue-400" : ""}`}
+                  href={"/trabalheConosco"}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/trabalheConosco" ? "bg-blue-400" : ""}`}
                 >
                   Trabalhe Conosco
                 </Link>

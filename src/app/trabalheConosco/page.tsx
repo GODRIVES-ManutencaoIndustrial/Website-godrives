@@ -6,6 +6,7 @@ import location from "@/../public/Location.svg"
 import phone from "@/../public/Phone.svg"
 import email from "@/../public/Mail_inverse.svg"
 import ContactFormCollaborators from "@/components/contactFormCollaborators/contactFormCollaborators"
+import { Motion } from "@/components/motion/motion"
 
 export default function WorkUs() {
   const url = process.env.URL
@@ -15,25 +16,41 @@ export default function WorkUs() {
       <div className="h-20 w-full bg-secondary-900"></div>
       <div className="flex w-full justify-center bg-secondary-900 px-10 shadow-2xl drop-shadow-xl max-lg:px-0">
         <div className="flex w-full max-w-6xl items-center justify-between gap-4 overflow-hidden max-lg:w-80 max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
-          <div className="flex max-w-3xl flex-col gap-6 max-lg:items-center">
-            <Image
-              src={tertiaryLogo}
-              width={128}
-              height={0}
-              alt="Logo terciária da godrives"
-            />
-            <p className="z-10 text-4xl font-semibold text-primaryWhite max-lg:text-center">
-              Venha fazer parte da melhor empresa focada em{" "}
-              <span className="text-blue">manutenção industrial de Goiás</span>
-            </p>
-          </div>
+          <Motion
+            initial={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            children={
+              <div className="flex max-w-3xl flex-col gap-6 max-lg:items-center">
+                <Image
+                  src={tertiaryLogo}
+                  width={128}
+                  height={0}
+                  alt="Logo terciária da godrives"
+                />
+                <p className="z-10 text-4xl font-semibold text-primaryWhite max-lg:text-center">
+                  Venha fazer parte da melhor empresa focada em{" "}
+                  <span className="text-blue">
+                    manutenção industrial de Goiás
+                  </span>
+                </p>
+              </div>
+            }
+          />
 
-          <Image
-            src={invertedLogo}
-            width={286}
-            height={0}
-            alt="Logo invertida godrives"
-            className="min-w-max opacity-70 max-lg:-mt-24"
+          <Motion
+            initial={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            children={
+              <Image
+                src={invertedLogo}
+                width={286}
+                height={0}
+                alt="Logo invertida godrives"
+                className="min-w-max opacity-70 max-lg:-mt-24"
+              />
+            }
           />
         </div>
       </div>

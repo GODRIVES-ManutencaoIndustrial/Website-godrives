@@ -23,18 +23,26 @@ export default function Faq() {
             <Accordion type="single" collapsible className="">
               {frequencesQuestion.map(
                 ({ question, response, value }: FrequencesQuestionType) => (
-                  <AccordionItem
-                    value={value}
-                    className="mb-6 rounded-xl border border-blue p-6 text-blue"
+                  <Motion
+                    initial={{ opacity: 0, y: -30 }}
+                    transition={{ duration: 0.7, delay: 0.1 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     key={value}
-                  >
-                    <AccordionTrigger className="gap-5 text-left text-lg">
-                      {question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-left text-base text-secondary-300">
-                      {response}
-                    </AccordionContent>
-                  </AccordionItem>
+                    children={
+                      <AccordionItem
+                        value={value}
+                        className="mb-6 rounded-xl border border-blue p-6 text-blue"
+                        key={value}
+                      >
+                        <AccordionTrigger className="gap-5 text-left text-lg">
+                          {question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-left text-base text-secondary-300">
+                          {response}
+                        </AccordionContent>
+                      </AccordionItem>
+                    }
+                  />
                 ),
               )}
             </Accordion>
