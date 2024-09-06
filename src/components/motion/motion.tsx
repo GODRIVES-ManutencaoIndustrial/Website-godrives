@@ -9,6 +9,7 @@ interface CustomMotionProps<Tag extends keyof JSX.IntrinsicElements>
   children: React.ReactNode
   className?: string
   key?: string | number
+  id?: string
 }
 
 export const Motion = <Tag extends keyof JSX.IntrinsicElements>({
@@ -16,13 +17,14 @@ export const Motion = <Tag extends keyof JSX.IntrinsicElements>({
   children,
   className,
   key,
+  id,
 
   ...props
 }: CustomMotionProps<Tag>) => {
   const Component = type ? (motion as any)[type] : motion.div
 
   return (
-    <Component className={className} {...props}>
+    <Component className={className} {...props} key={key} id={id}>
       {children}
     </Component>
   )

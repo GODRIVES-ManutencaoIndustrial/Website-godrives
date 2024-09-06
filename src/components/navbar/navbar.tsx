@@ -118,7 +118,7 @@ export default function Navbar() {
         </Sheet>
 
         <>
-          <ul className="hidden h-full items-end gap-8 text-blue lg:flex">
+          {/* <ul className="hidden h-full items-end gap-8 text-blue lg:flex">
             <li
               className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
@@ -134,9 +134,9 @@ export default function Navbar() {
             >
               <a href="/trabalheConosco">Trabalhe Conosco</a>
             </li>
-          </ul>
+          </ul> */}
 
-          {/* <NavigationMenu className="hidden h-full items-end text-blue lg:flex">
+          <NavigationMenu className="hidden h-full items-end text-blue lg:flex">
             <NavigationMenuList className="gap-8">
               <NavigationMenuItem
                 className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
@@ -144,36 +144,51 @@ export default function Navbar() {
                 <Link href={"/"}>Início</Link>
               </NavigationMenuItem>
               <NavigationMenuItem
-                className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
+                className={`h-[46px] text-blue transition-all hover:brightness-150`}
               >
                 <NavigationMenuTrigger className="items-start p-0">
-                  Item One
+                  Empresa
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-backgroundNavBar p-5">
-                  <ul className="flex flex-col gap-2">
-                    <Link href="#about" title="Introduction">
+                <NavigationMenuContent className="bg-backgroundNavBar px-10 py-7">
+                  <ul className="flex w-48 flex-col text-sm text-blue">
+                    <Link
+                      href="#about"
+                      title="Introduction"
+                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
+                    >
                       Sobre Nós
                     </Link>
-                    <Link href="#contact" title="Introduction">
+                    <Link
+                      href="/#contact"
+                      title="Introduction"
+                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
+                    >
                       Contato
                     </Link>
-                    <Link href="/trabalheConosco" title="Introduction">
+                    <Link
+                      href="/trabalheConosco"
+                      title="Introduction"
+                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
+                    >
                       Trabalhe Conosco
                     </Link>
-                    <Link href="#FAQ" title="Introduction">
+                    <Link
+                      href="#FAQ"
+                      title="Introduction"
+                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
+                    >
                       Perguntas Frequentes
                     </Link>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
-                </NavigationMenuContent>
+              <NavigationMenuItem
+                className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
+              >
+                <Link href={"/servicos"}>Serviços</Link>
               </NavigationMenuItem>
             </NavigationMenuList>
-          </NavigationMenu> */}
+          </NavigationMenu>
 
           <Link
             href="https://wa.me/5562998817695"

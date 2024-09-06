@@ -275,7 +275,7 @@ export default function Home() {
                   autoPlay
                   controls
                   muted
-                  className="mb-20 h-[500px] w-full rounded-xl border border-gray-200 shadow-xl"
+                  className="h-[500px] w-full rounded-xl border border-gray-200 shadow-xl"
                 >
                   <source src="/institutionalVideo.mp4" type="video/mp4" />
                 </video>
@@ -286,10 +286,11 @@ export default function Home() {
             initial={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.7 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="flex justify-between gap-16 max-lg:flex-col"
+            className="flex justify-between gap-16 pt-24 max-lg:flex-col"
+            id="contact"
             children={
               <>
-                <div id="contact" className="lg:min-w-[545px]">
+                <div className="lg:min-w-[545px]">
                   <div className="mb-12 flex flex-col gap-5">
                     <div className="flex flex-col gap-2">
                       <p className="text-red">Contato</p>

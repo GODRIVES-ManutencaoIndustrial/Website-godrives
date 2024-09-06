@@ -9,7 +9,7 @@ import { Motion } from "../motion/motion"
 
 export default function Faq() {
   return (
-    <div id="FAQ" className="bg-secondary-900 px-3 py-20">
+    <div id="FAQ" className="bg-secondary-900 px-3 py-28">
       <Motion
         initial={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.7, delay: 0.1 }}
