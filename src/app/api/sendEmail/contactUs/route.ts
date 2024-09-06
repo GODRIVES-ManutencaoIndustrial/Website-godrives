@@ -24,7 +24,6 @@ export async function POST(request: NextRequest) {
 
   try {
     const sendEmail = await transporter.sendMail(message)
-    console.log(sendEmail)
     return new Response(`Email send sucessfull: ${sendEmail.response}`, {
       status: 200,
     })

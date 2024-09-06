@@ -1,7 +1,6 @@
 import { transporter } from "@/emailSettings/config"
 import { File } from "buffer"
 import { NextRequest } from "next/server"
-import { send } from "process"
 
 export async function POST(request: NextRequest) {
   const body = await request.formData()
@@ -44,7 +43,6 @@ export async function POST(request: NextRequest) {
 
   try {
     const sendEmail = await transporter.sendMail(message)
-    console.log(sendEmail)
     return new Response(`Email send sucessfull: ${sendEmail.response}`, {
       status: 200,
     })
