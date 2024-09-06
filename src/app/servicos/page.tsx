@@ -1,6 +1,6 @@
 import Image from "next/image"
-import tertiaryLogo from "../../../../public/tertiary-logo.svg"
-import invertedLogo from "../../../../public/Logo-invertida-godrives.svg"
+import tertiaryLogo from "@/../public/tertiary-logo.svg"
+import invertedLogo from "@/../public/Logo-invertida-godrives.svg"
 import CardServices from "@/components/cardServices/cardServices"
 
 export default function Serviços() {

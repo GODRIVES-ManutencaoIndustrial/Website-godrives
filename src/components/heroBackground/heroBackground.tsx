@@ -1,5 +1,5 @@
 import Image from "next/image"
-import heroWallpaper from "../../../public/heroWallpaper.svg"
+import heroWallpaper from "@/../public/heroWallpaper.svg"
 
 export default function HeroBackground() {
   return (

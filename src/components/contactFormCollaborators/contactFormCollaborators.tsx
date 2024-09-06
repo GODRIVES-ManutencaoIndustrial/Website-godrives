@@ -20,7 +20,6 @@ export default function ContactFormCollaborators({
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
   } = useForm<TypeContactFormCollaboratorsSchema>({
     resolver: zodResolver(contactFormCollaboratorsSchema),
@@ -172,7 +171,11 @@ export default function ContactFormCollaborators({
             {...register("file")}
           />
           {errors.file && (
-            <span className="text-sm text-red-600">{errors.file?.message}</span>
+            <span className="text-sm text-red-600">
+              {typeof errors.file.message === "string"
+                ? errors.file.message
+                : "Erro"}
+            </span>
           )}
           <label className="text-center text-secondary-300 max-lg:text-sm">
             Anexe seu currículo PDF

@@ -65,19 +65,10 @@ export default function Navbar() {
                 </Link>
               </SheetClose>
 
-              {/* <SheetClose asChild>
-                <Link
-                  href={"/routes/empresa"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/empresa" ? "bg-blue-400" : ""}`}
-                >
-                  Empresa
-                </Link>
-              </SheetClose> */}
-
               <SheetClose asChild>
                 <Link
-                  href={"/routes/servicos"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/servicos" ? "bg-blue-400" : ""}`}
+                  href={"/servicos"}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
                 >
                   Serviços
                 </Link>
@@ -85,8 +76,8 @@ export default function Navbar() {
 
               <SheetClose asChild>
                 <Link
-                  href={"/routes/workUs"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/routes/contact" ? "bg-blue-400" : ""}`}
+                  href={"/workUs"}
+                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/contact" ? "bg-blue-400" : ""}`}
                 >
                   Trabalhe Conosco
                 </Link>
@@ -122,14 +113,14 @@ export default function Navbar() {
               <a href="/">Início</a>
             </li>
             <li
-              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/routes/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
+              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
-              <a href="/routes/servicos">Serviços</a>
+              <a href="/servicos">Serviços</a>
             </li>
             <li
-              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/routes/workUs" ? "border-b-2 border-blue brightness-150" : ""}`}
+              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/trabalheConosco" ? "border-b-2 border-blue brightness-150" : ""}`}
             >
-              <a href="/routes/workUs">Trabalhe Conosco</a>
+              <a href="/trabalheConosco">Trabalhe Conosco</a>
             </li>
           </ul>
 

@@ -6,13 +6,16 @@ export const contactFormCollaboratorsSchema = z.object({
   email: z.string().email({ message: "Email inválido" }),
   textarea: z.string().min(3, { message: "Fale sobre você" }),
   vaga: z.string().min(3, { message: "Vaga inválida" }),
-  file: z
-    .instanceof(FileList)
-    .refine((files) => files.length > 0, "Selecione um arquivo.")
-    .refine(
-      (files) => files[0]?.size <= 5 * 1024 * 1024,
-      "O arquivo deve ter no máximo 5MB.",
-    ),
+  file:
+    typeof window !== "undefined"
+      ? z
+          .instanceof(FileList)
+          .refine((files) => files.length > 0, "Selecione um arquivo.")
+          .refine(
+            (files) => files[0]?.size <= 5 * 1024 * 1024,
+            "O arquivo deve ter no máximo 5MB.",
+          )
+      : z.any(),
 })
 
 export type TypeContactFormCollaboratorsSchema = z.infer<

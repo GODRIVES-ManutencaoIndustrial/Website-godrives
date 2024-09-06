@@ -1,10 +1,10 @@
 import Image from "next/image"
-import tertiaryLogo from "../../../../public/tertiary-logo.svg"
-import invertedLogo from "../../../../public/Logo-invertida-godrives.svg"
+import tertiaryLogo from "@/../public/tertiary-logo.svg"
+import invertedLogo from "@/../public/Logo-invertida-godrives.svg"
 
-import location from "../../../../public/Location.svg"
-import phone from "../../../../public/Phone.svg"
-import email from "../../../../public/Mail_inverse.svg"
+import location from "@/../public/Location.svg"
+import phone from "@/../public/Phone.svg"
+import email from "@/../public/Mail_inverse.svg"
 import ContactFormCollaborators from "@/components/contactFormCollaborators/contactFormCollaborators"
 
 export default function WorkUs() {

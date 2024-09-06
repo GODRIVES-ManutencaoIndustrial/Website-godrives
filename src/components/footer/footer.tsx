@@ -64,13 +64,13 @@ export default function Footer() {
               Início
             </Link>
             <Link
-              href={"/routes/servicos"}
+              href={"/servicos"}
               className="text-sm font-bold text-blue transition-all hover:brightness-150"
             >
               Serviços
             </Link>
             <Link
-              href={"/routes/workUs"}
+              href={"/workUs"}
               className="text-sm font-bold text-blue transition-all hover:brightness-150"
             >
               Trabalhe Conosco

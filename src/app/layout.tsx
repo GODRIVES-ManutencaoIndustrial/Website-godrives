@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/navbar"
 import Footer from "@/components/footer/footer"
 import Faq from "@/components/FAQ/faq"
 import { Toaster } from "@/components/ui/toaster"
+import { Motion } from "@/components/motion/motion"
 
 const poppins = Poppins({
   subsets: ["latin"],
