@@ -23,6 +23,13 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 import { usePathname } from "next/navigation"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
 
@@ -71,27 +78,65 @@ export default function Navbar() {
               <SheetClose asChild>
                 <Link
                   href={"/"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/" ? "bg-blue-400" : ""}`}
+                  className={`h-full w-full py-5 text-center font-medium transition-all hover:bg-blue-600 ${pathname === "/" ? "bg-blue-400" : ""}`}
                 >
                   Início
                 </Link>
               </SheetClose>
 
-              <SheetClose asChild>
-                <Link
-                  href={"/servicos"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
-                >
-                  Serviços
-                </Link>
-              </SheetClose>
+              <Accordion type="single" collapsible className="">
+                <AccordionItem value="item-1" className="">
+                  <AccordionTrigger
+                    className={`items-center justify-center gap-3 transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                  >
+                    Empresa
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="flex flex-col gap-3">
+                      <SheetClose asChild>
+                        <Link
+                          href="#about"
+                          title="Introduction"
+                          className={`w-full py-3 text-center text-sm transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                        >
+                          Sobre Nós
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                          href={"/#contact"}
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                        >
+                          Contato
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                          href="/trabalheConosco"
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                        >
+                          Trabalhe Conosco
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                          href="#FAQ"
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                        >
+                          Perguntas Frequentes
+                        </Link>
+                      </SheetClose>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
 
               <SheetClose asChild>
                 <Link
-                  href={"/trabalheConosco"}
-                  className={`h-full w-full py-5 text-center transition-all hover:bg-blue-600 ${pathname === "/trabalheConosco" ? "bg-blue-400" : ""}`}
+                  href={"/servicos"}
+                  className={`h-full w-full py-5 text-center font-medium transition-all hover:bg-blue-600 ${pathname === "/trabalheConosco" ? "bg-blue-400" : ""}`}
                 >
-                  Trabalhe Conosco
+                  Serviços
                 </Link>
               </SheetClose>
             </SheetHeader>
