@@ -87,7 +87,7 @@ export default function Navbar() {
               <Accordion type="single" collapsible className="">
                 <AccordionItem value="item-1" className="">
                   <AccordionTrigger
-                    className={`items-center justify-center gap-3 transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                    className={`items-center justify-center gap-3 transition-all hover:bg-blue-600`}
                   >
                     Empresa
                   </AccordionTrigger>
@@ -97,7 +97,7 @@ export default function Navbar() {
                         <Link
                           href="#about"
                           title="Introduction"
-                          className={`w-full py-3 text-center text-sm transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                          className={`w-full py-3 text-center text-sm transition-all hover:bg-blue-600`}
                         >
                           Sobre Nós
                         </Link>
@@ -105,7 +105,7 @@ export default function Navbar() {
                       <SheetClose asChild>
                         <Link
                           href={"/#contact"}
-                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600`}
                         >
                           Contato
                         </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
                       <SheetClose asChild>
                         <Link
                           href="/trabalheConosco"
-                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/trabalheConosco" ? "bg-blue-400" : ""}`}
                         >
                           Trabalhe Conosco
                         </Link>
@@ -121,7 +121,7 @@ export default function Navbar() {
                       <SheetClose asChild>
                         <Link
                           href="#FAQ"
-                          className={`w-full py-3 text-center transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600`}
                         >
                           Perguntas Frequentes
                         </Link>
@@ -134,7 +134,7 @@ export default function Navbar() {
               <SheetClose asChild>
                 <Link
                   href={"/servicos"}
-                  className={`h-full w-full py-5 text-center font-medium transition-all hover:bg-blue-600 ${pathname === "/trabalheConosco" ? "bg-blue-400" : ""}`}
+                  className={`h-full w-full py-5 text-center font-medium transition-all hover:bg-blue-600 ${pathname === "/servicos" ? "bg-blue-400" : ""}`}
                 >
                   Serviços
                 </Link>
