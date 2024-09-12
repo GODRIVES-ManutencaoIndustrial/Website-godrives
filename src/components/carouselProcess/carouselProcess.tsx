@@ -27,7 +27,7 @@ export default function CarouselProcess() {
         {DataCarouselProcess.map((data, index) => (
           <CarouselItem
             key={index}
-            className="flex h-[35.37rem] lg:h-[21.25rem] lg:min-w-[45rem] lg:basis-1/3"
+            className="flex h-[35.50rem] lg:h-[21.25rem] lg:min-w-[45rem] lg:basis-1/3"
           >
             <div className="rounded-xl bg-primaryWhite shadow-lg lg:flex lg:items-center">
               <Image
@@ -46,7 +46,7 @@ export default function CarouselProcess() {
                 </p>
                 <Link href={"https://wa.me/5562998817695"} target="_blank">
                   <button className="rounded-3xl bg-blue px-7 py-2.5 text-sm text-primaryWhite transition-all hover:brightness-75 lg:py-3 lg:text-base lg:font-normal">
-                    Contate-nos
+                    Fale Conosco
                   </button>
                 </Link>
               </div>

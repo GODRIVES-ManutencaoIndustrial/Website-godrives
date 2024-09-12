@@ -8,39 +8,39 @@ type DataCardType = {
 
 export const DataCard: DataCardType[] = [
   {
-    title: "Reparo Inversores de Frequência",
+    title: "Reparo de Inversores de Frequência",
     description:
-      "Diagnóstico e reparo preciso de inversores para garantir eficiência e controle dos motores industriais.",
+      "Diagnóstico e reparo precisos de inversores para garantir eficiência e controle dos motores industriais.",
     src: readySVG,
   },
   {
-    title: "Reparo em Softstarters",
+    title: "Reparo de Soft Starter",
     description:
-      "Manutenção de softstarters para partidas suaves de motores, reduzindo desgaste e aumentando a vida útil.",
+      "Manutenção de soft starter para partidas suaves de motores, reduzindo o desgaste e aumentando a vida útil.",
     src: readySVG,
   },
   {
-    title: "Reparo em IHM's",
+    title: "Reparo de IHM",
     description:
-      "Correção rápida de IHMs para operação contínua e segura, facilitando a interação com sistemas industriais.",
+      "Correção rápida de IHMs para operação contínua e segura, sendo assim facilita a interação com os sistemas industriais.",
     src: readySVG,
   },
   {
-    title: "Reparo Servos Acionamentos",
+    title: "Reparo de Servos Acionamentos",
     description:
-      "Diagnóstico e reparo de servos para controle preciso de movimento em máquinas industriais.",
+      "Diagnóstico e reparo de servos acionamentos para controle preciso de movimento em máquinas industriais.",
     src: readySVG,
   },
   {
-    title: "Reparo em PLC´s",
+    title: "Reparo de PLC",
     description:
       "Reparo completo de PLCs para garantir a automação eficiente e funcional das operações industriais.",
     src: readySVG,
   },
   {
-    title: "Reparo em PainelPC",
+    title: "Reparo de Painel PC",
     description:
-      "Manutenção de PainelPCs para monitoramento e controle contínuos em ambientes industriais rigorosos.",
+      "Manutenção de Painéis PC para monitoramento e controle contínuos em ambientes industriais rigorosos.",
     src: readySVG,
   },
 ]

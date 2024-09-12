@@ -23,9 +23,9 @@ export default function Serviços() {
                   alt="Logo terciária da godrives"
                 />
                 <p className="z-10 text-4xl font-semibold text-primaryWhite max-lg:text-center">
-                  Garantimos manutenção industrial eletrônica{" "}
+                  Garantimos manutenção eletrônica industrial{" "}
                   <span className="text-blue">
-                    ágil e precisa do seus equipamentos.
+                    ágil e precisa para os seus equipamentos.
                   </span>
                 </p>
               </div>

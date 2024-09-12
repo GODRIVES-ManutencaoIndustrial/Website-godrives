@@ -4,7 +4,7 @@ import { Motion } from "../motion/motion"
 
 export default function Card() {
   return (
-    <div className="grid grid-cols-3 flex-col gap-10 max-lg:flex">
+    <div className="grid grid-cols-3 flex-col gap-9 max-lg:flex lg:gap-7 xl:gap-10">
       {DataCard.map((data, index) => (
         <Motion
           initial={{ opacity: 0, y: -30 }}

@@ -15,31 +15,31 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Recebimento",
     description:
-      "No recebimento, os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, local limpo, organizado e de fácil acesso interno.",
+      "No recebimento, os equipamentos são identificados e catalogados em nosso sistema assim que são recebidos na empresa. São armazenados em prateleiras industriais, em um local limpo, organizado e de fácil acesso interno.",
     src: recebimento,
   },
   {
     title: "Inspeção",
     description:
-      "O equipamento é levado ao laboratório para realizarmos testes em busca problemas. Ao encontrar os problemas, apontamos no sistema de acordo com cada Ordem de Serviço e passamos para a equipe de orçamentos.",
+      "O equipamento é levado ao laboratório para realizarmos testes em busca de problemas. Ao encontrar os problemas, eles são apontados no nosso sistema de acordo com cada ordem de serviço e passados para a equipe de orçamentos.",
     src: inspecao,
   },
   {
     title: "Limpeza",
     description:
-      "Equipamentos são levados a limpeza industrial, onde utilizamos produtos apropriados no seu equipamento. Sabemos que o pó pode se tornar um condutor de eletricidade e danificar o equipamento, por isso levamos muito a sério a limpeza.",
+      "os Equipamentos são levados a limpeza industrial, onde utilizamos produtos apropriados no seu equipamento. O pó pode se tornar um condutor de eletricidade e danificar o equipamento, por isso levamos muito a sério a limpeza.",
     src: limpeza,
   },
   {
     title: "Manutenção",
     description:
-      "Os nossos técnicos ultra qualificados realizam a troca dos componentes e peças com defeito. Para isso, dispomos de um vasto conhecimento em eletrônica, pois tornamos o equipamento de volta a vida com muita QUALIDADE e agilidade.",
+      "Os nossos técnicos altamente qualificados realizam a troca dos componentes e peças com defeito. Para isso, dispomos de um vasto conhecimento em eletrônica, pois devolvemos o equipamento à vida com muita qualidade e agilidade.",
     src: manutençao,
   },
   {
     title: "Testes e envio",
     description:
-      "Realizamos uma bateria de testes com carga aplicada de acordo com a capacidade nominal de cada equipamento, após isso enviamos os equipamentos de volta ao cliente, acompanhando o status de entrega e satisfação dos nossos clientes.",
+      "Realizamos vários de testes com carga aplicada, de acordo com a capacidade nominal de cada equipamento, após isso enviamos os equipamentos de volta ao cliente, acompanhando o status da entrega e a satisfação dos nossos clientes.",
     src: testes,
   },
 ]

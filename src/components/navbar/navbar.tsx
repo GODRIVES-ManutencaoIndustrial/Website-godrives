@@ -148,7 +148,7 @@ export default function Navbar() {
                 }
                 className="inline-flex h-[56px] w-52 items-center justify-center gap-4 rounded-[28px] border-2 border-secondary-900 bg-blue fill-secondary-900 py-3 text-blue-900 transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue"
               >
-                <p className="text-lg font-medium">Contate-nos</p>
+                <p className="text-lg font-medium">Fale Conosco</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -241,7 +241,7 @@ export default function Navbar() {
             className="hidden lg:flex"
           >
             <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-blue px-7 py-2.5 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
-              Contate-nos
+              Fale Conosco
             </button>
           </Link>
         </>

@@ -87,14 +87,14 @@ export default function ContactFormCollaborators({
 
           <div className="flex flex-col gap-2">
             <label className="text-sm text-secondary-300" htmlFor="number">
-              Número
+              Telefone
             </label>
             <InputMask
               {...register("number")}
               mask="(99) 99999-9999"
               type="text"
               id="number"
-              placeholder="Número"
+              placeholder="Telefone"
               className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300 placeholder:brightness-125"
             />
             {errors.number && (
@@ -178,7 +178,7 @@ export default function ContactFormCollaborators({
             </span>
           )}
           <label className="text-center text-secondary-300 max-lg:text-sm">
-            Anexe seu currículo PDF
+            Anexe seu currículo PDF (Máx: 5MB)
           </label>
         </div>
       </div>

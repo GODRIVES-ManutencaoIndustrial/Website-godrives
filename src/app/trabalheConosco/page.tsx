@@ -60,25 +60,26 @@ export default function WorkUs() {
             Trabalhe conosco
           </h2>
           <p className="my-10 text-center text-base text-secondary-300 max-lg:text-left">
-            Na GODRIVES, acreditamos que o nosso maior patrimônio são as pessoas
-            que fazem parte da nossa equipe. Estamos sempre em busca de
-            profissionais talentosos e dedicados que queiram fazer a diferença.
-            Se você é apaixonado por tecnologia, inovação e busca constante por
-            excelência, aqui é o lugar certo para você.
+            A GO Drives, acredita que o nosso maior patrimônio são as pessoas
+            que compõe nossa equipe. Estamos sempre em busca de profissionais
+            talentosos, dedicados e comprometidos em fazer a diferença. Se você
+            é apaixonado por tecnologia, inovação e pela busca por excelência,
+            aqui é o lugar certo para você.
           </p>
 
-          <ul className="flex justify-around gap-7 max-lg:flex-col">
-            <li className="flex items-center gap-6">
+          <ul className="flex justify-around gap-7 px-7 max-lg:flex-col">
+            <li className="flex w-[40%] items-center justify-center gap-6">
               <Image width={28} height={28} src={location} alt="location svg" />{" "}
               <p className="text-secondary-300">
-                R. 42, 2 - QD 64 LT 28 - Cardoso, Aparecida de Goiânia - GO
+                Rua. 42 - QD 64 - LT 28 - Cardoso Continuação, Aparecida de
+                Goiânia - GO
               </p>
             </li>
-            <li className="flex items-center gap-6">
+            <li className="flex w-[30%] items-center justify-center gap-6">
               <Image width={28} height={28} src={phone} alt="Phone svg" />
               <p className="text-secondary-300">+55 62 99881-7695</p>
             </li>
-            <li className="flex items-center gap-6">
+            <li className="flex w-[30%] items-center justify-center gap-6">
               <Image width={28} height={28} src={email} alt="Email svg" />{" "}
               <p className="text-secondary-300">comercial@godrives.com.br</p>
             </li>

@@ -12,7 +12,7 @@ export const contactFormCollaboratorsSchema = z.object({
           .instanceof(FileList)
           .refine((files) => files.length > 0, "Selecione um arquivo.")
           .refine(
-            (files) => files[0]?.size <= 5 * 1024 * 1024,
+            (files) => files[0]?.size < 5 * 1024 * 1024,
             "O arquivo deve ter no máximo 5MB.",
           )
       : z.any(),

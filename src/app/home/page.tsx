@@ -63,7 +63,7 @@ export default function Home() {
             children={
               <>
                 <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite sm:text-4xl">
-                  Manutenção em equipamentos{" "}
+                  Manutenção de equipamentos{" "}
                   <span className="text-blue">eletrônicos industriais</span>{" "}
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 lg:flex-row">
@@ -71,12 +71,12 @@ export default function Home() {
                     href={"#about"}
                     className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900"
                   >
-                    Leia mais
+                    Saiba mais
                   </Link>
 
                   <Link href="https://wa.me/5562998817695" target="_blank">
                     <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
-                      Contate-nos
+                      Fale Conosco
                     </button>
                   </Link>
                 </div>
@@ -112,13 +112,13 @@ export default function Home() {
                   </div>
 
                   <p className="text-lg text-secondary-300 lg:text-base xl:text-lg">
-                    Fundada em 2013, a GODRIVES é um pilar de excelência no
+                    Fundada em 2013, a GO Drives é um pilar de excelência no
                     setor de manutenção eletrônica industrial de Goiás. Com sede
-                    em Aparecida de Goiânia GO, nossa empresa se dedica a
+                    em Aparecida de Goiânia - GO, nossa empresa se dedica a
                     fornecer serviços especializados de manutenção, reparo e
                     atualização de equipamentos eletrônicos industriais,
-                    garantindo a máxima eficiência e produtividade para os
-                    clientes nos setores abaixo:
+                    garantindo a máxima eficiência, produtividade e qualidade
+                    para os clientes nos setores abaixo:
                   </p>
                 </div>
                 <div className="row-span-2 lg:min-w-[488px]">
@@ -186,7 +186,7 @@ export default function Home() {
               <div className="mb-12 flex flex-col gap-1">
                 <p className="text-red">Serviços</p>
                 <h2 className="text-4xl font-bold text-secondary-500">
-                  Como podemos solucionar o seu serviço ?
+                  Como podemos solucionar o seu problema ?
                 </h2>
               </div>
 
@@ -251,7 +251,7 @@ export default function Home() {
                   className="absolute z-10 flex h-[64px] w-64 items-center"
                 >
                   <button className="absolute flex h-full w-full items-center justify-center gap-5 rounded-[28px] border-2 border-blue bg-blue fill-secondary-900 text-xl text-blue-900 shadow-2xl drop-shadow-3xl transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue">
-                    Contate-nos
+                    Fale Conosco
                   </button>
                 </Link>
               </div>
@@ -315,8 +315,8 @@ export default function Home() {
                         alt="location svg"
                       />{" "}
                       <p className="text-secondary-300">
-                        R. 42, 2 - QD 64 LT 28 - Cardoso, Aparecida de Goiânia -
-                        GO
+                        Rua. 42 - QD 64 - LT 28 - Cardoso Continuação, Aparecida
+                        de Goiânia - GO
                       </p>
                     </li>
                     <li className="flex items-center gap-6">
