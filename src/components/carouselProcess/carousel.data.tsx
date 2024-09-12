@@ -21,7 +21,7 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Inspeção",
     description:
-      "O equipamento é levado ao laboratório para realizarmos testes em busca de problemas. Ao encontrar os problemas, eles são apontados no nosso sistema de acordo com cada ordem de serviço e passados para a equipe de orçamentos.",
+      "O equipamento é levado ao laboratório para realizarmos testes em busca de problemas. Ao encontra-los, eles são apontados no nosso sistema de acordo com cada ordem de serviço e passados para a equipe de orçamentos.",
     src: inspecao,
   },
   {
