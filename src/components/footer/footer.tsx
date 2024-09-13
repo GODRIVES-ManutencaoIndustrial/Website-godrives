@@ -45,7 +45,7 @@ export default function Footer() {
 
                 <Link
                   href={
-                    " https://www.linkedin.com/company/go-drives/posts/?feedView=all"
+                    "https://www.linkedin.com/company/go-drives/posts/?feedView=all"
                   }
                 >
                   <Image
@@ -56,11 +56,7 @@ export default function Footer() {
                   />
                 </Link>
 
-                <Link
-                  href={
-                    " https://www.linkedin.com/company/go-drives/posts/?feedView=all"
-                  }
-                >
+                <Link href={" https://www.youtube.com/@GODrives/videos"}>
                   <FaYoutube size={36} />
                 </Link>
               </li>

@@ -5,6 +5,7 @@ type DataCarouselType = {
 }
 
 export const DataCarousel: DataCarouselType[] = [
+  { name: "Usinas", description: "teste", src: "/" },
   { name: "Construção Civil", description: "teste", src: "/" },
   { name: "Alimentício", description: "teste", src: "/" },
   { name: "Agroindústria", description: "teste", src: "/" },
@@ -13,7 +14,4 @@ export const DataCarousel: DataCarouselType[] = [
   { name: "Mineração", description: "teste", src: "/" },
   { name: "Farmacêutico", description: "teste", src: "/" },
   { name: "Papel e Celulose", description: "teste", src: "/" },
-  { name: "Usina de Álcool", description: "teste", src: "/" },
-  { name: "Usina de Açucar", description: "teste", src: "/" },
-  { name: "Usina de Bioenergia", description: "teste", src: "/" },
 ]
