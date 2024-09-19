@@ -25,8 +25,8 @@ export async function POST(request: NextRequest) {
   )
 
   const message = {
-    from: process.env.EMAILMANICUCCI,
-    to: body.email,
+    from: process.env.EMAIL,
+    to: process.env.EMAIL,
     subject: "Email de Contato - Website GO Drives",
     html: emailTemplate,
   }
