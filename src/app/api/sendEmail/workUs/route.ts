@@ -1,4 +1,6 @@
 import { transporter } from "@/emailSettings/config"
+import { EmailTemplate } from "@/emailSettings/emailTemplate"
+import { render } from "@react-email/components"
 import { File } from "buffer"
 import { NextRequest } from "next/server"
 
@@ -20,18 +22,27 @@ export async function POST(request: NextRequest) {
     number: body.get("number"),
     message: body.get("textarea"),
     file: body.get("file"),
+    vaga: body.get("vaga"),
     filebuffer,
   }
+
+  const emailTemplate = await render(
+    EmailTemplate({
+      name: `${emailSendData.name}`,
+      email: `${emailSendData.email}`,
+      number: `${emailSendData.number}`,
+      textarea: `${emailSendData.message}`,
+      vaga: `${emailSendData.vaga}`,
+      subject: "Envio de Currículo - Website GO Drives",
+    }),
+    { pretty: true },
+  )
 
   const message = {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
-    subject: "Email do projeto GODRIVES com Currículo",
-    html: `
-      <h3>Email enviado por ${emailSendData.name}, ${emailSendData.email}, ${emailSendData.number}</h3>
-  
-      <p>${emailSendData.message}</p>
-    `,
+    subject: "Envio de Currículo - Website GO Drives",
+    html: emailTemplate,
     attachments: [
       {
         filename: fileFormData.name,

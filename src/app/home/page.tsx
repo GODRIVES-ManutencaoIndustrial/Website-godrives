@@ -6,6 +6,8 @@ import location from "../../../public/Location.svg"
 import phone from "@/../public/Phone.svg"
 import email from "@/../public/Mail_inverse.svg"
 import equipe from "@/../public/EquipeGODRIVES.png"
+import equipeGodrives from "@/../public/EquipeGODRIVESCortada.png"
+import equipeGodrivesEdited from "@/../public/EquipeGODRIVESEdited.png"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
@@ -96,7 +98,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           children={
             <div className="max-w-6xl max-lg:w-80">
-              <div className="mb-7 grid grid-cols-2 gap-10 max-lg:flex max-lg:flex-col max-lg:gap-7 xl:gap-12">
+              <div className="mb-7 grid grid-cols-2 max-lg:flex max-lg:flex-col max-lg:gap-7 lg:gap-3 min-[1056px]:gap-8 xl:gap-12">
                 <div className="flex flex-col gap-6 xl:gap-8">
                   <div>
                     <p className="text-red">Sobre</p>
@@ -123,7 +125,7 @@ export default function Home() {
                 </div>
                 <div className="row-span-2 lg:min-w-[488px]">
                   <Image
-                    src={equipe}
+                    src={equipeGodrivesEdited}
                     width={0}
                     alt="Equipe GODRIVES"
                     className="rounded-lg"

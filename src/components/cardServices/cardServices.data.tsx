@@ -4,6 +4,7 @@ import imageReparoIHM from "../../../public/reparoIHM.png"
 import imageReparoSofstarter from "../../../public/reparoSoftStarter.png"
 import imageReparoServoAcionamento from "../../../public/reparoServoAcionamento.png"
 import imageReparoClp from "../../../public/reparoCLP.png"
+import atendimentoInLoco from "../../../public/AtendimentoInLoco.png"
 
 export type DataCardServicesType = {
   title: string
@@ -42,5 +43,11 @@ export const DataCardServices: DataCardServicesType[] = [
     description:
       "As IHMs são fundamentais para a interação entre operadores e sistemas de controle industrial. Oferecemos serviços de reparo para IHMs de diversas marcas e modelos, garantindo uma interface de usuário funcional e intuitiva. Nossa equipe diagnostica e corrige problemas de forma rápida, permitindo uma operação ininterrupta e segura.",
     src: imageReparoIHM,
+  },
+  {
+    title: "Atendimento In Loco e Emergencial",
+    description:
+      "Oferecemos Atendimento In Loco e Emergencial para fornecer suporte completo diretamente nas instalações do cliente. Contamos com equipamentos avançados e uma equipe técnica especializada para realizar diagnósticos, manutenção corretiva e preventiva, dentre outros serviços no local, garantindo soluções eficazes e eficientes. Em situações emergenciais, nossa equipe está pronta para agir rapidamente, solucionando problemas críticos com urgência para minimizar o impacto na operação e restaurar a funcionalidade dos sistemas o mais rápido possível.",
+    src: atendimentoInLoco,
   },
 ]

@@ -1,5 +1,7 @@
 import { transporter } from "@/emailSettings/config"
+import { render } from "@react-email/components"
 import { NextRequest } from "next/server"
+import { EmailTemplate } from "@/emailSettings/emailTemplate"
 
 type BodyType = {
   name: string
@@ -11,15 +13,22 @@ type BodyType = {
 export async function POST(request: NextRequest) {
   const body: BodyType = await request.json()
 
+  const emailTemplate = await render(
+    EmailTemplate({
+      name: body.name,
+      email: body.email,
+      number: body.number,
+      textarea: body.textarea,
+      subject: "Solicitação de Contato - Website GO Drives",
+    }),
+    { pretty: true },
+  )
+
   const message = {
-    from: process.env.EMAIL,
-    to: process.env.EMAIL,
-    subject: "Email do projeto GODRIVES",
-    html: `
-      <h3>Email enviado por ${body.name}, ${body.email}, ${body.number}</h3>
-  
-      <p>${body.textarea}</p>
-    `,
+    from: process.env.EMAILMANICUCCI,
+    to: body.email,
+    subject: "Email de Contato - Website GO Drives",
+    html: emailTemplate,
   }
 
   try {

@@ -43,4 +43,22 @@ export const DataCard: DataCardType[] = [
       "Manutenção de Painéis PC para monitoramento e controle contínuos em ambientes industriais rigorosos.",
     src: readySVG,
   },
+  {
+    title: "Treinamento Técnico",
+    description:
+      "Nosso treinamento técnico é voltado para capacitar equipes na operação, diagnóstico e manutenção de equipamentos eletrônicos industriais.",
+    src: readySVG,
+  },
+  {
+    title: "Atendimento In Loco e Emergencial",
+    description:
+      "Nosso atendimento fornece suporte completo diretamente nas instalações do cliente.",
+    src: readySVG,
+  },
+  {
+    title: "Automação Industrial",
+    description:
+      "Oferecemos serviços completos, incluindo projetos de painéis elétricos, comissionamento, startup de sistemas e retrofit de máquinas para modernização e maior eficiência.",
+    src: readySVG,
+  },
 ]

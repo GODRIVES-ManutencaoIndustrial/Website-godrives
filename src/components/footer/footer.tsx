@@ -56,7 +56,7 @@ export default function Footer() {
                   />
                 </Link>
 
-                <Link href={" https://www.youtube.com/@GODrives/videos"}>
+                <Link href={"https://www.youtube.com/@GODrives/videos"}>
                   <FaYoutube size={36} />
                 </Link>
               </li>

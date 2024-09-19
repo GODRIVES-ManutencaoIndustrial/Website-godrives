@@ -50,7 +50,7 @@ export default function ContactForm({ url }: ContactFormProps) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex w-full max-w-lg flex-col gap-6 py-3"
+      className="flex w-full max-w-lg flex-col gap-7 py-3"
     >
       <div className="flex flex-col gap-2">
         <label className="text-sm text-secondary-300" htmlFor="name">

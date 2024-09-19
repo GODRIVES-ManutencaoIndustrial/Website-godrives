@@ -197,7 +197,7 @@ export default function Navbar() {
                 <NavigationMenuContent className="bg-backgroundNavBar px-10 py-7">
                   <ul className="flex w-48 flex-col text-sm text-blue">
                     <Link
-                      href="#about"
+                      href="/#about"
                       title="Introduction"
                       className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
                     >
