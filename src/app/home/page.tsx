@@ -15,6 +15,7 @@ import Link from "next/link"
 import ContactForm from "@/components/contactForm/contactForm"
 import GoogleMap from "@/components/googleMap/googleMap"
 import { Motion } from "@/components/motion/motion"
+import Brands from "@/components/brands/brands"
 
 export default function Home() {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY
@@ -22,17 +23,17 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="absolute left-0 top-0 -z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-secondary-900">
+      <div className="absolute left-0 top-0 -z-10 flex h-[58.25rem] w-full items-center justify-center overflow-hidden bg-secondary-900 lg:h-screen">
         <Hero />
       </div>
 
-      <div className="my-0 flex h-screen w-full items-center justify-center px-10 shadow-2xl drop-shadow-xl max-lg:px-0">
-        <div className="max-lg:w-80">
+      <div className="my-0 h-[58.25rem] w-full px-10 shadow-2xl drop-shadow-xl max-lg:px-0 lg:h-screen">
+        <div className="relative top-1/4 mx-auto my-0 mb-24 max-lg:w-80 lg:top-1/2 lg:mb-32 lg:-translate-y-1/2">
           <div className="flex flex-col items-center gap-3">
             <Motion
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 0.6 }}
+              transition={{ ease: "easeOut", duration: 0.5 }}
               children={
                 <Image
                   src={"/logo.svg"}
@@ -46,7 +47,7 @@ export default function Home() {
             <Motion
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 0.6, delay: 0.5 }}
+              transition={{ ease: "easeOut", duration: 0.6, delay: 0.6 }}
               className="text-center text-base text-primaryWhite md:text-lg"
               children={
                 <p>
@@ -61,7 +62,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.6, delay: 1.2 }}
+            transition={{ ease: "easeOut", duration: 0.6, delay: 1 }}
             children={
               <>
                 <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite sm:text-4xl">
@@ -81,6 +82,24 @@ export default function Home() {
                       Fale Conosco
                     </button>
                   </Link>
+                </div>
+              </>
+            }
+          />
+        </div>
+
+        <div className="relative top-1/4 lg:top-[38%]">
+          <Motion
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeOut", duration: 0.6, delay: 1.5 }}
+            children={
+              <>
+                <h2 className="mb-7 text-center text-xl font-normal text-red">
+                  Marcas atendidas
+                </h2>
+                <div className="relative flex overflow-hidden">
+                  <Brands />
                 </div>
               </>
             }
