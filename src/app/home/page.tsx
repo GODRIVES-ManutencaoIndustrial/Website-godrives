@@ -6,7 +6,8 @@ import location from "../../../public/Location.svg"
 import phone from "@/../public/Phone.svg"
 import email from "@/../public/Mail_inverse.svg"
 import equipe from "@/../public/EquipeGODRIVES.png"
-import equipeGodrives from "@/../public/EquipeGODRIVESCortada.png"
+// import equipeGodrives from "@/../public/EquipeGODRIVESCortada.png"
+import equipeGodrives from "@/../public/EquipeGoDrives2.png"
 import equipeGodrivesEdited from "@/../public/EquipeGODRIVESEdited.png"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
@@ -144,7 +145,7 @@ export default function Home() {
                 </div>
                 <div className="row-span-2 lg:min-w-[488px]">
                   <Image
-                    src={equipeGodrivesEdited}
+                    src={equipeGodrives}
                     width={0}
                     alt="Equipe GODRIVES"
                     className="rounded-lg"
