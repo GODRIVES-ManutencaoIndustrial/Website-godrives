@@ -99,7 +99,7 @@ export default function Home() {
                 <h2 className="mb-7 text-center text-xl font-normal text-red">
                   Marcas atendidas
                 </h2>
-                <div className="relative flex overflow-hidden">
+                <div className="relative flex overflow-x-hidden">
                   <Brands />
                 </div>
               </>
