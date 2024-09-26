@@ -87,14 +87,14 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative top-[23%] lg:top-[38%]">
+        <div className="relative top-[21%] lg:top-[36%]">
           <Motion
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut", duration: 0.6, delay: 1.5 }}
             children={
               <>
-                <h2 className="mb-7 text-center text-xl font-normal text-red">
+                <h2 className="mb-6 text-center text-xl font-normal text-red">
                   Marcas atendidas
                 </h2>
                 <div className="relative flex overflow-x-hidden">
