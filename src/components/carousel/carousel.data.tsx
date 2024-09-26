@@ -5,13 +5,23 @@ type DataCarouselType = {
 }
 
 export const DataCarousel: DataCarouselType[] = [
-  { name: "Usinas", description: "teste", src: "/" },
-  { name: "Construção Civil", description: "teste", src: "/" },
-  { name: "Alimentício", description: "teste", src: "/" },
-  { name: "Agroindústria", description: "teste", src: "/" },
-  { name: "Siderurgia", description: "teste", src: "/" },
-  { name: "Automotivo", description: "teste", src: "/" },
-  { name: "Mineração", description: "teste", src: "/" },
-  { name: "Farmacêutico", description: "teste", src: "/" },
-  { name: "Papel e Celulose", description: "teste", src: "/" },
+  {
+    name: "Usinas",
+    description: "Indústria que possuem usinas, como açucar e bebidas",
+    src: "/",
+  },
+  { name: "Alimentício", description: "indústria alimentícia", src: "/" },
+  { name: "Agroindústria", description: "Indústrias do agronegócio", src: "/" },
+  { name: "Siderurgia", description: "Siderurgias", src: "/" },
+  {
+    name: "Mineração",
+    description: "Indústrias de mineração como Vale",
+    src: "/",
+  },
+  {
+    name: "Farmacêutico",
+    description: "Indústrias de medicamentos como Neo Química",
+    src: "/",
+  },
+  { name: "Papel e Celulose", description: "Indústrias de papel", src: "/" },
 ]

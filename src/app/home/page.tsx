@@ -5,10 +5,8 @@ import ilustration from "@/../public/ilustration.svg"
 import location from "../../../public/Location.svg"
 import phone from "@/../public/Phone.svg"
 import email from "@/../public/Mail_inverse.svg"
-import equipe from "@/../public/EquipeGODRIVES.png"
-// import equipeGodrives from "@/../public/EquipeGODRIVESCortada.png"
 import equipeGodrives from "@/../public/EquipeGoDrives2.png"
-import equipeGodrivesEdited from "@/../public/EquipeGODRIVESEdited.png"
+import DanielWork from "@/../public/DanielGoDrivesWork.png"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
@@ -133,7 +131,7 @@ export default function Home() {
                     </h2>
                   </div>
 
-                  <p className="text-lg text-secondary-300 lg:text-base xl:text-lg">
+                  <p className="text-lg text-secondary-300 lg:text-base xl:text-xl">
                     Fundada em 2013, a GO Drives é um pilar de excelência no
                     setor de manutenção eletrônica industrial de Goiás. Com sede
                     em Aparecida de Goiânia - GO, nossa empresa se dedica a
@@ -145,10 +143,10 @@ export default function Home() {
                 </div>
                 <div className="row-span-2 lg:min-w-[488px]">
                   <Image
-                    src={equipeGodrives}
+                    src={DanielWork}
                     width={0}
-                    alt="Equipe GODRIVES"
-                    className="rounded-lg"
+                    alt="Daniel Diretor GoDrives"
+                    className="rounded-xl"
                   />
                 </div>
                 <Carousel />

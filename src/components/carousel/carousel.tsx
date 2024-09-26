@@ -10,7 +10,7 @@ export default function Carousel() {
       {DataCarousel.map((data, index) => (
         <div
           key={index}
-          className="my-2 flex h-40 items-center justify-center rounded-lg bg-gray-200"
+          className="flex h-40 items-center justify-center rounded-lg bg-gray-200 max-lg:my-2"
         >
           <p className="w-36 px-5 text-center text-red">{data.name}</p>
         </div>
