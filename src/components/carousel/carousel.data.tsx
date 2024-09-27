@@ -10,14 +10,14 @@ export const DataCarousel: DataCarouselType[] = [
     description: "Indústria que possuem usinas, como açucar e bebidas",
     src: "/",
   },
-  { name: "Alimentício", description: "indústria alimentícia", src: "/" },
-  { name: "Agroindústria", description: "Indústrias do agronegócio", src: "/" },
-  { name: "Siderurgia", description: "Siderurgias", src: "/" },
   {
     name: "Mineração",
     description: "Indústrias de mineração como Vale",
     src: "/",
   },
+  { name: "Alimentício", description: "indústria alimentícia", src: "/" },
+  { name: "Agroindústria", description: "Indústrias do agronegócio", src: "/" },
+  { name: "Siderurgia", description: "Siderurgias", src: "/" },
   {
     name: "Farmacêutico",
     description: "Indústrias de medicamentos como Neo Química",

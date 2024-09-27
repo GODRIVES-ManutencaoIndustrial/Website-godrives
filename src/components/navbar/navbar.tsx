@@ -126,6 +126,14 @@ export default function Navbar() {
                           Perguntas Frequentes
                         </Link>
                       </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                          href="/#processos"
+                          className={`w-full py-3 text-center transition-all hover:bg-blue-600`}
+                        >
+                          Processos
+                        </Link>
+                      </SheetClose>
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
@@ -223,6 +231,13 @@ export default function Navbar() {
                       className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
                     >
                       Perguntas Frequentes
+                    </Link>
+                    <Link
+                      href="/#processos"
+                      title="Introduction"
+                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
+                    >
+                      Processos
                     </Link>
                   </ul>
                 </NavigationMenuContent>

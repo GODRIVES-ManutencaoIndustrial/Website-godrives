@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image"
 import recebimento from "../../../public/recebimento.png"
 import inspecao from "../../../public/inspecao.png"
 import manutençao from "../../../public/manutencao.png"
-import limpeza from "../../../public/limpeza.png"
+import limpeza from "../../../public/Limpeza.png"
 import testes from "../../../public/testesOficial.png"
 
 type TypeDataCarouselProcess = {

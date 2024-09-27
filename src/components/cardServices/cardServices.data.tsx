@@ -5,6 +5,7 @@ import imageReparoSofstarter from "../../../public/reparoSoftStarter.png"
 import imageReparoServoAcionamento from "../../../public/reparoServoAcionamento.png"
 import imageReparoClp from "../../../public/reparoCLP.png"
 import atendimentoInLoco from "../../../public/AtendimentoInLoco.png"
+import treinamento from "../../../public/Treinamento.png"
 
 export type DataCardServicesType = {
   title: string
@@ -49,5 +50,11 @@ export const DataCardServices: DataCardServicesType[] = [
     description:
       "Oferecemos Atendimento In Loco e Emergencial para fornecer suporte completo diretamente nas instalações do cliente. Contamos com equipamentos avançados e uma equipe técnica especializada para realizar diagnósticos, manutenção corretiva e preventiva, dentre outros serviços no local, garantindo soluções eficazes e eficientes. Em situações emergenciais, nossa equipe está pronta para agir rapidamente, solucionando problemas críticos com urgência para minimizar o impacto na operação e restaurar a funcionalidade dos sistemas o mais rápido possível.",
     src: atendimentoInLoco,
+  },
+  {
+    title: "Treinamento Técnico em Eletrônica Industrial",
+    description:
+      "Oferecemos treinamento técnico especializado em eletrônica industrial para nossos clientes. Os cursos são focados em capacitar equipes para operar, diagnosticar e realizar a manutenção de equipamentos eletrônicos industriais com eficiência. Com instrutores experientes e conteúdo prático, garantimos que sua equipe esteja preparada para maximizar a performance e a confiabilidade dos sistemas, reduzindo falhas e tempo de inatividade.",
+    src: treinamento,
   },
 ]
