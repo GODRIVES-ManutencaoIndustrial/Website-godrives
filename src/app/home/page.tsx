@@ -306,12 +306,12 @@ export default function Home() {
             initial={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.7 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="flex justify-between gap-16 pt-24 max-lg:flex-col"
+            className="flex justify-between gap-12 pt-24 max-lg:flex-col lg:gap-16"
             id="contact"
             children={
               <>
                 <div className="lg:min-w-[545px]">
-                  <div className="mb-12 flex flex-col gap-5">
+                  <div className="mb-10 flex flex-col gap-5">
                     <div className="flex flex-col gap-2">
                       <p className="text-red">Contato</p>
                       <h2 className="text-4xl font-bold text-secondary-500">
@@ -361,7 +361,7 @@ export default function Home() {
                     </li>
                   </ul>
 
-                  <div className="my-12 h-[2px] w-full bg-secondary-500" />
+                  <div className="my-11 h-[2px] w-full bg-secondary-500" />
 
                   <div className="flex flex-col gap-5">
                     <h3 className="text-2xl font-bold text-secondary-500">
@@ -388,6 +388,24 @@ export default function Home() {
                           Mato Grosso - Rua Ipê, 01 - Jardim Imperial II, Cuiabá
                         </p>
                       </Link>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h4 className="text-[17px] font-extrabold text-blue">
+                        GO<span className="text-red">DRIVES</span>
+                      </h4>
+
+                      <div className="flex items-center gap-6 rounded-2xl border border-secondary-50 bg-gray-200 p-3 shadow transition-all last:text-secondary-500 hover:brightness-90">
+                        <Image
+                          width={28}
+                          height={28}
+                          src={location}
+                          alt="location svg"
+                        />{" "}
+                        <p>
+                          Rua. 42 - QD 64 - LT 24 - Cardoso Continuação,
+                          Aparecida de Goiânia - GO
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

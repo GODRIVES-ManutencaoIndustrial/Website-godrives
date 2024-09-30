@@ -22,7 +22,7 @@ export const DataCard: DataCardType[] = [
   {
     title: "Reparo de IHM",
     description:
-      "Correção rápida de IHMs para operação contínua e segura, sendo assim facilita a interação com os sistemas industriais.",
+      "Correção rápida de IHMs para operação contínua e segura, facilitando assim a interação com os sistemas industriais.",
     src: readySVG,
   },
   {

@@ -50,7 +50,7 @@ export default function ContactForm({ url }: ContactFormProps) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex w-full max-w-lg flex-col gap-7 py-3"
+      className="flex w-full max-w-lg flex-col gap-7 py-3 lg:gap-8"
     >
       <div className="flex flex-col gap-2">
         <label className="text-sm text-secondary-300" htmlFor="name">
@@ -60,7 +60,7 @@ export default function ContactForm({ url }: ContactFormProps) {
           {...register("name")}
           id="name"
           placeholder="Nome"
-          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
+          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300 lg:h-[4.2rem]"
         />
         {errors.name && (
           <span className="text-sm text-red-600">{errors.name?.message}</span>
@@ -77,7 +77,7 @@ export default function ContactForm({ url }: ContactFormProps) {
           mask="(99) 99999-9999"
           id="number"
           placeholder="Telefone"
-          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
+          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300 lg:h-[4.2rem]"
         />
         {errors.number && (
           <span className="text-sm text-red-600">{errors.number?.message}</span>
@@ -93,7 +93,7 @@ export default function ContactForm({ url }: ContactFormProps) {
           type="text"
           id="email"
           placeholder="Email"
-          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300"
+          className="h-16 rounded-md border border-secondary-50 px-3 text-secondary-300 lg:h-[4.2rem]"
         />
         {errors.email && (
           <span className="text-sm text-red-600">{errors.email?.message}</span>
@@ -108,7 +108,7 @@ export default function ContactForm({ url }: ContactFormProps) {
           {...register("textarea")}
           placeholder="Escreva algo..."
           id="message"
-          className="h-32 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300"
+          className="h-32 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300 lg:h-[12.8rem]"
         />
         {errors.textarea && (
           <span className="text-sm text-red-600">
@@ -119,7 +119,7 @@ export default function ContactForm({ url }: ContactFormProps) {
 
       <button
         type="submit"
-        className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 ${loading ? "brightness-150" : ""}`}
+        className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 lg:h-[4.8rem] ${loading ? "brightness-150" : ""}`}
       >
         {loading ? (
           <LoaderCircle className="animate-spin" size={24} />

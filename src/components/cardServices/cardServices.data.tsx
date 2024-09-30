@@ -6,6 +6,7 @@ import imageReparoServoAcionamento from "../../../public/reparoServoAcionamento.
 import imageReparoClp from "../../../public/reparoCLP.png"
 import atendimentoInLoco from "../../../public/AtendimentoInLoco.png"
 import treinamento from "../../../public/Treinamento.png"
+import automacaoIndustrial from "../../../public/automacaoIndustrial.png"
 
 export type DataCardServicesType = {
   title: string
@@ -48,7 +49,7 @@ export const DataCardServices: DataCardServicesType[] = [
   {
     title: "Atendimento In Loco e Emergencial",
     description:
-      "Oferecemos Atendimento In Loco e Emergencial para fornecer suporte completo diretamente nas instalações do cliente. Contamos com equipamentos avançados e uma equipe técnica especializada para realizar diagnósticos, manutenção corretiva e preventiva, dentre outros serviços no local, garantindo soluções eficazes e eficientes. Em situações emergenciais, nossa equipe está pronta para agir rapidamente, solucionando problemas críticos com urgência para minimizar o impacto na operação e restaurar a funcionalidade dos sistemas o mais rápido possível.",
+      "Oferecemos Atendimento In Loco e Emergencial para suporte completo nas instalações do cliente. Com equipamentos avançados e equipe técnica especializada, realizamos diagnósticos, manutenção corretiva e preventiva, dentre outros serviços no local, garantindo soluções eficazes e eficientes. Em emergências, nossa equipe age rapidamente para solucionar problemas críticos, minimizar o impacto e restaurar a funcionalidade dos sistemas o mais rápido possível.",
     src: atendimentoInLoco,
   },
   {
@@ -56,5 +57,11 @@ export const DataCardServices: DataCardServicesType[] = [
     description:
       "Oferecemos treinamento técnico especializado em eletrônica industrial para nossos clientes. Os cursos são focados em capacitar equipes para operar, diagnosticar e realizar a manutenção de equipamentos eletrônicos industriais com eficiência. Com instrutores experientes e conteúdo prático, garantimos que sua equipe esteja preparada para maximizar a performance e a confiabilidade dos sistemas, reduzindo falhas e tempo de inatividade.",
     src: treinamento,
+  },
+  {
+    title: "Automação Industrial",
+    description:
+      "Somos especialistas em Automação Industrial, oferecendo soluções personalizadas para otimizar a eficiência das operações. Desenvolvemos painéis elétricos sob medida, garantindo controle e segurança. Realizamos o comissionamento e startup dos sistemas, assegurando integração perfeita. Também fazemos retrofit com tecnologia de ponta, aumentando sua vida útil e produtividade. Nosso compromisso é entregar inovação, qualidade e soluções que melhorem o controle dos processos, reduzam falhas e elevem a eficiência operacional, sempre focando na satisfação do cliente.",
+    src: automacaoIndustrial,
   },
 ]

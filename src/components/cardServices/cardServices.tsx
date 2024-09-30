@@ -19,7 +19,7 @@ export default function CardServices() {
                 className="flex w-full items-center justify-between gap-20 max-xl:gap-16 max-lg:flex-col max-lg:gap-12"
               >
                 <Image
-                  className="min-h-96 min-w-96 rounded-3xl bg-gray-50 shadow-2xl max-lg:min-h-[300px] max-lg:min-w-[300px]"
+                  className="h-[26rem] w-[26rem] rounded-3xl bg-gray-50 shadow-2xl max-lg:max-h-[300px] max-lg:max-w-[300px]"
                   src={src}
                   // width={300}
                   // height={300}
