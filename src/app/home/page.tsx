@@ -22,12 +22,12 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="absolute left-0 top-0 -z-10 flex h-[56rem] w-full items-center justify-center overflow-hidden bg-secondary-900 lg:h-screen">
+      <div className="absolute left-0 top-0 -z-10 flex h-[55rem] w-full items-center justify-center overflow-hidden bg-secondary-900 2xl:h-screen">
         <Hero />
       </div>
 
-      <div className="my-0 h-[56rem] w-full px-10 shadow-2xl drop-shadow-xl max-lg:px-0 lg:h-screen">
-        <div className="relative top-[22%] mx-auto my-0 mb-24 max-lg:w-80 lg:top-1/2 lg:mb-32 lg:-translate-y-1/2">
+      <div className="my-0 h-[55rem] w-full px-10 shadow-2xl drop-shadow-xl max-lg:px-0 lg:inline-flex lg:items-center lg:justify-center 2xl:h-screen">
+        <div className="relative mx-auto my-0 max-lg:top-[22%] max-lg:w-80 lg:w-full">
           <div className="flex flex-col items-center gap-3">
             <Motion
               initial={{ opacity: 0, y: -50 }}
@@ -85,24 +85,24 @@ export default function Home() {
               </>
             }
           />
-        </div>
 
-        <div className="relative top-[21%] lg:top-[36%]">
-          <Motion
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeOut", duration: 0.6, delay: 1.5 }}
-            children={
-              <>
-                <h2 className="mb-6 text-center text-xl font-normal text-red">
-                  Marcas atendidas
-                </h2>
-                <div className="relative flex overflow-x-hidden">
-                  <Brands />
-                </div>
-              </>
-            }
-          />
+          <div className="mt-20 lg:-mb-[14rem] lg:mt-[7.1rem]">
+            <Motion
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ ease: "easeOut", duration: 0.6, delay: 1.5 }}
+              children={
+                <>
+                  <h2 className="mb-6 text-center text-xl font-normal text-red">
+                    Marcas atendidas
+                  </h2>
+                  <div className="relative flex overflow-x-hidden">
+                    <Brands />
+                  </div>
+                </>
+              }
+            />
+          </div>
         </div>
       </div>
 

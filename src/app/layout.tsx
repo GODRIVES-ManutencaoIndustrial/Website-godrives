@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "GODRIVES",
-  description: "Manutenção em equipamentos eletrônicos industriais",
+  description: "Manutenção em equipamentos eletrônicos industriais.",
 }
 
 export default function RootLayout({
