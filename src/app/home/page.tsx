@@ -32,7 +32,7 @@ export default function Home() {
             <Motion
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 0.5 }}
+              transition={{ ease: "easeOut", duration: 0.4 }}
               children={
                 <Image
                   src={"/logo.svg"}
@@ -46,7 +46,7 @@ export default function Home() {
             <Motion
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 0.6, delay: 0.6 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
               className="text-center text-base text-primaryWhite md:text-lg"
               children={
                 <p>
@@ -61,7 +61,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.6, delay: 1 }}
+            transition={{ ease: "easeOut", duration: 0.5, delay: 0.6 }}
             children={
               <>
                 <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite sm:text-4xl">
@@ -90,7 +90,7 @@ export default function Home() {
             <Motion
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ ease: "easeOut", duration: 0.6, delay: 1.5 }}
+              transition={{ ease: "easeOut", duration: 0.4, delay: 0.9 }}
               children={
                 <>
                   <h2 className="mb-6 text-center text-xl font-normal text-red">
