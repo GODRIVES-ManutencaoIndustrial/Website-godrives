@@ -22,86 +22,90 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="absolute left-0 top-0 -z-10 flex h-[55rem] w-full items-center justify-center overflow-hidden bg-secondary-900 2xl:h-screen">
-        <Hero />
-      </div>
+      <div className="relative overflow-hidden bg-secondary-900 py-[4.5rem] shadow-2xl drop-shadow-xl">
+        <div className="absolute left-0 flex h-[51rem] w-full -translate-y-[9%] items-center justify-center overflow-hidden bg-secondary-900 lg:h-screen">
+          <Hero />
+        </div>
 
-      <div className="my-0 h-[55rem] w-full px-10 shadow-2xl drop-shadow-xl max-lg:px-0 lg:inline-flex lg:items-center lg:justify-center 2xl:h-screen">
-        <div className="relative mx-auto my-0 max-lg:top-[22%] max-lg:w-80 lg:w-full">
-          <div className="flex flex-col items-center gap-3">
-            <Motion
-              initial={{ opacity: 0, y: -50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 0.4 }}
-              children={
-                <Image
-                  src={"/logo.svg"}
-                  alt="logo GODRIVES"
-                  width={48}
-                  height={48}
+        <div className="my-0 h-[51rem] w-full px-10 max-lg:px-0 lg:inline-flex lg:h-[92vh] lg:items-center lg:justify-center lg:py-20">
+          <div className="relative mx-auto my-0 max-lg:top-[17%] max-lg:w-80 lg:-mb-[8.5rem] lg:w-full">
+            <div>
+              <div className="flex flex-col items-center gap-3">
+                <Motion
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ ease: "easeOut", duration: 0.4 }}
+                  children={
+                    <Image
+                      src={"/logo.svg"}
+                      alt="logo GODRIVES"
+                      width={48}
+                      height={48}
+                    />
+                  }
                 />
-              }
-            />
 
-            <Motion
-              initial={{ opacity: 0, y: -50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
-              className="text-center text-base text-primaryWhite md:text-lg"
-              children={
-                <p>
-                  Seja bem vindo a{" "}
-                  <span className="text-xl font-bold text-blue">GO</span>
-                  <span className="text-xl font-bold text-red">DRIVES</span>
-                </p>
-              }
-            />
-          </div>
+                <Motion
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
+                  className="text-center text-base text-primaryWhite md:text-lg"
+                  children={
+                    <p>
+                      Seja bem vindo a{" "}
+                      <span className="text-xl font-bold text-blue">GO</span>
+                      <span className="text-xl font-bold text-red">DRIVES</span>
+                    </p>
+                  }
+                />
+              </div>
 
-          <Motion
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.5, delay: 0.6 }}
-            children={
-              <>
-                <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite sm:text-4xl">
-                  Manutenção de equipamentos{" "}
-                  <span className="text-blue">eletrônicos industriais</span>{" "}
-                </p>
-                <div className="mt-8 flex flex-col items-center justify-center gap-3 lg:flex-row">
-                  <Link
-                    href={"#about"}
-                    className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900"
-                  >
-                    Saiba mais
-                  </Link>
+              <Motion
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 0.5, delay: 0.6 }}
+                children={
+                  <>
+                    <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite sm:text-4xl">
+                      Manutenção de equipamentos{" "}
+                      <span className="text-blue">eletrônicos industriais</span>{" "}
+                    </p>
+                    <div className="mt-8 flex flex-col items-center justify-center gap-3 lg:flex-row">
+                      <Link
+                        href={"#about"}
+                        className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900"
+                      >
+                        Saiba mais
+                      </Link>
 
-                  <Link href="https://wa.me/5562998817695" target="_blank">
-                    <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
-                      Fale Conosco
-                    </button>
-                  </Link>
-                </div>
-              </>
-            }
-          />
+                      <Link href="https://wa.me/5562998817695" target="_blank">
+                        <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
+                          Fale Conosco
+                        </button>
+                      </Link>
+                    </div>
+                  </>
+                }
+              />
+            </div>
 
-          <div className="mt-20 lg:-mb-[14rem] lg:mt-[7.1rem]">
-            <Motion
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ ease: "easeOut", duration: 0.4, delay: 0.9 }}
-              children={
-                <>
-                  <h2 className="mb-6 text-center text-xl font-normal text-red">
-                    Marcas atendidas
-                  </h2>
-                  <div className="relative flex overflow-x-hidden">
-                    <Brands />
-                  </div>
-                </>
-              }
-            />
+            <div className="mt-20 lg:mt-28">
+              <Motion
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ease: "easeOut", duration: 0.4, delay: 0.9 }}
+                children={
+                  <>
+                    <h2 className="mb-6 text-center text-xl font-normal text-red">
+                      Marcas atendidas
+                    </h2>
+                    <div className="relative flex overflow-x-hidden">
+                      <Brands />
+                    </div>
+                  </>
+                }
+              />
+            </div>
           </div>
         </div>
       </div>
