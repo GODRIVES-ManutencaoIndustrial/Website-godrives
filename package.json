@@ -46,7 +46,6 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "0.6.6",
-    "react-email": "3.0.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
