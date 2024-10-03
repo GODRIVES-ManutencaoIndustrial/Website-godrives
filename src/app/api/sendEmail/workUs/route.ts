@@ -1,6 +1,4 @@
 import { transporter } from "@/emailSettings/config"
-import { EmailTemplate } from "@/emailSettings/emailTemplate"
-import { render } from "@react-email/components"
 import { File } from "buffer"
 import { NextRequest } from "next/server"
 

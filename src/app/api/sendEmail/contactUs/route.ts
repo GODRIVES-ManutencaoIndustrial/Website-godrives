@@ -1,7 +1,5 @@
 import { transporter } from "@/emailSettings/config"
-import { render } from "@react-email/components"
 import { NextRequest } from "next/server"
-import { EmailTemplate } from "@/emailSettings/emailTemplate"
 
 type BodyType = {
   name: string
