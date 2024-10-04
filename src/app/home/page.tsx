@@ -17,7 +17,7 @@ import Brands from "@/components/brands/brands"
 import logo from "@/../public/logo.svg"
 
 export default function Home() {
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY
+  // const apiKey = process.env.GOOGLE_MAPS_API_KEY
   const url = process.env.URL
 
   return (
@@ -430,7 +430,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center px-6 pb-28 lg:px-8">
+      {/* <div className="flex justify-center px-6 pb-28 lg:px-8">
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7 }}
@@ -445,7 +445,7 @@ export default function Home() {
             </div>
           }
         />
-      </div>
+      </div> */}
     </div>
   )
 }
