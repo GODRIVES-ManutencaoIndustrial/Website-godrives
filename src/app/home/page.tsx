@@ -5,7 +5,7 @@ import ilustration from "@/../public/ilustration.svg"
 import location from "../../../public/Location.svg"
 import phone from "@/../public/Phone.svg"
 import email from "@/../public/Mail_inverse.svg"
-import godrivesRepresentation from "@/../public/GODriveRepresentation.webp"
+import godrivesRepresentation from "@/../public/GODriveRepresentation3.webp"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
@@ -17,7 +17,7 @@ import Brands from "@/components/brands/brands"
 import logo from "@/../public/logo.svg"
 
 export default function Home() {
-  // const apiKey = process.env.GOOGLE_MAPS_API_KEY
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY
   const url = process.env.URL
 
   return (
@@ -150,6 +150,7 @@ export default function Home() {
                     src={godrivesRepresentation}
                     alt="Daniel Diretor GoDrives"
                     className="rounded-xl"
+                    loading="lazy"
                   />
                 </div>
                 <Carousel />
@@ -430,7 +431,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="flex justify-center px-6 pb-28 lg:px-8">
+      <div className="flex justify-center px-6 pb-28 lg:px-8">
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7 }}
@@ -445,7 +446,7 @@ export default function Home() {
             </div>
           }
         />
-      </div> */}
+      </div>
     </div>
   )
 }

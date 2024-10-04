@@ -22,6 +22,7 @@ export default function CardServices() {
                   className="rounded-3xl bg-gray-50 shadow-2xl md:h-[23rem] md:w-[23rem] lg:h-[26rem] lg:w-[26rem] xl:h-[28rem] xl:w-[28rem]"
                   src={src}
                   alt={description}
+                  loading="lazy"
                 />
                 <div className="flex items-center">
                   <div className="w-full">

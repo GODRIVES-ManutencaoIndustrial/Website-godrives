@@ -42,6 +42,7 @@ export default function Footer() {
                     width={40}
                     height={40}
                     alt="Ícone link Instagram"
+                    loading="lazy"
                   />
                 </Link>
 
@@ -56,6 +57,7 @@ export default function Footer() {
                     width={40}
                     height={40}
                     alt="Ícone link Linkedin"
+                    loading="lazy"
                   />
                 </Link>
 
@@ -70,18 +72,36 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-7 text-sm">
             <div className="flex items-center gap-6">
-              <Image width={24} height={24} src={location} alt="location svg" />{" "}
+              <Image
+                width={24}
+                height={24}
+                src={location}
+                alt="location svg"
+                loading="lazy"
+              />{" "}
               <p className="text-secondary-50">
                 Rua. 42 - QD 64 - LT 24 - Cardoso Continuação, Aparecida de
                 Goiânia - GO
               </p>
             </div>
             <div className="flex items-center gap-6">
-              <Image width={24} height={24} src={phone} alt="Phone svg" />
+              <Image
+                loading="lazy"
+                width={24}
+                height={24}
+                src={phone}
+                alt="Phone svg"
+              />
               <p className="text-secondary-50">+55 62 99881-7695</p>
             </div>
             <div className="flex items-center gap-6">
-              <Image width={24} height={24} src={email} alt="Email svg" />{" "}
+              <Image
+                loading="lazy"
+                width={24}
+                height={24}
+                src={email}
+                alt="Email svg"
+              />{" "}
               <p className="text-secondary-50">comercial@godrives.com.br</p>
             </div>
           </div>

@@ -34,6 +34,7 @@ export default function CarouselProcess() {
                 src={data.src}
                 width={340}
                 height={400}
+                loading="lazy"
                 className="max-lg:rounded-t-xl lg:rounded-l-xl"
                 alt={data.description}
               />

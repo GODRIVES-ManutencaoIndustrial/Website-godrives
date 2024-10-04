@@ -27,6 +27,7 @@ export default function WorkUs() {
                   width={128}
                   height={0}
                   alt="Logo terciária da godrives"
+                  loading="lazy"
                 />
                 <p className="z-10 text-4xl font-semibold text-primaryWhite max-lg:text-center">
                   Venha fazer parte da melhor empresa focada em{" "}
