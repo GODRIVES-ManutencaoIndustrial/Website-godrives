@@ -14,8 +14,8 @@ export default function WorkUs() {
   return (
     <main>
       <div className="h-20 w-full bg-secondary-900"></div>
-      <div className="flex w-full justify-center bg-secondary-900 px-10 shadow-2xl drop-shadow-xl max-lg:px-0">
-        <div className="flex w-full max-w-6xl items-center justify-between gap-4 overflow-hidden max-lg:w-80 max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
+      <div className="flex w-full justify-center bg-secondary-900 px-8 shadow-2xl drop-shadow-xl max-lg:px-6">
+        <div className="flex w-full max-w-6xl items-center justify-between gap-4 overflow-hidden max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
           <Motion
             initial={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.7, delay: 0.1 }}
@@ -44,6 +44,7 @@ export default function WorkUs() {
             whileInView={{ opacity: 1, y: 0 }}
             children={
               <Image
+                loading="lazy"
                 src={invertedLogo}
                 width={286}
                 height={0}
@@ -54,9 +55,9 @@ export default function WorkUs() {
           />
         </div>
       </div>
-      <div className="my-24 flex flex-col items-center bg-gray-100 px-6 max-lg:px-3">
-        <div className="max-w-6xl px-3 max-lg:w-80">
-          <h2 className="text-center text-[38px] font-bold leading-10 text-secondary-500">
+      <div className="my-24 flex flex-col items-center bg-gray-100 px-8 max-lg:px-6">
+        <div className="max-w-7xl">
+          <h2 className="text-left text-[38px] font-bold leading-10 text-secondary-500 md:text-center">
             Trabalhe conosco
           </h2>
           <p className="my-10 text-center text-base text-secondary-300 max-lg:text-left">
@@ -67,26 +68,44 @@ export default function WorkUs() {
             aqui é o lugar certo para você.
           </p>
 
-          <ul className="flex justify-around gap-7 px-7 max-lg:flex-col">
-            <li className="flex w-[40%] items-center justify-center gap-6">
-              <Image width={28} height={28} src={location} alt="location svg" />{" "}
+          <div className="flex flex-col gap-7 lg:flex-row">
+            <div className="flex items-center gap-6 lg:gap-3">
+              <Image
+                loading="lazy"
+                width={28}
+                height={28}
+                src={location}
+                alt="location svg"
+              />{" "}
               <p className="text-secondary-300">
                 Rua. 42 - QD 64 - LT 28 - Cardoso Continuação, Aparecida de
                 Goiânia - GO
               </p>
-            </li>
-            <li className="flex w-[30%] items-center justify-center gap-6">
-              <Image width={28} height={28} src={phone} alt="Phone svg" />
+            </div>
+            <div className="flex items-center gap-6 lg:gap-3">
+              <Image
+                loading="lazy"
+                width={28}
+                height={28}
+                src={phone}
+                alt="Phone svg"
+              />
               <p className="text-secondary-300">+55 62 99881-7695</p>
-            </li>
-            <li className="flex w-[30%] items-center justify-center gap-6">
-              <Image width={28} height={28} src={email} alt="Email svg" />{" "}
+            </div>
+            <div className="flex items-center gap-6 lg:gap-3">
+              <Image
+                loading="lazy"
+                width={28}
+                height={28}
+                src={email}
+                alt="Email svg"
+              />{" "}
               <p className="text-secondary-300">comercial@godrives.com.br</p>
-            </li>
-          </ul>
+            </div>
+          </div>
 
           <div className="my-14 w-full">
-            <div className="mx-auto my-0 h-[2px] max-w-3xl bg-secondary-500" />
+            <div className="mx-auto my-0 h-[2px] bg-secondary-500 lg:max-w-3xl" />
           </div>
 
           <ContactFormCollaborators url={url} />

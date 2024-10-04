@@ -8,8 +8,8 @@ export default function Serviços() {
   return (
     <main className="">
       <div className="h-20 w-full bg-secondary-900"></div>
-      <div className="flex w-full justify-center bg-secondary-900 px-10 shadow-2xl drop-shadow-xl max-lg:px-0">
-        <div className="flex w-full max-w-6xl items-center justify-between gap-4 overflow-hidden max-lg:w-80 max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
+      <div className="flex w-full justify-center bg-secondary-900 px-8 shadow-2xl drop-shadow-xl max-lg:px-4">
+        <div className="flex w-full max-w-6xl items-center justify-between gap-4 overflow-hidden max-lg:flex-col max-lg:gap-0 max-lg:pb-5 max-lg:pt-16">
           <Motion
             initial={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.7, delay: 0.1 }}
@@ -39,23 +39,23 @@ export default function Serviços() {
             children={
               <Image
                 src={invertedLogo}
-                width={286}
+                width={0}
                 height={0}
                 alt="Logo invertida godrives"
-                className="min-w-max opacity-70 max-lg:-mt-24"
+                className="w-full opacity-70 max-lg:-mt-24"
               />
             }
           />
         </div>
       </div>
 
-      <div className="my-24 flex flex-col items-center bg-gray-100 px-10">
+      <div className="my-24 flex flex-col items-center bg-gray-100 px-8">
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           whileInView={{ opacity: 1, y: 0 }}
           children={
-            <div className="max-w-6xl max-lg:w-80">
+            <div className="max-w-6xl">
               <h2 className="text-center text-[38px] font-bold leading-10 text-secondary-500">
                 Saiba mais sobre os nossos serviços
               </h2>

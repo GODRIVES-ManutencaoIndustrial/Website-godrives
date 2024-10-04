@@ -14,13 +14,9 @@ import {
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
 import {
@@ -56,7 +52,7 @@ export default function Navbar() {
     <header
       className={`fixed z-50 w-full px-5 ${scrolled ? "bg-backgroundNavBar" : "bg-transparent"}`}
     >
-      <nav className="mx-auto my-0 flex h-[74px] max-w-7xl items-center justify-between max-lg:max-w-lg">
+      <nav className="mx-auto my-0 flex h-[74px] max-w-7xl items-center justify-between">
         <div className="pr-36">
           <Link href={"/"}>
             <Image
@@ -70,7 +66,7 @@ export default function Navbar() {
         </div>
 
         <Sheet>
-          <SheetTrigger className="lg:hidden">
+          <SheetTrigger className="lg:hidden" aria-label="Expandir menu mobile">
             <HiOutlineMenuAlt3 size={42} className="text-blue" />
           </SheetTrigger>
           <SheetContent className="flex flex-col items-center gap-10 bg-blue p-0 pt-10">
@@ -151,9 +147,10 @@ export default function Navbar() {
 
             <SheetClose asChild>
               <button
-                onClick={() =>
-                  (window.location.href = "https://wa.me/5562998817695")
-                }
+                aria-label="Fale conosco no menu mobile"
+                onClick={() => {
+                  window.location.href = "https://wa.me/5562998817695"
+                }}
                 className="inline-flex h-[56px] w-52 items-center justify-center gap-4 rounded-[28px] border-2 border-secondary-900 bg-blue fill-secondary-900 py-3 text-blue-900 transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue"
               >
                 <p className="text-lg font-medium">Fale Conosco</p>
@@ -171,24 +168,6 @@ export default function Navbar() {
         </Sheet>
 
         <>
-          {/* <ul className="hidden h-full items-end gap-8 text-blue lg:flex">
-            <li
-              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/" ? "border-b-2 border-blue brightness-150" : ""}`}
-            >
-              <a href="/">Início</a>
-            </li>
-            <li
-              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/servicos" ? "border-b-2 border-blue brightness-150" : ""}`}
-            >
-              <a href="/servicos">Serviços</a>
-            </li>
-            <li
-              className={`h-[46px] text-blue transition-all hover:brightness-150 ${pathname === "/trabalheConosco" ? "border-b-2 border-blue brightness-150" : ""}`}
-            >
-              <a href="/trabalheConosco">Trabalhe Conosco</a>
-            </li>
-          </ul> */}
-
           <NavigationMenu className="hidden h-full items-end text-blue lg:flex">
             <NavigationMenuList className="gap-8">
               <NavigationMenuItem
@@ -204,41 +183,53 @@ export default function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-backgroundNavBar px-10 py-7">
                   <ul className="flex w-48 flex-col text-sm text-blue">
-                    <Link
-                      href="/#about"
-                      title="Introduction"
-                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
-                    >
-                      Sobre Nós
-                    </Link>
-                    <Link
-                      href="/#contact"
-                      title="Introduction"
-                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
-                    >
-                      Contato
-                    </Link>
-                    <Link
-                      href="/trabalheConosco"
-                      title="Introduction"
-                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
-                    >
-                      Trabalhe Conosco
-                    </Link>
-                    <Link
-                      href="#FAQ"
-                      title="Introduction"
-                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
-                    >
-                      Perguntas Frequentes
-                    </Link>
-                    <Link
-                      href="/#processos"
-                      title="Introduction"
-                      className="rounded-xl p-3 font-medium transition-all hover:bg-blue-600 hover:text-blue-950 hover:brightness-150"
-                    >
-                      Processos
-                    </Link>
+                    <li className="rounded-xl font-medium transition-all hover:cursor-pointer hover:bg-blue-600 hover:text-blue-950 hover:brightness-150">
+                      <Link
+                        href="/#about"
+                        title="Introduction"
+                        className="inline-flex w-full p-3"
+                      >
+                        Sobre Nós
+                      </Link>
+                    </li>
+
+                    <li className="rounded-xl font-medium transition-all hover:cursor-pointer hover:bg-blue-600 hover:text-blue-950 hover:brightness-150">
+                      <Link
+                        href="/#contact"
+                        title="Introduction"
+                        className="inline-flex w-full p-3"
+                      >
+                        Contato
+                      </Link>
+                    </li>
+                    <li className="rounded-xl font-medium transition-all hover:cursor-pointer hover:bg-blue-600 hover:text-blue-950 hover:brightness-150">
+                      <Link
+                        href="/trabalheConosco"
+                        title="Introduction"
+                        className="inline-flex w-full p-3"
+                      >
+                        Trabalhe Conosco
+                      </Link>
+                    </li>
+                    <li className="rounded-xl font-medium transition-all hover:cursor-pointer hover:bg-blue-600 hover:text-blue-950 hover:brightness-150">
+                      {" "}
+                      <Link
+                        href="#FAQ"
+                        title="Introduction"
+                        className="inline-flex w-full p-3"
+                      >
+                        Perguntas Frequentes
+                      </Link>
+                    </li>
+                    <li className="rounded-xl font-medium transition-all hover:cursor-pointer hover:bg-blue-600 hover:text-blue-950 hover:brightness-150">
+                      <Link
+                        href="/#processos"
+                        title="Introduction"
+                        className="inline-flex w-full p-3"
+                      >
+                        Processos
+                      </Link>
+                    </li>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -255,7 +246,10 @@ export default function Navbar() {
             target="_blank"
             className="hidden lg:flex"
           >
-            <button className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-blue px-7 py-2.5 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
+            <button
+              aria-label="Fale conosco menu desktop"
+              className="bg-transparent hover:text-backgroundBlue rounded-3xl border-2 border-blue px-7 py-2.5 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900"
+            >
               Fale Conosco
             </button>
           </Link>

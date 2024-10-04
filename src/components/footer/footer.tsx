@@ -10,15 +10,14 @@ import { FaYoutube } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <div className="w-full bg-secondary-900 px-5 pb-14 pt-20">
-      <div className="mx-auto my-0 max-w-7xl max-lg:max-w-lg">
+    <div className="w-full bg-secondary-900 px-6 pb-14 pt-20 lg:px-8">
+      <div className="mx-auto my-0 max-w-7xl">
         <div className="flex justify-between gap-6 max-lg:flex-col">
           <div className="flex flex-col gap-1">
             <Image
               src={"/logoMarca.svg"}
               width={188}
               height={0}
-              // className="min-w-max opacity-80 mix-blend-overlay"
               alt="Logo marca GODRIVES"
             />
             <p className="text-xl font-medium text-primaryWhite">
@@ -34,7 +33,10 @@ export default function Footer() {
             <p className="text-lg">Siga as nossas redes sociais</p>
             <ul className="flex">
               <li className="flex items-center justify-between gap-5">
-                <Link href={"https://www.instagram.com/go.drives/"}>
+                <Link
+                  href={"https://www.instagram.com/go.drives/"}
+                  aria-label="Ícone link para instagram da godrives"
+                >
                   <Image
                     src={"/instagram.png"}
                     width={40}
@@ -47,6 +49,7 @@ export default function Footer() {
                   href={
                     "https://www.linkedin.com/company/go-drives/posts/?feedView=all"
                   }
+                  aria-label="Ícone link para linkedin da godrives"
                 >
                   <Image
                     src={"/Linkedin.png"}
@@ -56,29 +59,32 @@ export default function Footer() {
                   />
                 </Link>
 
-                <Link href={"https://www.youtube.com/@GODrives/videos"}>
+                <Link
+                  href={"https://www.youtube.com/@GODrives/videos"}
+                  aria-label="Ícone link para youtube da godrives"
+                >
                   <FaYoutube size={36} />
                 </Link>
               </li>
             </ul>
           </div>
-          <ul className="flex flex-col gap-7 text-sm">
-            <li className="flex items-center gap-6">
+          <div className="flex flex-col gap-7 text-sm">
+            <div className="flex items-center gap-6">
               <Image width={24} height={24} src={location} alt="location svg" />{" "}
               <p className="text-secondary-50">
                 Rua. 42 - QD 64 - LT 24 - Cardoso Continuação, Aparecida de
                 Goiânia - GO
               </p>
-            </li>
-            <li className="flex items-center gap-6">
+            </div>
+            <div className="flex items-center gap-6">
               <Image width={24} height={24} src={phone} alt="Phone svg" />
               <p className="text-secondary-50">+55 62 99881-7695</p>
-            </li>
-            <li className="flex items-center gap-6">
+            </div>
+            <div className="flex items-center gap-6">
               <Image width={24} height={24} src={email} alt="Email svg" />{" "}
               <p className="text-secondary-50">comercial@godrives.com.br</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div className="flex gap-6 max-md:flex-col lg:gap-8">
             <Link
               href={"/"}
@@ -98,27 +104,19 @@ export default function Footer() {
                 Empresa
               </h4>
               <ul className="flex flex-col items-start gap-2 text-xs text-secondary-50">
-                <Link
-                  className="cursor-pointer hover:text-blue"
-                  href={"/#about"}
-                >
-                  Sobre Nós
-                </Link>
-                <Link
-                  className="cursor-pointer hover:text-blue"
-                  href={"/#contact"}
-                >
-                  Contato
-                </Link>
-                <Link
-                  className="cursor-pointer hover:text-blue"
-                  href={"/trabalheConosco"}
-                >
-                  Trabalhe Conosco
-                </Link>
-                <Link className="cursor-pointer hover:text-blue" href={"#FAQ"}>
-                  Perguntas Frequentes
-                </Link>
+                <li className="cursor-pointer hover:text-blue">
+                  <Link href={"/#about"}>Sobre Nós</Link>
+                </li>
+
+                <li className="cursor-pointer hover:text-blue">
+                  <Link href={"/#contact"}>Contato</Link>
+                </li>
+                <li className="cursor-pointer hover:text-blue">
+                  <Link href={"/trabalheConosco"}>Trabalhe Conosco</Link>
+                </li>
+                <li className="cursor-pointer hover:text-blue">
+                  <Link href={"#FAQ"}>Perguntas Frequentes</Link>
+                </li>
               </ul>
             </div>
           </div>

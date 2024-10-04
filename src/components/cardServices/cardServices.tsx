@@ -16,27 +16,25 @@ export default function CardServices() {
             children={
               <div
                 key={title}
-                className="flex w-full items-center justify-between gap-20 max-xl:gap-16 max-lg:flex-col max-lg:gap-12"
+                className="flex w-full items-center justify-between gap-20 max-xl:gap-16 max-lg:gap-12 max-md:flex-col"
               >
                 <Image
-                  className="h-[26rem] w-[26rem] rounded-3xl bg-gray-50 shadow-2xl max-lg:max-h-[300px] max-lg:max-w-[300px]"
+                  className="rounded-3xl bg-gray-50 shadow-2xl md:h-[23rem] md:w-[23rem] lg:h-[26rem] lg:w-[26rem] xl:h-[28rem] xl:w-[28rem]"
                   src={src}
-                  // width={300}
-                  // height={300}
                   alt={description}
                 />
-                <div className="flex h-96 items-center max-lg:h-auto max-lg:px-4">
+                <div className="flex items-center">
                   <div className="w-full">
-                    <h3 className="text-left text-3xl font-light text-secondary-500">
+                    <h3 className="text-left text-3xl font-light text-secondary-500 xl:text-4xl">
                       {title}
                     </h3>
-                    <p className="my-4 w-full text-base text-secondary-300 max-lg:text-sm">
+                    <p className="my-4 w-full text-base text-secondary-300 max-lg:text-sm lg:text-lg">
                       {description}
                     </p>
                     <Link
                       className="flex h-14 w-52 items-center justify-center rounded-2xl bg-blue text-center text-lg text-primaryWhite transition-all hover:brightness-90"
-                      // onClick={() => (window.location.href = "https://wa.me/5562998817695")}
                       href={"https://wa.me/5562998817695"}
+                      target="_blank"
                     >
                       Fale conosco
                     </Link>

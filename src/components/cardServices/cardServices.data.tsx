@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image"
-import imageReparoInversorFrequencia from "../../../public/reparoInversorFrequencia.png"
-import imageReparoIHM from "../../../public/reparoIHM.png"
-import imageReparoSofstarter from "../../../public/reparoSoftStarter.png"
-import imageReparoServoAcionamento from "../../../public/reparoServoAcionamento.png"
-import imageReparoClp from "../../../public/reparoCLP.png"
-import atendimentoInLoco from "../../../public/AtendimentoInLoco.png"
-import treinamento from "../../../public/Treinamento.png"
-import automacaoIndustrial from "../../../public/automacaoIndustrial.png"
+import imageReparoInversorFrequencia from "../../../public/InversoresFrequencia.webp"
+import imageReparoIHM from "../../../public/ReparoIHM.webp"
+import imageReparoSofstarter from "../../../public/SoftStarter.webp"
+import imageReparoServoAcionamento from "../../../public/ServoAcionamento.webp"
+import imageReparoClp from "../../../public/ReparoPLC.webp"
+import atendimentoInLoco from "../../../public/AtendimentoInLoco.webp"
+import treinamento from "../../../public/treinamento.webp"
+import automacaoIndustrial from "../../../public/automacaoIndustrial.webp"
 
 export type DataCardServicesType = {
   title: string

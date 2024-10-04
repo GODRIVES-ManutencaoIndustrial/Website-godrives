@@ -9,12 +9,12 @@ import { Motion } from "../motion/motion"
 
 export default function Faq() {
   return (
-    <div id="FAQ" className="bg-secondary-900 px-3 py-28">
+    <div id="FAQ" className="bg-secondary-900 px-6 py-28 lg:px-8">
       <Motion
         initial={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="mx-auto my-0 max-w-lg lg:max-w-7xl"
+        className="mx-auto my-0 lg:max-w-7xl"
         children={
           <div>
             <h2 className="mx-auto my-0 mb-12 text-center text-4xl font-semibold leading-[2.5rem] text-primaryWhite">

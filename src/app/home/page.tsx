@@ -5,8 +5,7 @@ import ilustration from "@/../public/ilustration.svg"
 import location from "../../../public/Location.svg"
 import phone from "@/../public/Phone.svg"
 import email from "@/../public/Mail_inverse.svg"
-import equipeGodrives from "@/../public/EquipeGoDrives2.png"
-import DanielWork from "@/../public/DanielGoDrivesWork.png"
+import godrivesRepresentation from "@/../public/GODriveRepresentation.webp"
 import Carousel from "@/components/carousel/carousel"
 import Card from "@/components/card/card"
 import CarouselProcess from "@/components/carouselProcess/carouselProcess"
@@ -22,13 +21,13 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="relative overflow-hidden bg-secondary-900 py-[4.5rem] shadow-2xl drop-shadow-xl">
-        <div className="absolute left-0 flex h-[51rem] w-full -translate-y-[9%] items-center justify-center overflow-hidden bg-secondary-900 lg:h-screen">
+      <div className="relative overflow-hidden bg-secondary-900 py-[4.7rem] shadow-2xl drop-shadow-xl">
+        <div className="absolute left-0 flex h-[51rem] w-full -translate-y-[8%] items-center justify-center overflow-hidden bg-secondary-900 md:h-screen">
           <Hero />
         </div>
 
-        <div className="my-0 h-[51rem] w-full px-10 max-lg:px-0 lg:inline-flex lg:h-[92vh] lg:items-center lg:justify-center lg:py-20">
-          <div className="relative mx-auto my-0 max-lg:top-[17%] max-lg:w-80 lg:-mb-[8.5rem] lg:w-full">
+        <div className="my-0 h-[51rem] w-full px-10 max-md:px-4 md:inline-flex md:h-[97vh] md:items-center md:justify-center md:py-20">
+          <div className="relative mx-auto my-0 w-full max-md:top-[17%] md:-mb-[6.5rem]">
             <div>
               <div className="flex flex-col items-center gap-3">
                 <Motion
@@ -70,7 +69,7 @@ export default function Home() {
                       Manutenção de equipamentos{" "}
                       <span className="text-blue">eletrônicos industriais</span>{" "}
                     </p>
-                    <div className="mt-8 flex flex-col items-center justify-center gap-3 lg:flex-row">
+                    <div className="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row">
                       <Link
                         href={"#about"}
                         className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900"
@@ -79,7 +78,10 @@ export default function Home() {
                       </Link>
 
                       <Link href="https://wa.me/5562998817695" target="_blank">
-                        <button className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900">
+                        <button
+                          aria-label="Fale Conosco"
+                          className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900"
+                        >
                           Fale Conosco
                         </button>
                       </Link>
@@ -89,7 +91,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="mt-20 lg:mt-28">
+            <div className="mt-28 md:mt-28">
               <Motion
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -110,18 +112,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        id="about"
-        className="flex w-full justify-center bg-gray-50 px-3 py-28 shadow-xl lg:px-10"
-      >
+      <div id="about" className="bg-gray-50 px-6 py-28 shadow-xl lg:px-8">
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
           children={
-            <div className="max-w-6xl max-lg:w-80">
-              <div className="mb-7 grid grid-cols-2 max-lg:flex max-lg:flex-col max-lg:gap-7 lg:gap-3 min-[1056px]:gap-8 xl:gap-12">
-                <div className="flex flex-col gap-6 xl:gap-8">
+            <div className="mx-auto my-0 w-full max-w-6xl">
+              <div className="lg:gap mb-7 grid grid-cols-2 max-lg:flex max-lg:flex-col max-lg:gap-7 lg:gap-3 min-[1116px]:gap-7 xl:gap-8">
+                <div className="flex flex-col gap-6 lg:gap-4 xl:gap-5">
                   <div>
                     <p className="text-red">Sobre</p>
                     <h2 className="text-[38px] font-bold leading-10 text-secondary-500">
@@ -147,8 +146,7 @@ export default function Home() {
                 </div>
                 <div className="row-span-2 lg:min-w-[488px]">
                   <Image
-                    src={DanielWork}
-                    width={0}
+                    src={godrivesRepresentation}
                     alt="Daniel Diretor GoDrives"
                     className="rounded-xl"
                   />
@@ -156,7 +154,7 @@ export default function Home() {
                 <Carousel />
               </div>
 
-              <div className="mt-12 flex items-center px-6 max-lg:flex-col max-lg:gap-16 max-md:gap-10">
+              <div className="mt-12 flex items-center px-3 max-lg:flex-col max-lg:gap-16 max-md:gap-10 lg:px-6">
                 <div className="max-w flex w-full items-center">
                   <div className="flex h-[100px] w-36 flex-1 flex-col items-center border-l border-r border-gray-400">
                     <p className="w-20 text-center text-[40px] font-semibold text-blue">
@@ -203,10 +201,10 @@ export default function Home() {
         initial={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.7 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="flex w-full justify-center px-3 py-14 lg:px-10"
+        className="flex w-full justify-center px-6 py-14 lg:px-8"
         children={
           <div>
-            <div className="max-w-6xl max-lg:w-80">
+            <div className="w-full max-w-6xl">
               <div className="mb-12 flex flex-col gap-1">
                 <p className="text-red">Serviços</p>
                 <h2 className="text-4xl font-bold text-secondary-500">
@@ -220,12 +218,12 @@ export default function Home() {
         }
       />
 
-      <div className="w-full px-3 py-20 lg:px-10" id="processos">
+      <div className="w-full px-6 py-20 lg:px-8" id="processos">
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mx-auto my-0 max-w-6xl max-lg:w-80"
+          className="mx-auto my-0 max-w-6xl"
           children={
             <div>
               <div className="mb-9 flex flex-col gap-2">
@@ -262,6 +260,7 @@ export default function Home() {
               </div>
               <div className="relative flex w-[40%] items-center justify-center overflow-hidden max-xl:w-full">
                 <Image
+                  loading="lazy"
                   src={ilustration}
                   width={449}
                   height={437}
@@ -274,7 +273,10 @@ export default function Home() {
                   target="_blank"
                   className="absolute z-10 flex h-[64px] w-64 items-center"
                 >
-                  <button className="absolute flex h-full w-full items-center justify-center gap-5 rounded-[28px] border-2 border-blue bg-blue fill-secondary-900 text-xl text-blue-900 shadow-2xl drop-shadow-3xl transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue">
+                  <button
+                    aria-label="Fale Conosco"
+                    className="absolute flex h-full w-full items-center justify-center gap-5 rounded-[28px] border-2 border-blue bg-blue fill-secondary-900 text-xl text-blue-900 shadow-2xl drop-shadow-3xl transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue"
+                  >
                     Fale Conosco
                   </button>
                 </Link>
@@ -284,8 +286,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex w-full justify-center px-3 pb-16 pt-20 lg:px-10">
-        <div className="w-full max-w-6xl max-lg:w-80">
+      <div className="flex w-full justify-center px-6 pb-16 pt-20 lg:px-8">
+        <div className="w-full max-w-6xl">
           <Motion
             initial={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.7 }}
@@ -300,6 +302,7 @@ export default function Home() {
                   controls
                   muted
                   className="h-[500px] w-full rounded-xl border border-gray-200 shadow-xl"
+                  preload="none"
                 >
                   <source src="/institutionalVideo.mp4" type="video/mp4" />
                 </video>
@@ -330,9 +333,10 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <ul className="flex flex-col gap-7">
-                    <li className="flex items-center gap-6">
+                  <div className="flex flex-col gap-7">
+                    <div className="flex items-center gap-6">
                       <Image
+                        loading="lazy"
                         width={28}
                         height={28}
                         src={location}
@@ -342,18 +346,20 @@ export default function Home() {
                         Rua. 42 - QD 64 - LT 28 - Cardoso Continuação, Aparecida
                         de Goiânia - GO
                       </p>
-                    </li>
-                    <li className="flex items-center gap-6">
+                    </div>
+                    <div className="flex items-center gap-6">
                       <Image
+                        loading="lazy"
                         width={28}
                         height={28}
                         src={phone}
                         alt="Phone svg"
                       />
                       <p className="text-secondary-300">+55 62 99881-7695</p>
-                    </li>
-                    <li className="flex items-center gap-6">
+                    </div>
+                    <div className="flex items-center gap-6">
                       <Image
+                        loading="lazy"
                         width={28}
                         height={28}
                         src={email}
@@ -362,8 +368,8 @@ export default function Home() {
                       <p className="text-secondary-300">
                         comercial@godrives.com.br
                       </p>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
 
                   <div className="my-11 h-[2px] w-full bg-secondary-500" />
 
@@ -383,6 +389,7 @@ export default function Home() {
                         title="Visite https://mtdrives.com.br"
                       >
                         <Image
+                          loading="lazy"
                           width={28}
                           height={28}
                           src={location}
@@ -400,6 +407,7 @@ export default function Home() {
 
                       <div className="flex items-center gap-6 rounded-2xl border border-secondary-50 bg-gray-200 p-3 shadow transition-all last:text-secondary-500 hover:brightness-90">
                         <Image
+                          loading="lazy"
                           width={28}
                           height={28}
                           src={location}
@@ -421,12 +429,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center px-2 pb-28 lg:px-10">
+      <div className="flex justify-center px-6 pb-28 lg:px-8">
         <Motion
           initial={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="w-full max-w-lg lg:max-w-7xl"
+          className="w-full lg:max-w-7xl"
           children={
             <div>
               <h2 className="mb-8 text-center text-2xl font-bold text-secondary-500">

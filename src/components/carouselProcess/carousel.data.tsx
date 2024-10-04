@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image"
-import recebimento from "../../../public/recebimento.png"
-import inspecao from "../../../public/inspecao.png"
-import manutençao from "../../../public/manutencao.png"
-import limpeza from "../../../public/Limpeza.png"
-import testes from "../../../public/testesOficial.png"
+import recebimento from "../../../public/Recebimento.webp"
+import inspecao from "../../../public/inspecao.webp"
+import manutençao from "../../../public/manutencao.webp"
+import limpeza from "../../../public/Limpeza.webp"
+import testes from "../../../public/testesEnvio.webp"
 
 type TypeDataCarouselProcess = {
   title: string

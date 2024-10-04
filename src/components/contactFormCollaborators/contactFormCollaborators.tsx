@@ -1,5 +1,5 @@
 "use client"
-import { Controller, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import InputMask from "react-input-mask"
 import {
@@ -66,7 +66,7 @@ export default function ContactFormCollaborators({
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col items-center gap-6 py-3"
     >
-      <div className="flex w-full max-w-4xl gap-10 max-lg:flex-col">
+      <div className="flex w-full gap-10 max-lg:flex-col lg:max-w-4xl">
         <div className="flex w-1/2 flex-col gap-5 max-lg:w-full">
           <div className="flex flex-col gap-2">
             <label className="text-sm text-secondary-300" htmlFor="name">
@@ -184,6 +184,7 @@ export default function ContactFormCollaborators({
       </div>
 
       <button
+        aria-label="Enviar formulário colaboradores"
         type="submit"
         className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 lg:w-1/2 ${loading ? "brightness-150" : ""}`}
       >

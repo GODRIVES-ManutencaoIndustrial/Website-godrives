@@ -50,7 +50,7 @@ export default function ContactForm({ url }: ContactFormProps) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex w-full max-w-lg flex-col gap-7 py-3 lg:gap-8"
+      className="flex w-full flex-col gap-7 py-3 lg:max-w-lg lg:gap-8"
     >
       <div className="flex flex-col gap-2">
         <label className="text-sm text-secondary-300" htmlFor="name">
@@ -118,6 +118,7 @@ export default function ContactForm({ url }: ContactFormProps) {
       </div>
 
       <button
+        aria-label="Enviar formulário entre em contato"
         type="submit"
         className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 lg:h-[4.8rem] ${loading ? "brightness-150" : ""}`}
       >

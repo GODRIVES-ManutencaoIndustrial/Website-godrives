@@ -19,6 +19,7 @@ export default function Card() {
                 alt={data.description}
                 width={28}
                 height={28}
+                loading="lazy"
               />
               <div className="flex flex-col gap-3">
                 <h3 className="text-xl font-semibold text-secondary-500">
