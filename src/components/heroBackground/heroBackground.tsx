@@ -8,6 +8,7 @@ export default function HeroBackground() {
         src={heroWallpaper}
         width={0}
         height={0}
+        loading="lazy"
         className="min-w-max opacity-80 mix-blend-overlay lg:w-screen"
         alt="papel de parede represetado por um emaranhado de fios"
       />

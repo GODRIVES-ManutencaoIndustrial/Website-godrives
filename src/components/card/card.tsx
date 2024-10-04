@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { DataCard } from "./card.data"
 import { Motion } from "../motion/motion"
+import ready from "@/../public/ready.webp"
 
 export default function Card() {
   return (
@@ -15,7 +16,7 @@ export default function Card() {
           children={
             <>
               <Image
-                src={data.src}
+                src={ready}
                 alt={data.description}
                 width={28}
                 height={28}

@@ -28,6 +28,7 @@ import {
 
 import { usePathname } from "next/navigation"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
+import logo from "@/../public/logo.svg"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -56,7 +57,7 @@ export default function Navbar() {
         <div className="pr-36">
           <Link href={"/"}>
             <Image
-              src={"/logo.svg"}
+              src={logo}
               alt="logo GODRIVES"
               width={44}
               height={44}
