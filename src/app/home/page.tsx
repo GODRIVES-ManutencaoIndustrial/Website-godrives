@@ -299,15 +299,13 @@ export default function Home() {
                 <h2 className="mb-9 text-center text-4xl font-bold text-secondary-500">
                   Conheça nossa empresa
                 </h2>
-                <video
-                  autoPlay
-                  controls
-                  muted
-                  className="h-[500px] w-full rounded-xl border border-gray-200 shadow-xl"
-                  preload="none"
-                >
-                  <source src="/institutionalVideo.mp4" type="video/mp4" />
-                </video>
+                <iframe
+                  src="https://www.youtube.com/embed/8wIJUhKVqDM"
+                  className="h-[500px] w-full rounded-xl shadow-xl"
+                  loading="lazy"
+                  style={{ border: "none" }}
+                  title="Vídeo institucional da empresa GO Drives"
+                />
               </>
             }
           />
