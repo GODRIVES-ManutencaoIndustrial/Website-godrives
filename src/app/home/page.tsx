@@ -15,6 +15,7 @@ import GoogleMap from "@/components/googleMap/googleMap"
 import { Motion } from "@/components/motion/motion"
 import Brands from "@/components/brands/brands"
 import logo from "@/../public/logo.svg"
+import CompanyVideo from "@/components/companyVideo/companyVideo"
 
 export default function Home() {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY
@@ -299,13 +300,23 @@ export default function Home() {
                 <h2 className="mb-9 text-center text-4xl font-bold text-secondary-500">
                   Conheça nossa empresa
                 </h2>
-                <iframe
+                {/* <iframe
                   src="https://www.youtube.com/embed/8wIJUhKVqDM"
                   className="h-[500px] w-full rounded-xl shadow-xl"
                   loading="lazy"
                   style={{ border: "none" }}
                   title="Vídeo institucional da empresa GO Drives"
-                />
+                /> */}
+                <CompanyVideo />
+                {/* <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/8wIJUhKVqDM?si=xMkB19cPZZLnhix5"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe> */}
               </>
             }
           />
