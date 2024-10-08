@@ -23,14 +23,18 @@ export default function CompanyVideo() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
           className="h-[580px] w-full rounded-xl shadow-xl"
+          loading="lazy"
         ></iframe>
       ) : (
         <div className="relative">
           <img
-            src={thumbnailUrl}
+            src={
+              "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/thumbnail-I67uevACG8K3b8S6L9QeU92s0cxyFt.webp"
+            }
             alt="Thumbnail do vídeo"
             className="h-[580px] w-full cursor-pointer rounded-lg object-cover"
             onClick={loadVideo}
+            loading="lazy"
           />
           <IoLogoYoutube
             onClick={loadVideo}
