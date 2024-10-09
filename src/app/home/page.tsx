@@ -41,6 +41,7 @@ export default function Home() {
                       alt="logo GODRIVES"
                       width={48}
                       height={48}
+                      className="h-10 w-10 lg:h-12 lg:w-12"
                     />
                   }
                 />
@@ -49,7 +50,7 @@ export default function Home() {
                   // initial={{ opacity: 0, y: -50 }}
                   // whileInView={{ opacity: 1, y: 0 }}
                   // transition={{ ease: "easeOut", duration: 0.4, delay: 0.4 }}
-                  className="text-center text-base text-primaryWhite md:text-lg"
+                  className="text-center text-sm text-primaryWhite md:text-lg"
                   children={
                     <p>
                       Seja bem vindo a{" "}
@@ -66,7 +67,7 @@ export default function Home() {
                 // transition={{ ease: "easeOut", duration: 0.4, delay: 0.7 }}
                 className="text-center text-base text-primaryWhite md:text-lg"
                 children={
-                  <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite xl:text-4xl">
+                  <p className="mt-5 text-center text-[1.4rem] font-semibold leading-7 text-primaryWhite xl:text-4xl">
                     Manutenção de equipamentos{" "}
                     <span className="text-blue">eletrônicos industriais</span>{" "}
                   </p>
