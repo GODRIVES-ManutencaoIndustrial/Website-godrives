@@ -23,11 +23,11 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <div className="relative overflow-hidden bg-secondary-900 py-[4.7rem] shadow-2xl drop-shadow-xl">
-        <div className="absolute left-0 flex h-[51rem] w-full -translate-y-[8%] items-center justify-center overflow-hidden bg-secondary-900 md:h-screen">
+        <div className="absolute left-0 flex h-[48rem] w-full -translate-y-[8%] items-center justify-center overflow-hidden bg-secondary-900 md:h-screen">
           <Hero />
         </div>
 
-        <div className="my-0 h-[51rem] w-full px-10 max-md:px-4 md:inline-flex md:h-[97vh] md:items-center md:justify-center md:py-20">
+        <div className="my-0 h-[48rem] w-full px-10 max-md:px-4 md:inline-flex md:h-[97vh] md:items-center md:justify-center md:py-20">
           <div className="relative mx-auto my-0 w-full max-md:top-[17%] md:-mb-[6.5rem]">
             <div>
               <div className="flex flex-col items-center gap-3">
@@ -71,7 +71,7 @@ export default function Home() {
                       Manutenção de equipamentos{" "}
                       <span className="text-blue">eletrônicos industriais</span>{" "}
                     </p>
-                    <div className="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row">
+                    <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                       <Link
                         href={"#about"}
                         className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-primaryWhite px-7 py-3 font-medium text-primaryWhite transition-all hover:bg-primaryWhite hover:text-secondary-900"
