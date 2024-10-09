@@ -64,7 +64,7 @@ export default function Home() {
               <Motion
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeOut", duration: 0.2, delay: 0.8 }}
+                transition={{ ease: "easeOut", duration: 0.2, delay: 0.4 }}
                 children={
                   <>
                     <p className="mt-5 text-center text-[1.4rem] font-medium leading-7 text-primaryWhite lg:font-semibold xl:text-4xl">
@@ -97,7 +97,7 @@ export default function Home() {
               <Motion
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ ease: "easeOut", duration: 0.2, delay: 1 }}
+                transition={{ ease: "easeOut", duration: 0.2, delay: 0.6 }}
                 children={
                   <>
                     <h2 className="mb-6 text-center text-xl font-normal text-red">
