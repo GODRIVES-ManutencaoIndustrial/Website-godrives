@@ -32,9 +32,9 @@ export default function Home() {
             <div>
               <div className="flex flex-col items-center gap-3">
                 <Motion
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ ease: "easeOut", duration: 0.3 }}
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ ease: "easeOut", duration: 0.3 }}
                   children={
                     <Image
                       src={logo}
@@ -46,9 +46,9 @@ export default function Home() {
                 />
 
                 <Motion
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ ease: "easeOut", duration: 0.4, delay: 0.3 }}
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ ease: "easeOut", duration: 0.4, delay: 0.3 }}
                   className="text-center text-base text-primaryWhite md:text-lg"
                   children={
                     <p>
@@ -61,15 +61,24 @@ export default function Home() {
               </div>
 
               <Motion
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeOut", duration: 0.4, delay: 0.5 }}
+                // initial={{ opacity: 0, y: -50 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.3 }}
+                className="text-center text-base text-primaryWhite md:text-lg"
+                children={
+                  <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite xl:text-4xl">
+                    Manutenção de equipamentos{" "}
+                    <span className="text-blue">eletrônicos industriais</span>{" "}
+                  </p>
+                }
+              />
+
+              <Motion
+                // initial={{ opacity: 0, y: -50 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.5 }}
                 children={
                   <>
-                    <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite xl:text-4xl">
-                      Manutenção de equipamentos{" "}
-                      <span className="text-blue">eletrônicos industriais</span>{" "}
-                    </p>
                     <div className="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row">
                       <Link
                         href={"#about"}
@@ -94,9 +103,9 @@ export default function Home() {
 
             <div className="mt-28 md:mt-28">
               <Motion
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ ease: "easeOut", duration: 0.4, delay: 0.8 }}
+                // initial={{ opacity: 0, x: 50 }}
+                // whileInView={{ opacity: 1, x: 0 }}
+                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.8 }}
                 children={
                   <>
                     <h2 className="mb-6 text-center text-xl font-normal text-red">
