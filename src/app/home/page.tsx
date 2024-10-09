@@ -17,7 +17,7 @@ import logo from "@/../public/logo.svg"
 import CompanyVideo from "@/components/companyVideo/companyVideo"
 
 export default function Home() {
-  // const apiKey = process.env.GOOGLE_MAPS_API_KEY
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY
   const url = process.env.URL
 
   return (
@@ -298,6 +298,23 @@ export default function Home() {
                 </Link>
               </div>
             </>
+          }
+        />
+      </div>
+
+      <div className="flex justify-center px-6 pb-28 lg:px-8">
+        <Motion
+          initial={{ opacity: 0, y: -30 }}
+          transition={{ duration: 0.7 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="w-full lg:max-w-7xl"
+          children={
+            <div>
+              <h2 className="mb-8 text-center text-2xl font-bold text-secondary-500">
+                Localização
+              </h2>
+              <GoogleMap apiKey={apiKey} />
+            </div>
           }
         />
       </div>
