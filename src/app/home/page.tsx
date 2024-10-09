@@ -64,22 +64,13 @@ export default function Home() {
               <Motion
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeOut", duration: 0.2, delay: 0.5 }}
-                className="text-center text-base text-primaryWhite md:text-lg"
-                children={
-                  <p className="mt-5 text-center text-[1.4rem] font-medium leading-7 text-primaryWhite lg:font-semibold xl:text-4xl">
-                    Manutenção de equipamentos{" "}
-                    <span className="text-blue">eletrônicos industriais</span>{" "}
-                  </p>
-                }
-              />
-
-              <Motion
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 0.2, delay: 0.8 }}
                 children={
                   <>
+                    <p className="mt-5 text-center text-[1.4rem] font-medium leading-7 text-primaryWhite lg:font-semibold xl:text-4xl">
+                      Manutenção de equipamentos{" "}
+                      <span className="text-blue">eletrônicos industriais</span>{" "}
+                    </p>
                     <div className="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row">
                       <Link
                         href={"#about"}
