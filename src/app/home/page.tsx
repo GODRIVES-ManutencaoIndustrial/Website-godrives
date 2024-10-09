@@ -63,19 +63,6 @@ export default function Home() {
               <Motion
                 // initial={{ opacity: 0, y: -50 }}
                 // whileInView={{ opacity: 1, y: 0 }}
-                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.3 }}
-                className="text-center text-base text-primaryWhite md:text-lg"
-                children={
-                  <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite xl:text-4xl">
-                    Manutenção de equipamentos{" "}
-                    <span className="text-blue">eletrônicos industriais</span>{" "}
-                  </p>
-                }
-              />
-
-              <Motion
-                // initial={{ opacity: 0, y: -50 }}
-                // whileInView={{ opacity: 1, y: 0 }}
                 // transition={{ ease: "easeOut", duration: 0.4, delay: 0.5 }}
                 children={
                   <>
