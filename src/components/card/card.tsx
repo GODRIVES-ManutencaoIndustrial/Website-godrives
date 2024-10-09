@@ -16,7 +16,7 @@ export default function Card() {
           children={
             <>
               <Image
-                src={ready}
+                src="https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/servi%C3%A7os/ready-RaU4DCuSSC8trLo8FaJ7FTHvjX9zpP.webp"
                 alt={data.description}
                 width={28}
                 height={28}

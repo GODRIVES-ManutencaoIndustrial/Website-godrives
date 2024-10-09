@@ -7,7 +7,7 @@ export default function CardServices() {
   return (
     <div className="my-20 flex w-full flex-col items-center gap-32 max-lg:gap-20">
       {DataCardServices.map(
-        ({ title, description, src }: DataCardServicesType) => (
+        ({ title, description, src, width, height }: DataCardServicesType) => (
           <Motion
             initial={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.7, delay: 0.1 }}
@@ -23,6 +23,8 @@ export default function CardServices() {
                   src={src}
                   alt={description}
                   loading="lazy"
+                  width={width}
+                  height={height}
                 />
                 <div className="flex items-center">
                   <div className="w-full">
