@@ -302,23 +302,6 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex justify-center px-6 pb-28 lg:px-8">
-        <Motion
-          initial={{ opacity: 0, y: -30 }}
-          transition={{ duration: 0.7 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="w-full lg:max-w-7xl"
-          children={
-            <div>
-              <h2 className="mb-8 text-center text-2xl font-bold text-secondary-500">
-                Localização
-              </h2>
-              <GoogleMap apiKey={apiKey} />
-            </div>
-          }
-        />
-      </div>
-
       <div className="flex w-full justify-center px-6 pb-16 pt-20 lg:px-8">
         <div className="w-full max-w-6xl">
           <Motion
@@ -452,6 +435,23 @@ export default function Home() {
             }
           />
         </div>
+      </div>
+
+      <div className="flex justify-center px-6 pb-28 lg:px-8">
+        <Motion
+          initial={{ opacity: 0, y: -30 }}
+          transition={{ duration: 0.7 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="w-full lg:max-w-7xl"
+          children={
+            <div>
+              <h2 className="mb-8 text-center text-2xl font-bold text-secondary-500">
+                Localização
+              </h2>
+              <GoogleMap apiKey={apiKey} />
+            </div>
+          }
+        />
       </div>
     </div>
   )
