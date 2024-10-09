@@ -17,7 +17,7 @@ import logo from "@/../public/logo.svg"
 import CompanyVideo from "@/components/companyVideo/companyVideo"
 
 export default function Home() {
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY
+  // const apiKey = process.env.GOOGLE_MAPS_API_KEY
   const url = process.env.URL
 
   return (
@@ -34,7 +34,7 @@ export default function Home() {
                 <Motion
                   // initial={{ opacity: 0, y: -50 }}
                   // whileInView={{ opacity: 1, y: 0 }}
-                  // transition={{ ease: "easeOut", duration: 0.3 }}
+                  // transition={{ ease: "easeOut", duration: 0.4 }}
                   children={
                     <Image
                       src={logo}
@@ -48,7 +48,7 @@ export default function Home() {
                 <Motion
                   // initial={{ opacity: 0, y: -50 }}
                   // whileInView={{ opacity: 1, y: 0 }}
-                  // transition={{ ease: "easeOut", duration: 0.4, delay: 0.3 }}
+                  // transition={{ ease: "easeOut", duration: 0.4, delay: 0.4 }}
                   className="text-center text-base text-primaryWhite md:text-lg"
                   children={
                     <p>
@@ -63,7 +63,20 @@ export default function Home() {
               <Motion
                 // initial={{ opacity: 0, y: -50 }}
                 // whileInView={{ opacity: 1, y: 0 }}
-                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.5 }}
+                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.7 }}
+                className="text-center text-base text-primaryWhite md:text-lg"
+                children={
+                  <p className="mt-5 text-center text-3xl font-semibold text-primaryWhite xl:text-4xl">
+                    Manutenção de equipamentos{" "}
+                    <span className="text-blue">eletrônicos industriais</span>{" "}
+                  </p>
+                }
+              />
+
+              <Motion
+                // initial={{ opacity: 0, y: -50 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.9 }}
                 children={
                   <>
                     <div className="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row">
@@ -92,7 +105,7 @@ export default function Home() {
               <Motion
                 // initial={{ opacity: 0, x: 50 }}
                 // whileInView={{ opacity: 1, x: 0 }}
-                // transition={{ ease: "easeOut", duration: 0.4, delay: 0.8 }}
+                // transition={{ ease: "easeOut", duration: 0.4, delay: 1 }}
                 children={
                   <>
                     <h2 className="mb-6 text-center text-xl font-normal text-red">
@@ -421,23 +434,6 @@ export default function Home() {
             }
           />
         </div>
-      </div>
-
-      <div className="flex justify-center px-6 pb-28 lg:px-8">
-        <Motion
-          initial={{ opacity: 0, y: -30 }}
-          transition={{ duration: 0.7 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="w-full lg:max-w-7xl"
-          children={
-            <div>
-              <h2 className="mb-8 text-center text-2xl font-bold text-secondary-500">
-                Localização
-              </h2>
-              <GoogleMap apiKey={apiKey} />
-            </div>
-          }
-        />
       </div>
     </div>
   )
