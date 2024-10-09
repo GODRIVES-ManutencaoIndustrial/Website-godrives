@@ -38,7 +38,9 @@ export default function Footer() {
                   aria-label="Ícone link para instagram da godrives"
                 >
                   <Image
-                    src={"/instagram.png"}
+                    src={
+                      "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/instagram-6G6DVqT21OdcHzuEP4Nx6xXZvV0rhD.png"
+                    }
                     width={40}
                     height={40}
                     alt="Ícone link Instagram"
@@ -53,7 +55,9 @@ export default function Footer() {
                   aria-label="Ícone link para linkedin da godrives"
                 >
                   <Image
-                    src={"/Linkedin.png"}
+                    src={
+                      "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/Linkedin-tuyNcnvKcMnHvJFoY0xJCxU3Hri21U.png"
+                    }
                     width={40}
                     height={40}
                     alt="Ícone link Linkedin"
