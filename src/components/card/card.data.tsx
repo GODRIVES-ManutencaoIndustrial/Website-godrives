@@ -10,12 +10,12 @@ export const DataCard: DataCardType[] = [
       "Diagnóstico e reparo precisos de inversores para garantir eficiência e controle dos motores industriais.",
   },
   {
-    title: "Reparo de Soft Starter",
+    title: "Reparo de Soft Starters",
     description:
-      "Manutenção de soft starter para partidas suaves de motores, reduzindo o desgaste e aumentando a vida útil.",
+      "Manutenção de soft starters para partidas suaves de motores, reduzindo o desgaste e aumentando a vida útil.",
   },
   {
-    title: "Reparo de IHM",
+    title: "Reparo de IHMs",
     description:
       "Correção rápida de IHMs para operação contínua e segura, facilitando assim a interação com os sistemas industriais.",
   },
@@ -25,12 +25,12 @@ export const DataCard: DataCardType[] = [
       "Diagnóstico e reparo de servos acionamentos para controle preciso de movimento em máquinas industriais.",
   },
   {
-    title: "Reparo de PLC",
+    title: "Reparo de PLCs",
     description:
       "Reparo completo de PLCs para garantir a automação eficiente e funcional das operações industriais.",
   },
   {
-    title: "Reparo de Painel PC",
+    title: "Reparo de Painéis PC",
     description:
       "Manutenção de Painéis PC para monitoramento e controle contínuos em ambientes industriais rigorosos.",
   },

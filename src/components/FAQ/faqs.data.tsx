@@ -14,7 +14,7 @@ export const frequencesQuestion: FrequencesQuestionType[] = [
   {
     question: "Quais equipamentos a GO Drives repara ?",
     response:
-      "Nós oferecemos serviços de reparo para uma ampla gama de equipamentos, incluindo inversores de frequência, soft starter, IHMs, servos acionamentos, PLCs, e Painéis PC. Temos experiência em diversas marcas líderes do mercado industrial.",
+      "Nós oferecemos serviços de reparo para uma ampla gama de equipamentos, incluindo inversores de frequência, soft starters, IHMs, servos acionamentos, PLCs, e Painéis PC. Temos experiência em diversas marcas líderes do mercado industrial.",
     value: "item 2",
   },
   {

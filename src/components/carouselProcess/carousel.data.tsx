@@ -32,7 +32,7 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Testes e envio",
     description:
-      "Realizamos vários de testes com carga aplicada, de acordo com a capacidade nominal de cada equipamento, após isso enviamos os equipamentos de volta ao cliente, acompanhando o status da entrega e a satisfação dos nossos clientes.",
+      "Realizamos vários testes com carga aplicada de acordo com a capacidade nominal de cada equipamento, após isso enviamos os equipamentos de volta ao cliente, acompanhando o status da entrega e a satisfação dos nossos clientes.",
     src: "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/processos/testesEnvio-TWSAX76YcZ2DyPBeqyBoab2nO1LAhM.webp",
   },
 ]

@@ -16,9 +16,9 @@ export const DataCardServices: DataCardServicesType[] = [
     height: 2045,
   },
   {
-    title: "Reparo de Soft Starter",
+    title: "Reparo de Soft Starters",
     description:
-      "Os soft starter são dispositivos essenciais para o controle suave da partida e parada de motores, reduzindo o desgaste mecânico e prolongando a vida útil dos equipamentos. Nosso serviço de reparo em soft starter garante que seus motores operem de maneira confiável e eficiente, minimizando o tempo de inatividade e maximizando a produtividade.",
+      "Os soft starters são dispositivos essenciais para o controle suave da partida e parada de motores, reduzindo o desgaste mecânico e prolongando a vida útil dos equipamentos. Nosso serviço de reparo em soft starter garante que seus motores operem de maneira confiável e eficiente, minimizando o tempo de inatividade e maximizando a produtividade.",
     src: "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/servi%C3%A7os/SoftStarter-4QoKdJCF2XrqnLn2O5ZLOTKHOcFHZG.webp",
     width: 2024,
     height: 2024,
