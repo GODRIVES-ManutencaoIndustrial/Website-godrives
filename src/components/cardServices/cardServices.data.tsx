@@ -44,7 +44,7 @@ export const DataCardServices: DataCardServicesType[] = [
     title: "Reparo de IHMs",
     description:
       "As IHMs são fundamentais para a interação entre operadores e sistemas de controle industrial. Oferecemos serviços de reparo para IHMs de diversas marcas e modelos, garantindo uma interface de usuário funcional e intuitiva. Nossa equipe diagnostica e corrige problemas de forma rápida, permitindo uma operação ininterrupta e segura.",
-    src: "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/servi%C3%A7os/ReparoIHM-aOidBDsOmF8Ny98hhTYa6morzhmEQ2.webp",
+    src: "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/servi%C3%A7os/ReparoIHM-UbWRJ4yaKa3cFWOqmFvGcDGnWLULNL.webp",
     width: 2003,
     height: 2003,
   },
