@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
 
     <p>Obrigado,</p>
     <p><strong>Equipe GO Drives</strong></p>
-    <p><a href="https://website-tau-pink.vercel.app">https://website-tau-pink.vercel.app</a></p>
+    <p><a href="https://godrives.com.br">https://godrives.com.br</a></p>
 
     <div class="footer">
       <p>&copy; GO Drives. Todos os direitos reservados.</p>
