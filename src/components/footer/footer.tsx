@@ -147,7 +147,7 @@ export default function Footer() {
         </div>
         <div className="my-16 h-px w-full bg-[#0c8cbf]" />
         <div className="flex flex-col justify-center gap-2 text-center text-sm text-secondary-200">
-          <p>©2024 - GODRIVES | Todos os direitos reservardos</p>
+          <p>©2024 - GODRIVES | Todos os direitos reservados</p>
           <p className="text-xs opacity-70">
             Desenvolvido por Gabriel Manicucci
             <span className="ml-3">-</span>

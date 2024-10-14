@@ -20,13 +20,13 @@ export const DataCarouselProcess: TypeDataCarouselProcess[] = [
   {
     title: "Limpeza",
     description:
-      "os Equipamentos são levados a limpeza industrial, onde utilizamos produtos apropriados no seu equipamento. O pó pode se tornar um condutor de eletricidade e danificar o equipamento, por isso levamos muito a sério a limpeza.",
+      "Equipamentos são levados a limpeza industrial, onde utilizamos produtos apropriados no seu equipamento. O pó pode se tornar um condutor de eletricidade e danificar o equipamento, por isso levamos muito a sério a limpeza.",
     src: "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/processos/Limpeza-7yCAFmqispunEbsyJc1doEbIqVhZ8L.webp",
   },
   {
     title: "Manutenção",
     description:
-      "Os nossos técnicos altamente qualificados realizam a troca dos componentes e peças com defeito. Para isso, dispomos de um vasto conhecimento em eletrônica, pois devolvemos o equipamento à vida com muita qualidade e agilidade.",
+      "Nossos técnicos altamente qualificados realizam a troca dos componentes e peças com defeito. Para isso, dispomos de um vasto conhecimento em eletrônica, pois devolvemos o equipamento à vida com muita qualidade e agilidade.",
     src: "https://n6ex5dyrtzbs9rq2.public.blob.vercel-storage.com/processos/manutencao-ElsTgjpg3WsSmHcHbdE5ITSfpweDwi.webp",
   },
   {
