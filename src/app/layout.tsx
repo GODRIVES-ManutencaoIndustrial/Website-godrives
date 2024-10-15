@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "Indústria",
     "Manutenção",
     "Inversores de Frequência",
+    "Manutenção Industrial",
   ],
   authors: [
     {
