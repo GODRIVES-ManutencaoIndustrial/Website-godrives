@@ -8,7 +8,7 @@ export default function HeroBackground() {
       }
       width={1920}
       height={1080}
-      className="min-w-mapd mix-blend-overlay lg:w-screen"
+      className="min-w-max mix-blend-overlay lg:w-screen"
       alt="papel de parede represetado por um emaranhado de fios"
     />
   )
