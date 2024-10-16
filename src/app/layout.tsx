@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/navbar"
 import Footer from "@/components/footer/footer"
 import Faq from "@/components/FAQ/faq"
 import { Toaster } from "@/components/ui/toaster"
+import Analytics from "@/components/analytics/analytics"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,7 +44,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MENXW4837W"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MENXW4837W', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
+
       <body className={`${poppins.className} bg-gray-100`}>
+        <Analytics />
         <Navbar />
 
         {children}
