@@ -61,6 +61,18 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Go Drives",
+              url: "https://godrives.com.br",
+              logo: "https://godrives.com.br/logo.svg",
+            }),
+          }}
+        />
       </head>
 
       <body className={`${poppins.className} bg-gray-100`}>
