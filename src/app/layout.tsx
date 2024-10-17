@@ -13,7 +13,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "GODRIVES",
+  title: "GO Drives",
   description: "Manutenção em equipamentos eletrônicos industriais.",
   applicationName: "Website GO Drives",
   keywords: [
@@ -67,7 +67,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Go Drives",
+              name: "GO Drives",
               url: "https://godrives.com.br",
               logo: "https://godrives.com.br/logo.svg",
             }),
