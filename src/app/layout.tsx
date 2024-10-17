@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: [
     "GO Drives",
     "Manutenção eletrônica industrial",
-    "Manutenção em equipamentos eletrônicos industriais.",
+    "Manutenção em equipamentos eletrônicos industriais",
     "Eletrônica",
     "Indústria",
     "Manutenção",
