@@ -376,29 +376,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-secondary-500">
                       Unidades
                     </h3>
-                    <div className="flex flex-col gap-2">
-                      <h4 className="text-[17px] font-extrabold text-blue">
-                        MT<span className="text-red">DRIVES</span>
-                      </h4>
 
-                      <Link
-                        className="flex items-center gap-6 rounded-2xl border border-secondary-50 bg-gray-200 p-3 shadow transition-all last:text-secondary-500 hover:cursor-pointer hover:brightness-90"
-                        href={"https://mtdrives.com.br/"}
-                        target="_blanck"
-                        title="Visite https://mtdrives.com.br"
-                      >
-                        <Image
-                          loading="lazy"
-                          width={28}
-                          height={28}
-                          src={location}
-                          alt="location svg"
-                        />{" "}
-                        <p>
-                          Mato Grosso - Rua Ipê, 01 - Jardim Imperial II, Cuiabá
-                        </p>
-                      </Link>
-                    </div>
                     <div className="flex flex-col gap-2">
                       <h4 className="text-[17px] font-extrabold text-blue">
                         GO<span className="text-red">DRIVES</span>
@@ -439,7 +417,7 @@ export default function Home() {
               <h2 className="mb-8 text-center text-2xl font-bold text-secondary-500">
                 Localização
               </h2>
-              <GoogleMap apiKey={apiKey} />
+              <GoogleMap />
             </div>
           }
         />

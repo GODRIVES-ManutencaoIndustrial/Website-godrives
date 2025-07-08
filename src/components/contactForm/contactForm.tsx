@@ -50,9 +50,9 @@ export default function ContactForm({ url }: ContactFormProps) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex w-full flex-col gap-7 py-3 lg:max-w-lg lg:gap-8"
+      className="flex w-full flex-col gap-6 py-3 lg:max-w-lg"
     >
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <label className="text-sm text-secondary-300" htmlFor="name">
           Nome
         </label>
@@ -67,7 +67,7 @@ export default function ContactForm({ url }: ContactFormProps) {
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <label className="text-sm text-secondary-300" htmlFor="number">
           Telefone
         </label>
@@ -84,7 +84,7 @@ export default function ContactForm({ url }: ContactFormProps) {
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <label className="text-sm text-secondary-300" htmlFor="email">
           Email
         </label>
@@ -100,7 +100,7 @@ export default function ContactForm({ url }: ContactFormProps) {
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <label className="text-sm text-secondary-300" htmlFor="message">
           Mensagem
         </label>
@@ -108,7 +108,7 @@ export default function ContactForm({ url }: ContactFormProps) {
           {...register("textarea")}
           placeholder="Escreva algo..."
           id="message"
-          className="h-32 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300 lg:h-[12.8rem]"
+          className="h-32 rounded-md border border-secondary-50 px-3 py-3 text-secondary-300 lg:h-[10rem]"
         />
         {errors.textarea && (
           <span className="text-sm text-red-600">
@@ -120,7 +120,7 @@ export default function ContactForm({ url }: ContactFormProps) {
       <button
         aria-label="Enviar formulário entre em contato"
         type="submit"
-        className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 lg:h-[4.8rem] ${loading ? "brightness-150" : ""}`}
+        className={`inline-flex h-16 w-full items-center justify-center rounded-md bg-secondary-500 text-sm font-medium text-primaryWhite transition-all hover:brightness-150 lg:h-[4rem] ${loading ? "brightness-150" : ""}`}
       >
         {loading ? (
           <LoaderCircle className="animate-spin" size={24} />

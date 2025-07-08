@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "Manutenção",
     "Inversores de Frequência",
     "Manutenção Industrial",
+    "Inversor de Frequência",
+    "Soft Starter",
+    "CLP",
+    "Manutenção de inversor de Frequência",
+    "Atendimento Técnico in loco",
   ],
   authors: [
     {
