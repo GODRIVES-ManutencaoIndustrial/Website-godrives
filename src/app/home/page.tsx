@@ -17,7 +17,6 @@ import logo from "@/../public/logo.svg"
 import CompanyVideo from "@/components/companyVideo/companyVideo"
 
 export default function Home() {
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY
   const url = process.env.URL
 
   return (

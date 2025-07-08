@@ -1,9 +1,4 @@
 "use client"
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps"
-
-type TypeGoogleMap = {
-  apiKey: string | undefined
-}
 
 export default function GoogleMap() {
   const address =
