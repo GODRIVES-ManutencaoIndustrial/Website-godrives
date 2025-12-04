@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import { Poppins } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/navbar/navbar"
@@ -80,7 +81,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <FacebookPixel />
+      <Suspense fallback={null}>
+        <FacebookPixel />
+      </Suspense>
 
       <body className={`${poppins.className} bg-gray-100`}>
         <Analytics />
