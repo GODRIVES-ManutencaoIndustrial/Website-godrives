@@ -6,6 +6,7 @@ import Footer from "@/components/footer/footer"
 import Faq from "@/components/FAQ/faq"
 import { Toaster } from "@/components/ui/toaster"
 import Analytics from "@/components/analytics/analytics"
+import FacebookPixel from "@/components/facebookPixel/facebookPixel"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -79,6 +80,7 @@ export default function RootLayout({
           }}
         />
       </head>
+      <FacebookPixel />
 
       <body className={`${poppins.className} bg-gray-100`}>
         <Analytics />
