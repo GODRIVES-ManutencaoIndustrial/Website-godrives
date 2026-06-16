@@ -66,9 +66,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <Suspense fallback={null}>
+      {/* <Suspense fallback={null}>
         <FacebookPixel />
-      </Suspense>
+      </Suspense> */}
 
       <body className={`${poppins.className} bg-gray-100`}>
         <GoogleTagManager />
