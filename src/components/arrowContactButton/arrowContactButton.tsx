@@ -5,7 +5,7 @@ import Link from "next/link"
 const ArrowContactButton = () => {
   return (
     <div>
-      <Link href={"https://wa.me/5562998817695"} target="_blank">
+      <Link href={"https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."} target="_blank">
         <button
           aria-label="Fale conosco bt footer"
           className="inline-flex h-[54px] w-64 items-center justify-center gap-5 rounded-[28px] border-2 border-blue bg-blue fill-secondary-900 py-3 text-blue-900 transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue"

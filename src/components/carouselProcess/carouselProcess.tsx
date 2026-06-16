@@ -45,7 +45,7 @@ export default function CarouselProcess() {
                 <p className="mb-2 text-[13px] leading-5 text-secondary-300 lg:text-sm">
                   {data.description}
                 </p>
-                <Link href={"https://wa.me/5562998817695"} target="_blank">
+                <Link href={"https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."} target="_blank">
                   <button
                     aria-label="Fale conosco pelo card de processo"
                     className="rounded-3xl bg-blue px-7 py-2.5 text-sm text-primaryWhite transition-all hover:brightness-75 lg:py-3 lg:text-base lg:font-normal"

@@ -150,7 +150,7 @@ export default function Navbar() {
               <button
                 aria-label="Fale conosco no menu mobile"
                 onClick={() => {
-                  window.location.href = "https://wa.me/5562998817695"
+                  window.location.href = "https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                 }}
                 className="inline-flex h-[56px] w-52 items-center justify-center gap-4 rounded-[28px] border-2 border-secondary-900 bg-blue fill-secondary-900 py-3 text-blue-900 transition-all hover:bg-secondary-900 hover:fill-blue hover:text-blue"
               >
@@ -243,7 +243,7 @@ export default function Navbar() {
           </NavigationMenu>
 
           <Link
-            href="https://wa.me/5562998817695"
+            href="https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
             target="_blank"
             className="hidden lg:flex"
           >

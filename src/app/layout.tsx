@@ -8,6 +8,7 @@ import Faq from "@/components/FAQ/faq"
 import { Toaster } from "@/components/ui/toaster"
 import Analytics from "@/components/analytics/analytics"
 import FacebookPixel from "@/components/facebookPixel/facebookPixel"
+import GoogleTagManager from "@/components/googleTagManager/googleTagManager"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -53,22 +54,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-MENXW4837W"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-MENXW4837W', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
-        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -86,7 +71,8 @@ export default function RootLayout({
       </Suspense>
 
       <body className={`${poppins.className} bg-gray-100`}>
-        <Analytics />
+        <GoogleTagManager />
+        {/* <Analytics /> */}
         <Navbar />
 
         {children}

@@ -78,7 +78,7 @@ export default function Home() {
                         Saiba mais
                       </Link>
 
-                      <Link href="https://wa.me/5562998817695" target="_blank">
+                      <Link href="https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank">
                         <button
                           aria-label="Fale Conosco"
                           className="hover:text-backgroundBlue bg-transparent rounded-3xl border-2 border-blue px-7 py-3 font-medium text-blue transition-all hover:bg-blue hover:text-secondary-900"
@@ -275,7 +275,7 @@ export default function Home() {
                 />
 
                 <Link
-                  href="https://wa.me/5562998817695"
+                  href="https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                   target="_blank"
                   className="absolute z-10 flex h-[64px] w-64 items-center"
                 >

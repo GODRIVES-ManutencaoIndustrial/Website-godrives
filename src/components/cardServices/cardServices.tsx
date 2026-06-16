@@ -36,7 +36,7 @@ export default function CardServices() {
                     </p>
                     <Link
                       className="flex h-14 w-52 items-center justify-center rounded-2xl bg-blue text-center text-lg text-primaryWhite transition-all hover:brightness-90"
-                      href={"https://wa.me/5562998817695"}
+                      href={"https://wa.me/5562998817695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Go%20Drives%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."}
                       target="_blank"
                     >
                       Fale conosco
